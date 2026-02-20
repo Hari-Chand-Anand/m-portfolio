@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Map • HCA Internal Portfolio</title>
+
+  <!-- Same font + base styles -->
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link href="https://fonts.cdnfonts.com/css/ikaros" rel="stylesheet">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <style>
+    body{
+      font-family:'Ikaros', sans-serif;
+      background:#050b1c;
+      color:#fff;
+      margin:0;
+    }
+
+    /* Vanta background */
+    #vantaBg{
+      position:fixed;
+      inset:0;
+      z-index:-1;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:0 auto;
+      padding:40px 0 30px;
+      position:relative;
+      z-index:1;
+    }
+
+    /* Header row like other pages */
+    .heroRow{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:18px;
+    }
+
+    .heroTitle{
+      margin:0;
+      font-weight:400;
+      letter-spacing:8px;
+      font-size:40px;
+      text-transform:uppercase;
+      color:rgba(255,255,255,.92);
+    }
+
+    .navText{
+      letter-spacing:4px;
+      font-size:16px;
+      color:rgba(255,255,255,.75);
+      text-decoration:none;
+      transition:all .25s ease;
+      text-transform:uppercase;
+      white-space:nowrap;
+    }
+    .navText:hover{
+      color:#2f6cff;
+      transform:translateY(-2px);
+    }
+
+    /* Glass card blocks (transparent like others) */
+    .glass{
+      border-radius:22px;
+      background:rgba(255,255,255,0.03);
+      border:1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .heroCard{
+      padding:22px 24px;
+      margin-bottom:18px;
+    }
+
+    .heroCard h1{
+      margin:0;
+      font-size:22px;
+      letter-spacing:6px;
+      text-transform:uppercase;
+      font-weight:400;
+      color:rgba(255,255,255,.92);
+    }
+
+    .toolbar{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      align-items:center;
+      justify-content:flex-start;
+      padding:16px 18px;
+      margin-bottom:18px;
+    }
+
+    select{
+      font-family:'Ikaros', sans-serif;
+      letter-spacing:2px;
+      color:rgba(255,255,255,.9);
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.10);
+      border-radius:16px;
+      padding:12px 14px;
+      outline:none;
+      min-width:300px;
+      cursor:pointer;
+    }
+
+    /* Reset as text (like HOME) */
+    .resetText{
+      letter-spacing:4px;
+      font-size:16px;
+      color:rgba(255,255,255,.75);
+      text-decoration:none;
+      transition:all .25s ease;
+      text-transform:uppercase;
+      white-space:nowrap;
+      cursor:pointer;
+      user-select:none;
+    }
+    .resetText:hover{
+      color:#2f6cff;
+      transform:translateY(-2px);
+    }
+
+    /* Hide hint per your “remove extra text” vibe */
+    #hint{
+      display:none;
+    }
+
+    /* Map container glass + size */
+    #mapWrap{
+      padding:14px;
+    }
+
+    #map{
+      height: 560px;
+      width: 100%;
+      border-radius:18px;
+      overflow:hidden;
+    }
+
+    /* Leaflet tweaks for premium feel */
+    .leaflet-control-zoom a{
+      background:rgba(255,255,255,0.06) !important;
+      color:rgba(255,255,255,0.85) !important;
+      border:1px solid rgba(255,255,255,0.10) !important;
+      backdrop-filter: blur(14px);
+    }
+    .leaflet-popup-content-wrapper{
+      background: rgba(10,14,22,0.78);
+      color: rgba(255,255,255,0.92);
+      border: 1px solid rgba(255,255,255,0.10);
+      backdrop-filter: blur(14px);
+    }
+    .leaflet-popup-tip{
+      background: rgba(10,14,22,0.78);
+    }
+
+    @media (max-width: 640px){
+      .heroTitle{ font-size:34px; }
+      select{ min-width:100%; width:100%; }
+      #map{ height: 520px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="vantaBg" aria-hidden="true"></div>
+
+  <main class="container">
+
+    <!-- Minimal header -->
+    <div class="heroRow">
+      <h1 class="heroTitle">MAP</h1>
+      <a class="navText" href="index.html">HOME</a>
+    </div>
+
+    <!-- ✅ First card: title only (no long text) -->
+    <section class="glass heroCard">
+      <h1>WHERE MACHINES ARE RUNNING</h1>
+    </section>
+
+    <!-- ✅ Transparent toolbar card -->
+    <div class="glass toolbar">
+      <select id="machine"></select>
+      <span class="resetText" id="reset">RESET</span>
+      <span class="small" id="hint"></span>
+    </div>
+
+    <!-- ✅ India map (Leaflet) inside glass -->
+    <div class="glass" id="mapWrap">
+      <div id="map" role="application" aria-label="Installations map"></div>
+    </div>
+
+  </main>
+
+  <script src="assets/app.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <script>
+    (async () => {
+      const machines = await loadData('data/machines.json');
+      const installs = await loadData('data/installations.json');
+
+      const sel = document.querySelector('#machine');
+      sel.innerHTML = ['All machines', ...machines.map(m => `${m.id} — ${m.brand} ${m.model}`)]
+        .map((x,i) => `<option value="${i===0?'ALL':safeText(x.split(' — ')[0])}">${safeText(x)}</option>`)
+        .join('');
+
+      // ✅ India map focus
+      const map = L.map('map', { scrollWheelZoom: true }).setView([22.9734, 78.6569], 5);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; OpenStreetMap contributors'
+      }).addTo(map);
+
+      let markers = [];
+      function clearMarkers(){ markers.forEach(m => map.removeLayer(m)); markers = []; }
+
+      // ✅ Aggregated city/cluster markers only (no customer info)
+      function render(machineId){
+        clearMarkers();
+
+        const rows = installs.filter(x => machineId==='ALL' ? true : x.machineId===machineId);
+
+        rows.forEach(x => {
+          const m = machines.find(mm => mm.id === x.machineId);
+          const label = m ? `${m.brand} ${m.model}` : x.machineId;
+
+          const mk = L.circleMarker([x.lat, x.lng], {
+            radius: Math.min(18, 6 + (x.count || 1)),
+            weight: 1,
+            opacity: 0.9,
+            fillOpacity: 0.35
+          }).addTo(map);
+
+          mk.bindPopup(`
+            <b>${safeText(label)}</b><br/>
+            ${safeText(x.city)}, ${safeText(x.state)}<br/>
+            Installations (agg.): <b>${safeText(x.count || 0)}</b><br/>
+            <a href="machine.html?id=${encodeURIComponent(x.machineId)}">Open machine</a>
+          `);
+
+          markers.push(mk);
+        });
+      }
+
+      sel.addEventListener('change', () => render(sel.value));
+      document.querySelector('#reset').addEventListener('click', () => { sel.value='ALL'; render('ALL'); });
+
+      render('ALL');
+    })().catch(err => {
+      console.error(err);
+    });
+  </script>
+
+  <!-- ✅ Same Vanta NET background as other pages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script>
+    VANTA.NET({
+      el: "#vantaBg",
+      mouseControls: true,
+      touchControls: true,
+      color: 0x2f6cff,
+      backgroundColor: 0x050b1c,
+      points: 10.0,
+      maxDistance: 22.0,
+      spacing: 18.0
+    });
+  </script>
+</body>
+</html>

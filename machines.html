@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Machines • HCA Internal Portfolio</title>
+
+  <link href="https://fonts.cdnfonts.com/css/ikaros" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+
+  <style>
+    :root{
+      --bg:#050b1c;
+      --blue:#2f6cff;
+
+      /* ✅ ultra transparent like homepage */
+      --glass: rgba(255,255,255,0.010);
+      --glassHover: rgba(255,255,255,0.016);
+
+      --stroke: rgba(255,255,255,0.070);
+      --strokeHover: rgba(255,255,255,0.140);
+
+      --strokeSoft: rgba(255,255,255,0.055);
+
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.62);
+
+      /* keep blur subtle (no fog) */
+      --blur: blur(7px);
+
+      --radius: 22px;
+    }
+
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:'Ikaros', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x:hidden;
+    }
+
+    #vantaBg{
+      position:fixed;
+      inset:0;
+      z-index:-1;
+    }
+
+    .container{
+      width:min(1200px, 92vw);
+      margin: 0 auto;
+      padding: 34px 0 46px;
+      position:relative;
+      z-index:1;
+    }
+
+    .heroRow{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:18px;
+      padding: 8px 0 18px;
+    }
+
+    .heroTitle{
+      margin:0;
+      font-weight:400;
+      letter-spacing:8px;
+      font-size:44px;
+      text-transform:uppercase;
+      color: rgba(255,255,255,.92);
+      line-height:1;
+      text-shadow: 0 12px 40px rgba(0,0,0,0.35);
+    }
+
+    .heroHome{
+      letter-spacing:4px;
+      font-size:16px;
+      color: rgba(255,255,255,.75);
+      text-decoration:none;
+      transition: all .25s ease;
+      text-transform:uppercase;
+      white-space:nowrap;
+      display:inline-flex;
+      align-items:center;
+      gap:12px;
+      padding-top: 8px;
+      position:relative;
+      will-change: transform;
+    }
+    .heroHome:hover{
+      color: rgba(255,255,255,.95);
+      transform: translateY(-2px);
+    }
+    .heroHome::after{
+      content:"";
+      position:absolute;
+      left:0; right:0;
+      bottom:-6px;
+      height:1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+      opacity:0;
+      transform: scaleX(.85);
+      transition: all .25s ease;
+    }
+    .heroHome:hover::after{
+      opacity:1;
+      transform: scaleX(1);
+    }
+
+    /* ===== Toolbar ===== */
+    .toolbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      margin: 8px 0 18px;
+      flex-wrap:wrap;
+
+      /* ✅ ultra transparent long glass bar feel */
+      background: var(--glass);
+      border: 1px solid var(--stroke);
+      border-radius: 26px;
+      padding: 18px 18px;
+      backdrop-filter: var(--blur);
+      -webkit-backdrop-filter: var(--blur);
+      box-shadow: 0 18px 60px rgba(0,0,0,0.45);
+
+      position:relative;
+      overflow:hidden;
+    }
+
+    /* subtle animated border glow on hover */
+    .toolbar::before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      border-radius: 28px;
+      background:
+        radial-gradient(650px 220px at 20% 0%, rgba(47,108,255,0.22), transparent 60%),
+        radial-gradient(520px 220px at 85% 35%, rgba(255,255,255,0.14), transparent 55%);
+      opacity:0;
+      filter: blur(18px);
+      transition: opacity .28s ease;
+      pointer-events:none;
+    }
+
+    .toolbar:hover::before{ opacity:1; }
+
+    .toolbar-left{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+      width: 100%;
+    }
+
+    .input, select{
+      background: rgba(255,255,255,0.010);
+      border:1px solid var(--strokeSoft);
+      color: rgba(255,255,255,.88);
+      border-radius: 18px;
+      padding: 14px 16px;
+      outline:none;
+      letter-spacing: .08em;
+      font-family: inherit;
+      min-width: 240px;
+
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      transition: border-color .25s ease, background .25s ease;
+    }
+    .input:focus, select:focus{
+      border-color: rgba(47,108,255,0.35);
+      background: rgba(255,255,255,0.016);
+    }
+    select{ min-width: 200px; }
+
+    .actions{
+      display:flex;
+      gap:28px;
+      align-items:center;
+      margin-left:auto;
+    }
+
+    .small{
+      font-size:12px;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      color: rgba(255,255,255,.55);
+    }
+
+    /* ===== Grid ===== */
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:14px;
+      margin-top: 12px;
+    }
+    @media (max-width: 980px){
+      .grid{ grid-template-columns: repeat(2, 1fr); }
+      .heroTitle{ font-size: 38px; }
+    }
+    @media (max-width: 560px){
+      .grid{ grid-template-columns: 1fr; }
+      .heroTitle{ font-size: 34px; }
+    }
+
+    /* ===== Cards: ultra-transparent + Apple hover ===== */
+    .project-card{
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      min-height:240px;
+      padding:24px;
+      cursor:pointer;
+
+      background: var(--glass);
+      border:1px solid var(--stroke);
+      border-radius: var(--radius);
+      backdrop-filter: var(--blur);
+      -webkit-backdrop-filter: var(--blur);
+
+      transition:
+        transform .28s ease,
+        box-shadow .28s ease,
+        border-color .28s ease,
+        background .28s ease;
+
+      text-decoration:none;
+      color:inherit;
+      position:relative;
+      overflow:hidden;
+
+      box-shadow: 0 18px 60px rgba(0,0,0,0.45);
+      will-change: transform;
+    }
+
+    /* border glow layer */
+    .project-card::before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      border-radius: calc(var(--radius) + 2px);
+      background:
+        radial-gradient(650px 220px at 20% 0%, rgba(47,108,255,0.28), transparent 60%),
+        radial-gradient(520px 220px at 85% 35%, rgba(255,255,255,0.15), transparent 55%);
+      opacity:0;
+      filter: blur(18px);
+      transition: opacity .28s ease;
+      pointer-events:none;
+    }
+
+    /* light sweep */
+    .project-card::after{
+      content:"";
+      position:absolute;
+      top:-60%;
+      left:-70%;
+      width:70%;
+      height:220%;
+      transform: rotate(18deg);
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.10), transparent);
+      opacity:0;
+      pointer-events:none;
+    }
+
+    @keyframes sheenSweep {
+      0%   { transform: translateX(0) rotate(18deg); opacity:0; }
+      20%  { opacity:.22; }
+      60%  { opacity:.14; }
+      100% { transform: translateX(240%) rotate(18deg); opacity:0; }
+    }
+
+    .project-card:hover{
+      transform:translateY(-6px);
+      border-color: var(--strokeHover);
+      background: var(--glassHover);
+
+      box-shadow:
+        0 30px 95px rgba(0,0,0,0.62),
+        0 0 0 1px rgba(47,108,255,0.08);
+    }
+    .project-card:hover::before{ opacity:1; }
+    .project-card:hover::after{ animation: sheenSweep 900ms ease-out 1; }
+
+    .project-name{
+      margin:0;
+      font-size:16px;
+      letter-spacing:3px;
+      text-transform:uppercase;
+      color:rgba(255,255,255,.92);
+      line-height:1.35;
+    }
+
+    .card-sub{
+      margin-top:10px;
+      font-size:13px;
+      letter-spacing:2px;
+      color:rgba(255,255,255,.62);
+      line-height:1.5;
+    }
+
+    .metaRow{
+      margin-top:16px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+
+      background: rgba(255,255,255,0.010);
+      border:1px solid var(--strokeSoft);
+
+      color:rgba(255,255,255,.75);
+      letter-spacing:2px;
+      font-size:12px;
+      text-transform:uppercase;
+
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+    }
+
+    .dot{
+      width:8px;
+      height:8px;
+      border-radius:999px;
+      display:inline-block;
+    }
+    .dot.green{ background:#33d17a; }
+    .dot.yellow{ background:#f9c74f; }
+    .dot.red{ background:#ff4d4d; }
+
+    .project-open{
+      margin-top:20px;
+      font-size:14px;
+      letter-spacing:2px;
+      color:rgba(255,255,255,.7);
+      text-transform:uppercase;
+    }
+
+    .cornerArrow{
+      position:absolute;
+      right:18px;
+      bottom:18px;
+      font-size:22px;
+      color:rgba(255,255,255,.45);
+      transition:all .25s ease;
+    }
+    .project-card:hover .cornerArrow{
+      transform:translateX(6px);
+      color:rgba(255,255,255,.75);
+    }
+
+    @media (max-width: 560px){
+      .input, select{ min-width: 100%; width:100%; }
+      .toolbar{ gap:10px; padding: 16px; }
+      .toolbar-left{ width:100%; }
+      .actions{ margin-left:0; width:100%; justify-content:center; }
+      .grid{ grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="vantaBg" aria-hidden="true"></div>
+
+  <main class="container">
+
+    <div class="heroRow">
+      <h1 class="heroTitle" id="heroTitle">MACHINES</h1>
+      <a class="heroHome" href="index.html">HOME</a>
+    </div>
+
+    <div class="toolbar" id="toolbar">
+      <div class="toolbar-left">
+        <input class="input" id="q" placeholder="Search model / id..." style="display:none;" />
+        <select id="type" style="display:none;"></select>
+
+        <!-- ✅ CLEAR / BACK as text like HOME -->
+        <div class="actions">
+          <a class="heroHome" href="#" id="clearLink">CLEAR</a>
+          <a class="heroHome" href="machines.html" id="backToBrands" style="display:none;">BACK</a>
+        </div>
+      </div>
+      <span class="small" id="count" style="display:none;"></span>
+    </div>
+
+    <section id="list" class="grid"></section>
+
+  </main>
+
+  <script>
+    function safeText(s){
+      return String(s ?? "").replace(/[&<>"']/g, m => ({
+        "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+      }[m]));
+    }
+    function moneyINR(n){
+      if (!Number.isFinite(n)) return "—";
+      return "₹ " + n.toLocaleString("en-IN", { maximumFractionDigits: 0 });
+    }
+
+    function normalizeBrandKey(brand){
+      // "DUKE JIA" -> "DUKEJIA" (matches your UI screenshots)
+      return String(brand || "")
+        .trim()
+        .toUpperCase()
+        .replace(/\s+/g, "");
+    }
+
+    // ===== Google Sheets Pricing (live) =====
+    // Your sheet must be shared as "Anyone with the link can view"
+    const PRICING_SHEET_ID = "2PACX-1vS0ZUrXsnXZNQzSbuZgvaPQWv-8fV8BBdW9o7FI5Its9zwztKYvITxbJofE_rQuHGDaJJRAOekzMNRe";
+    const PRICING_GID = "0"; // first tab
+    const PRICING_CSV_URL = `https://docs.google.com/spreadsheets/d/${PRICING_SHEET_ID}/gviz/tq?tqx=out:csv&gid=${PRICING_GID}`;
+
+    function normKey(k){ return String(k ?? "").trim().toUpperCase(); }
+
+    function parseNumber(x){
+      const n = Number(String(x ?? "").replace(/[₹,\s]/g, ""));
+      return Number.isFinite(n) ? n : null;
+    }
+
+    // Minimal CSV parser (handles quotes + commas)
+    function parseCsv(text){
+      const rows = [];
+      let row = [];
+      let cur = "";
+      let inQuotes = false;
+
+      for (let i = 0; i < text.length; i++){
+        const ch = text[i];
+        const next = text[i+1];
+
+        if (ch === '"' ){
+          if (inQuotes && next === '"'){ cur += '"'; i++; }
+          else { inQuotes = !inQuotes; }
+          continue;
+        }
+
+        if (!inQuotes && (ch === ',' || ch === '\n' || ch === '\r')){
+          if (ch === ',' ){
+            row.push(cur);
+            cur = "";
+          } else {
+            if (ch === '\r' && next === '\n') i++;
+            row.push(cur);
+            rows.push(row);
+            row = [];
+            cur = "";
+          }
+          continue;
+        }
+
+        cur += ch;
+      }
+
+      if (cur.length || row.length){
+        row.push(cur);
+        rows.push(row);
+      }
+      return rows.filter(r => r.some(c => String(c).trim() !== ""));
+    }
+
+    async function loadPriceMap(){
+      const res = await fetch(PRICING_CSV_URL, { cache: "no-store" });
+      if (!res.ok) throw new Error("Failed to load pricing sheet CSV");
+      const csv = await res.text();
+      const rows = parseCsv(csv);
+      if (!rows.length) return {};
+
+      const header = rows[0].map(h => String(h).trim().toLowerCase());
+      const idxKey = header.indexOf("key");
+      const idxQuote = header.indexOf("quote price");
+      const idxOverride = header.indexOf("fx_override (for testing)");
+
+      if (idxKey === -1) return {};
+
+      const map = {};
+      for (let i = 1; i < rows.length; i++){
+        const r = rows[i];
+        const k = normKey(r[idxKey]);
+        if (!k) continue;
+
+        let price = null;
+        if (idxOverride !== -1) price = parseNumber(r[idxOverride]);
+        if (price == null && idxQuote !== -1) price = parseNumber(r[idxQuote]);
+
+        if (price != null) map[k] = Math.round(price);
+      }
+      return map;
+    }
+
+    (async () => {
+      const list = document.getElementById('list');
+      const q = document.getElementById('q');
+      const typeSel = document.getElementById('type');
+      const backToBrands = document.getElementById('backToBrands');
+      const toolbar = document.getElementById('toolbar');
+      const heroTitle = document.getElementById('heroTitle');
+      const clearLink = document.getElementById('clearLink');
+
+      function getBrandParam() {
+        const u = new URL(location.href);
+        const raw = (u.searchParams.get('brand') || '').trim();
+        return normalizeBrandKey(raw);
+      }
+
+      async function fetchJsonWithFallback(paths) {
+        for (const url of paths) {
+          try {
+            const res = await fetch(url, { cache: "no-store" });
+            if (!res.ok) continue;
+            return await res.json();
+          } catch {}
+        }
+        throw new Error("Failed to load products.json");
+      }
+
+      function guessRepoBase() {
+        const parts = location.pathname.split("/").filter(Boolean);
+        if (parts.length >= 2) return "/" + parts[0];
+        return "";
+      }
+
+      async function loadProducts() {
+        const repoBase = guessRepoBase();
+        const candidates = [
+          "./products.json",
+          "products.json",
+          "./assets/products.json",
+          "assets/products.json",
+          (repoBase ? `${repoBase}/products.json` : null),
+          (repoBase ? `${repoBase}/assets/products.json` : null),
+        ].filter(Boolean);
+
+        const data = await fetchJsonWithFallback(candidates);
+
+        // de-dupe by id
+        const seen = new Set();
+        const unique = [];
+        for (const p of data) {
+          const id = String(p.id || "").trim();
+          if (!id || seen.has(id)) continue;
+          seen.add(id);
+          unique.push(p);
+        }
+
+        // map into view-model
+        return unique.map(p => {
+          const brandKey = normalizeBrandKey(p.brand);
+          return {
+            id: p.id,
+            brandKey,                  // used for routing / filtering
+            brandDisplay: brandKey,    // show like "DUKEJIA", "VIOS"
+            model: p.model || "",
+            short: p.description || "",
+            type: p.operation || p.category || "Machine",
+            priceKey: p.key || p.priceKey || p.model || "",
+            priceINR: p.priceINR,
+            stockQty: p.stockQty
+          };
+        });
+      }
+
+      function stockDot(qty){
+        const n = Number(qty || 0);
+        if (n >= 10) return { cls: "green", label: "STOCK" };
+        if (n >= 1)  return { cls: "yellow", label: "LOW" };
+        return { cls: "red", label: "OUT" };
+      }
+
+      function renderBrandsView(machines) {
+        heroTitle.textContent = "BRANDS";
+        toolbar.style.display = "none";
+
+        // Group by brandKey
+        const map = new Map();
+        for (const m of machines) {
+          if (!m.brandKey) continue;
+          map.set(m.brandKey, (map.get(m.brandKey) || 0) + 1);
+        }
+
+        const brands = Array.from(map.entries())
+          .map(([brandKey, count]) => ({ brandKey, count }))
+          .sort((a,b) => a.brandKey.localeCompare(b.brandKey));
+
+        list.innerHTML = brands.map(b => `
+          <a class="project-card" href="machines.html?brand=${encodeURIComponent(b.brandKey)}">
+            <div>
+              <h3 class="project-name">${safeText(b.brandKey)}</h3>
+              <div class="card-sub">${safeText(b.count)} MACHINES AVAILABLE</div>
+            </div>
+            <div class="project-open">OPEN</div>
+            <div class="cornerArrow">→</div>
+          </a>
+        `).join("");
+
+        if (!brands.length) {
+          list.innerHTML = `
+            <div class="project-card" style="cursor:default;">
+              <div>
+                <h3 class="project-name">NO BRANDS</h3>
+                <div class="card-sub">PRODUCTS.JSON HAS NO VALID BRAND DATA.</div>
+              </div>
+              <div class="project-open">—</div>
+            </div>
+          `;
+        }
+      }
+
+      function renderBrandDetail(machines, brandKey) {
+        heroTitle.textContent = brandKey;
+
+        toolbar.style.display = "";
+        backToBrands.style.display = "";
+        q.style.display = "";
+        typeSel.style.display = "";
+        clearLink.style.display = "";
+
+        const brandMachines = machines.filter(m => m.brandKey === brandKey);
+
+        const allTypes = ['All types', ...Array.from(new Set(brandMachines.map(m => m.type))).filter(Boolean).sort()];
+        typeSel.innerHTML = allTypes.map(t => `<option value="${safeText(t)}">${safeText(t)}</option>`).join('');
+
+        function render() {
+          const term = (q.value || '').trim().toLowerCase();
+          const t = typeSel.value;
+
+          const filtered = brandMachines.filter(m => {
+            if (t !== 'All types' && m.type !== t) return false;
+            if (!term) return true;
+            return (m.model || '').toLowerCase().includes(term)
+              || (m.id || '').toLowerCase().includes(term);
+          });
+
+          filtered.sort((a,b) => String(a.model||'').localeCompare(String(b.model||'')));
+
+          list.innerHTML = filtered.map(m => {
+            const price = (m.priceINR != null) ? moneyINR(Number(m.priceINR)) : "—";
+            const qty = (m.stockQty != null) ? Number(m.stockQty) : 0;
+            const dot = stockDot(qty);
+
+            return `
+              <a class="project-card" href="machine.html?id=${encodeURIComponent(m.id)}&brand=${encodeURIComponent(brandKey)}">
+                <div>
+                  <h3 class="project-name">${safeText(m.brandDisplay)} • ${safeText(m.model)}</h3>
+                  <div class="card-sub">${safeText(m.type)}${m.short ? " • " + safeText(m.short) : ""}</div>
+                </div>
+
+                <div class="project-open">OPEN</div>
+                <div class="cornerArrow">→</div>
+              </a>
+            `;
+          }).join('');
+
+          if (!filtered.length) {
+            list.innerHTML = `
+              <div class="project-card" style="cursor:default;">
+                <div>
+                  <h3 class="project-name">NO RESULTS</h3>
+                  <div class="card-sub">TRY CLEARING SEARCH / TYPE FILTERS.</div>
+                </div>
+                <div class="project-open">—</div>
+              </div>
+            `;
+          }
+        }
+
+        // ✅ CLEAR as text link
+        clearLink.onclick = (e) => {
+          e.preventDefault();
+          q.value = '';
+          typeSel.value = 'All types';
+          render();
+          q.focus();
+        };
+
+        q.addEventListener('input', render);
+        typeSel.addEventListener('change', render);
+
+        render();
+      }
+
+      const machines = await loadProducts();
+
+      // Apply live prices from Google Sheet (by KEY). If sheet fails, UI falls back to products.json prices.
+      try {
+        const priceMap = await loadPriceMap();
+        for (const m of machines) {
+          const k = normKey(m.priceKey || m.model);
+          if (priceMap[k] != null) m.priceINR = priceMap[k];
+        }
+      } catch (e) {
+        console.warn("Pricing sheet not reachable, using JSON priceINR.", e);
+      }
+
+      const brandKey = getBrandParam();
+
+      if (!brandKey) {
+        renderBrandsView(machines);
+      } else {
+        // If invalid brand -> go back to brands
+        const exists = machines.some(m => m.brandKey === brandKey);
+        if (!exists) {
+          location.href = "machines.html";
+          return;
+        }
+        renderBrandDetail(machines, brandKey);
+      }
+
+    })().catch(err => {
+      console.error(err);
+      document.getElementById('toolbar').style.display = "none";
+      document.getElementById('list').innerHTML = `
+        <div class="project-card" style="cursor:default;">
+          <div>
+            <h3 class="project-name">ERROR</h3>
+            <div class="card-sub">FAILED TO LOAD PRODUCTS.JSON</div>
+          </div>
+          <div class="project-open">—</div>
+        </div>
+      `;
+    });
+  </script>
+
+  <!-- Vanta -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script>
+    VANTA.NET({
+      el: "#vantaBg",
+      mouseControls: true,
+      touchControls: true,
+      color: 0x2f6cff,
+      backgroundColor: 0x050b1c,
+      points: 10.0,
+      maxDistance: 22.0,
+      spacing: 18.0
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+[
+  {"machineId":"DUKE-R9","city":"Tirupur","state":"Tamil Nadu","lat":11.1085,"lng":77.3411,"count":6},
+  {"machineId":"DUKE-R9","city":"Noida","state":"Uttar Pradesh","lat":28.5355,"lng":77.3910,"count":3},
+  {"machineId":"BRANDX-LS-A1","city":"Ludhiana","state":"Punjab","lat":30.9000,"lng":75.8573,"count":4},
+  {"machineId":"DUKE-H1","city":"Surat","state":"Gujarat","lat":21.1702,"lng":72.8311,"count":8}
+]

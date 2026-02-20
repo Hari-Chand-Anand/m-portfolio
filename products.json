@@ -1,0 +1,4127 @@
+[
+  {
+    "id": "duke-dk-1201-embroidery-machine",
+    "brand": "DUKEJIA",
+    "model": "DUKE DK-1201 EMBROIDERY MACHINE",
+    "name": "DUKE DK-1201 EMBROIDERY MACHINE",
+    "category": "embroidery",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1CJkLigw6MMU3aaJ6ZzD4phQIsrulUh-C/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "Embroidery",
+    "description": "Industrial embroidery machine model.",
+    "spec": {
+      "Suitable For": "Flat, cap and finished garments embroidery",
+      "Auto Thread Trimmer": "Yes",
+      "Auto Color Change": "Yes",
+      "Cap Frame": "270° wide cap frame",
+      "Max Speed (RPM)": "1200",
+      "Memory": "2,000,000 stitches (200 designs)",
+      "Languages Supported": "Chinese, English, French, Russian, Dutch, Spanish, Portuguese, Turkish, German, Arabic, Thai, Vietnamese",
+      "Display": "LCD display showing real-time stitching",
+      "Design Preview": "Full screen pre-view design function support",
+      "Color Change Capacity": "Auto start and color change (up to 200 times)",
+      "Input Voltage": "AC 80–260V (adapts to unstable electricity)",
+      "Output Voltage": "DC 36V safe voltage output",
+      "Max Power Consumption": "150W",
+      "Thread Winding": "Automatic external thread winding device",
+      "Optional Devices": "Cording, Sequins, Beads, Rhinestone"
+    },
+    "features": [],
+    "application": "",
+    "tags": [                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+      "embroidery"
+    ],
+    "key": "DK-1201"
+  },
+  {
+    "id": "duke-dy-1201h-embroidery-machine",
+    "brand": "DUKEJIA",
+    "model": "DUKE DY-1201H EMBROIDERY MACHINE",
+    "name": "DUKE DY-1201H EMBROIDERY MACHINE",
+    "category": "embroidery",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Embroidery",
+    "description": "Industrial embroidery machine model.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "embroidery"
+    ],
+    "key": "DY-1201H"
+  },
+  {
+    "id": "duke-dy904-120-embroidery-machine",
+    "brand": "DUKEJIA",
+    "model": "DUKE DY904-120 EMBROIDERY MACHINE",
+    "name": "DUKE DY904-120 EMBROIDERY MACHINE",
+    "category": "embroidery",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Embroidery",
+    "description": "Industrial embroidery machine model.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "embroidery"
+    ],
+    "key": "DY-904-120"
+  },
+  {
+    "id": "duke-dy-904-150-embroidery-machine",
+    "brand": "DUKEJIA",
+    "model": "DUKE DY-904-150 EMBROIDERY MACHINE",
+    "name": "DUKE DY-904-150 EMBROIDERY MACHINE",
+    "category": "embroidery",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Embroidery",
+    "description": "Industrial embroidery machine model.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "embroidery"
+    ],
+    "key": "DY-904-150"
+  },
+  {
+    "id": "duke-dy924-120-embroidery-machine",
+    "brand": "DUKEJIA",
+    "model": "DUKE DY924-120 EMBROIDERY MACHINE",
+    "name": "DUKE DY924-120 EMBROIDERY MACHINE",
+    "category": "embroidery",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Embroidery",
+    "description": "Industrial embroidery machine model.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "embroidery"
+    ],
+    "key": "DY-924-120"
+  },
+  {
+    "id": "duke-embroidery-machine-400x-500",
+    "brand": "DUKEJIA",
+    "model": "DUKE EMBROIDERY MACHINE ( 400X 500)",
+    "name": "DUKE EMBROIDERY MACHINE ( 400X 500)",
+    "category": "embroidery",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Embroidery",
+    "description": "Industrial embroidery machine model.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "embroidery"
+    ],
+    "key": "EMB-400X500"
+  },
+  {
+    "id": "duke-es-1300",
+    "brand": "DUKEJIA",
+    "model": "DUKE ES-1300",
+    "name": "DUKE ES-1300",
+    "category": "embroidery",
+    "thumbnail": "images/es-1300.png",
+    "popularity": "medium",
+    "media": {
+      "youtubeId": "ECVKokkFGHw",
+      "catalogUrl": "assets/catalogs/es-1300.pdf",
+      "glbUrl": "assets/models/es-1300.glb"
+    },
+    "operation": "Embroidery and Sewing",
+    "description": "Embroidery sewing machine with auto threading, LCD control, and a wide range of seam/embroidery functions.",
+    "spec": {
+      "Function": "67 seam patterns + embroidery",
+      "Speed (rpm)": "650 (sewing), 650 (embroidery)",
+      "Auto Threading": "Yes",
+      "LCD Screen": "Touch-screen",
+      "Max Sewing Range (mm)": 7,
+      "Optional Presser Foot": "Decorative seams",
+      "Memory Capacity (stitches)": 2000000,
+      "Max Embroidery Area (mm)": "110×110",
+      "Max Needles/min": 650,
+      "Pattern Rotation (°)": 90,
+      "Pattern Resize": "50%, 100%, 200%",
+      "Body Size (mm)": "390×220×300",
+      "Packing Size (mm)": "510×375×370",
+      "Net/Gross Weight (kg)": "9 / 10",
+      "Supported OS": "Win98/2000/XP",
+      "Embroidery Format": "TAJIMA compatible",
+      "Power Supply": "Single-phase AC"
+    },
+    "features": [
+      "67 seam patterns + embroidery.",
+      "Auto-threading and trimming.",
+      "Touch LCD for easy operation.",
+      "Pattern resize & rotation.",
+      "USB interface; TAJIMA formats."
+    ],
+    "application": "Decorative embroidery & sewing for garments and home textiles.",
+    "tags": [
+      "sewing+embroidery",
+      "LCD",
+      "auto threading"
+    ],
+    "key": "ES-1300"
+  },
+  {
+    "id": "duke-excel-embroidery-machine",
+    "brand": "DUKEJIA",
+    "model": "DUKE EXCEL EMBROIDERY MACHINE",
+    "name": "DUKE EXCEL EMBROIDERY MACHINE",
+    "category": "embroidery",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Embroidery",
+    "description": "Industrial embroidery machine model.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "embroidery"
+    ],
+    "key": "EXCEL"
+  },
+  {
+    "id": "embroidery-machine-with-standard-accessories-halo-240mmx320mm",
+    "brand": "DUKEJIA",
+    "model": "EMBROIDERY MACHINE WITH STANDARD ACCESSORIES HALO (240MMX320MM)",
+    "name": "EMBROIDERY MACHINE WITH STANDARD ACCESSORIES HALO (240MMX320MM)",
+    "category": "embroidery",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Embroidery",
+    "description": "Industrial embroidery machine model.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "embroidery"
+    ],
+    "key": "HALO-240X320"
+  },
+  {
+    "id": "vios-868",
+    "brand": "VIOS",
+    "model": "VIOS-868",
+    "name": "High Speed Lockstitch Sewing Machine",
+    "category": "lockstitch",
+    "thumbnail": "images/vios-868.png",
+    "popularity": "high",
+    "media": {
+      "youtubeId": "2Nod9pUuz24",
+      "catalogUrl": "assets/catalogs/vios-868.pdf",
+      "glbUrl": "assets/models/vios-868.glb"
+    },
+    "operation": "Lockstitch",
+    "description": "High-speed industrial lockstitch machine with direct drive motor and smooth stitch formation.",
+    "spec": {
+      "Max Speed (rpm)": 4500,
+      "Needle Type": "DBx1 #9–18",
+      "Stitch Length (mm)": 5,
+      "Presser Foot Lift (mm)": "5.5 / 13",
+      "Lubrication": "Automatic",
+      "Motor": "Direct Drive Servo"
+    },
+    "features": [
+      "Direct drive for reduced vibration and low noise.",
+      "Energy saving servo motor.",
+      "Stable stitch formation at high speed."
+    ],
+    "application": "Garments, shirts, trousers, light to medium fabrics.",
+    "tags": [
+      "lockstitch",
+      "direct drive",
+      "servo"
+    ],
+    "key": "868"
+  },
+  {
+    "id": "vios-867",
+    "brand": "VIOS",
+    "model": "VIOS-867",
+    "name": "High Speed Lockstitch Sewing Machine",
+    "category": "lockstitch",
+    "thumbnail": "images/vios-867.png",
+    "popularity": "medium",
+    "media": {
+      "youtubeId": "2Nod9pUuz24",
+      "catalogUrl": "assets/catalogs/vios-867.pdf",
+      "glbUrl": "assets/models/vios-867.glb"
+    },
+    "operation": "Lockstitch",
+    "description": "High-speed lockstitch machine designed for consistent industrial performance.",
+    "spec": {
+      "Max Speed (rpm)": 4000,
+      "Needle Type": "DBx1 #9–18",
+      "Stitch Length (mm)": 5,
+      "Presser Foot Lift (mm)": "5.5 / 13",
+      "Lubrication": "Automatic",
+      "Motor": "Direct Drive Servo"
+    },
+    "features": [
+      "Stable operation and smooth feeding.",
+      "Energy saving servo motor."
+    ],
+    "application": "Garments, uniforms, general stitching.",
+    "tags": [
+      "lockstitch",
+      "industrial"
+    ],
+    "key": "867"
+  },
+  {
+    "id": "vios-699",
+    "brand": "VIOS",
+    "model": "VIOS-699",
+    "name": "Heavy Duty Lockstitch Sewing Machine",
+    "category": "lockstitch",
+    "thumbnail": "images/vios-699.png",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "2Nod9pUuz24",
+      "catalogUrl": "assets/catalogs/vios-699.pdf",
+      "glbUrl": "assets/models/vios-699.glb"
+    },
+    "operation": "Lockstitch",
+    "description": "Heavy duty lockstitch model for thicker materials and stable performance.",
+    "spec": {
+      "Max Speed (rpm)": 3500,
+      "Needle Type": "DPx17",
+      "Stitch Length (mm)": 7,
+      "Presser Foot Lift (mm)": "7 / 15",
+      "Lubrication": "Automatic",
+      "Motor": "Direct Drive Servo"
+    },
+    "features": [
+      "Designed for thicker materials.",
+      "Stable feeding and strong penetration."
+    ],
+    "application": "Denim, upholstery, medium-heavy fabrics.",
+    "tags": [
+      "lockstitch",
+      "heavy duty"
+    ],
+    "key": "699"
+  },
+  {
+    "id": "zoje-zj0328-1",
+    "brand": "ZOJE",
+    "model": "ZOJE ZJ0328-1",
+    "name": "ZOJE ZJ0328-1",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "high",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "ZOJE ZJ0328-1 industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "zoje"
+    ],
+    "key": "ZJ0328-1"
+  },
+  {
+    "id": "zoje-zj20u33",
+    "brand": "ZOJE",
+    "model": "ZOJE ZJ20U33",
+    "name": "ZOJE ZJ20U33",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "ZOJE ZJ20U33 industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "zoje"
+    ],
+    "key": "ZJ20U33"
+  },
+  {
+    "id": "zoje-zj-3800",
+    "brand": "ZOJE",
+    "model": "ZOJE ZJ-3800",
+    "name": "ZOJE ZJ-3800",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "ZOJE ZJ-3800 industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "zoje"
+    ],
+    "key": "ZJ-3800"
+  },
+  {
+    "id": "zoje-zj-8420a",
+    "brand": "ZOJE",
+    "model": "ZOJE ZJ-8420A",
+    "name": "ZOJE ZJ-8420A",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "ZOJE ZJ-8420A industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "zoje"
+    ],
+    "key": "ZJ-8420A"
+  },
+  {
+    "id": "zoje-zj-8500g",
+    "brand": "ZOJE",
+    "model": "ZOJE ZJ-8500G",
+    "name": "ZOJE ZJ-8500G",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "high",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "ZOJE ZJ-8500G industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "zoje"
+    ],
+    "key": "ZJ-8500G"
+  },
+  {
+    "id": "zoje-zj-932-86-bd",
+    "brand": "ZOJE",
+    "model": "ZOJE ZJ-932-86-BD",
+    "name": "ZOJE ZJ-932-86-BD",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "ZOJE ZJ-932-86-BD industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "zoje"
+    ],
+    "key": "ZJ-932-86-BD"
+  },
+  {
+    "id": "zoje-zj-9503b-01",
+    "brand": "ZOJE",
+    "model": "ZOJE ZJ-9503B/01",
+    "name": "ZOJE ZJ-9503B/01",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "ZOJE ZJ-9503B/01 industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "zoje"
+    ],
+    "key": "ZJ-9503B-01"
+  },
+  {
+    "id": "pfaff-1122-g-720-02-6-01bs",
+    "brand": "PFAFF",
+    "model": "PFAFF 1122-G-720/02-6/01BS",
+    "name": "PFAFF 1122-G-720/02-6/01BS",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Pfaff 1122-G-720/02-6/01BS industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "pfaff"
+    ],
+    "key": "1122-G-720"
+  },
+  {
+    "id": "pfaff-1181-8-11-900-24-910-06-911-37-bs",
+    "brand": "PFAFF",
+    "model": "PFAFF 1181-8/11-900/24-910/06-911/37-BS",
+    "name": "PFAFF 1181-8/11-900/24-910/06-911/37-BS",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Pfaff 1181 series industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "pfaff"
+    ],
+    "key": "1181-SERIES"
+  },
+  {
+    "id": "pfaff-1243-712-02-6-01-01-900-56-bs",
+    "brand": "PFAFF",
+    "model": "PFAFF 1243-712/02-6/01/01-900/56 BS",
+    "name": "PFAFF 1243-712/02-6/01/01-900/56 BS",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Pfaff 1243 series industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "pfaff"
+    ],
+    "key": "1243-SERIES"
+  },
+  {
+    "id": "pfaff-1245-6-01-sewing-machine",
+    "brand": "PFAFF",
+    "model": "PFAFF 1245-6/01 SEWING MACHINE",
+    "name": "PFAFF 1245-6/01 SEWING MACHINE",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Pfaff 1245-6/01 industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "pfaff"
+    ],
+    "key": "1245-601"
+  },
+  {
+    "id": "pfaff-1245-6-01-clpmn8",
+    "brand": "PFAFF",
+    "model": "PFAFF 1245-6/01-CLPMN8",
+    "name": "PFAFF 1245-6/01-CLPMN8",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Pfaff 1245-6/01-CLPMN8 industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "pfaff"
+    ],
+    "key": "1245-601"
+  },
+  {
+    "id": "pfaff-2481-2-01-980-30-bs-n3-5",
+    "brand": "PFAFF",
+    "model": "PFAFF 2481-2/01 980/30 BS N3.5",
+    "name": "PFAFF 2481-2/01 980/30 BS N3.5",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Pfaff 2481 series industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "pfaff"
+    ],
+    "key": "2481-2-01"
+  },
+  {
+    "id": "pfaff-3119",
+    "brand": "PFAFF",
+    "model": "PFAFF 3119",
+    "name": "PFAFF 3119",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Pfaff 3119 industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "pfaff"
+    ],
+    "key": "3119"
+  },
+  {
+    "id": "pfaff-333-712-02-6-01-900-51-as",
+    "brand": "PFAFF",
+    "model": "PFAFF 333-712/02-6/01-900/51 AS",
+    "name": "PFAFF 333-712/02-6/01-900/51 AS",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Pfaff 333 series industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "pfaff"
+    ],
+    "key": "333-SERIES"
+  },
+  {
+    "id": "pfaff-3586",
+    "brand": "PFAFF",
+    "model": "PFAFF 3586",
+    "name": "PFAFF 3586",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Pfaff 3586 industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "pfaff"
+    ],
+    "key": "3586"
+  },
+  {
+    "id": "merrow-70d-3b2-sewing-machine",
+    "brand": "MERROW",
+    "model": "MERROW 70D-3B2 SEWING MACHINE",
+    "name": "MERROW 70D-3B2 SEWING MACHINE",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Merrow 70D-3B2 sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "merrow"
+    ],
+    "key": "70D-3B2"
+  },
+  {
+    "id": "merrow-70-y3b-2",
+    "brand": "MERROW",
+    "model": "MERROW 70-Y3B-2",
+    "name": "MERROW 70-Y3B-2",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Merrow 70-Y3B-2 industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "merrow"
+    ],
+    "key": "70-Y3B-2"
+  },
+  {
+    "id": "merrow-mg-3u",
+    "brand": "MERROW",
+    "model": "MERROW MG-3U",
+    "name": "MERROW MG-3U",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Merrow MG-3U industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "merrow"
+    ],
+    "key": "MG-3U"
+  },
+  {
+    "id": "merrow-mg-3u-v",
+    "brand": "MERROW",
+    "model": "MERROW MG-3U-V",
+    "name": "MERROW MG-3U-V",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Merrow MG-3U-V industrial sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "merrow"
+    ],
+    "key": "MG-3U-V"
+  },
+  {
+    "id": "merrow-mg-3u-merrow-machine",
+    "brand": "MERROW",
+    "model": "MG-3U MERROW MACHINE",
+    "name": "MG-3U MERROW MACHINE",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "MG-3U Merrow machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "merrow"
+    ],
+    "key": "MG-3U-ALT"
+  },
+  {
+    "id": "loiva-8842-utc",
+    "brand": "LOIVA",
+    "model": "LOIVA -8842 UTC",
+    "name": "LOIVA -8842 UTC",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva -8842 UTC machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "8842-UTC"
+  },
+  {
+    "id": "loiva-bl-210-064c-10dm",
+    "brand": "LOIVA",
+    "model": "LOIVA BL-210-064C/10DM",
+    "name": "LOIVA BL-210-064C/10DM",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva BL-210-064C/10DM machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "BL-210-064C-10DM"
+  },
+  {
+    "id": "loiva-dex32-355-3x2x4-dm-3-needle-safty-stitch",
+    "brand": "LOIVA",
+    "model": "LOIVA DEX32-355-3X2X4-DM (3 NEEDLE SAFTY STITCH)",
+    "name": "LOIVA DEX32-355-3X2X4-DM (3 NEEDLE SAFTY STITCH)",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva DEX32-355-3X2X4-DM safety stitch machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "DEX32-355"
+  },
+  {
+    "id": "loiva-dex32-38-3x4-dm-5-th-o-l",
+    "brand": "LOIVA",
+    "model": "LOIVA DEX32-38-3X4-DM (5 TH O/L)",
+    "name": "LOIVA DEX32-38-3X4-DM (5 TH O/L)",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva DEX32-38-3X4-DM machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "DEX32-38"
+  },
+  {
+    "id": "loiva-dex32-70-5x5-dm-5th-o-l-for-wide-seam",
+    "brand": "LOIVA",
+    "model": "LOIVA DEX32-70-5X5-DM (5TH O/L for Wide Seam)",
+    "name": "LOIVA DEX32-70-5X5-DM (5TH O/L FOR WIDE SEAM)",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva DEX32-70-5X5-DM machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "DEX32-70"
+  },
+  {
+    "id": "loiva-dex-32-86-5x6dm",
+    "brand": "LOIVA",
+    "model": "LOIVA DEX-32-86-5X6DM",
+    "name": "LOIVA DEX-32-86-5X6DM",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva DEX-32-86-5X6DM machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "DEX-32-86"
+  },
+  {
+    "id": "loiva-dex-52-52-2x4dm",
+    "brand": "LOIVA",
+    "model": "LOIVA DEX-52-52-2X4DM",
+    "name": "LOIVA DEX-52-52-2X4DM",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva DEX-52-52-2X4DM machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "DEX-52-52"
+  },
+  {
+    "id": "loiva-dy-7300",
+    "brand": "LOIVA",
+    "model": "LOIVA DY-7300",
+    "name": "LOIVA DY-7300",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva DY-7300 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "DY-7300"
+  },
+  {
+    "id": "loiva-fb400-0664-064p-3l-10-dm",
+    "brand": "LOIVA",
+    "model": "LOIVA FB400-0664-064P/3L-10/DM",
+    "name": "LOIVA FB400-0664-064P/3L-10/DM",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva FB400-0664-064P/3L-10/DM machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "FB400"
+  },
+  {
+    "id": "loiva-fs-967",
+    "brand": "LOIVA",
+    "model": "LOIVA FS-967",
+    "name": "LOIVA FS-967",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva FS-967 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "FS-967"
+  },
+  {
+    "id": "loiva-g-35-automatic-bag-opener",
+    "brand": "LOIVA",
+    "model": "Loiva G-35 Automatic Bag Opener",
+    "name": "LOIVA G-35 AUTOMATIC BAG OPENER",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva G-35 automatic bag opener.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "G-35"
+  },
+  {
+    "id": "loiva-gl-865",
+    "brand": "LOIVA",
+    "model": "LOIVA GL 865",
+    "name": "LOIVA GL 865",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva GL 865 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "GL-865"
+  },
+  {
+    "id": "loiva-gl-2610-2s",
+    "brand": "LOIVA",
+    "model": "LOIVA GL-2610-2S",
+    "name": "LOIVA GL-2610-2S",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva GL-2610-2S machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "GL-2610-2S"
+  },
+  {
+    "id": "loiva-gl-2610-s-cord",
+    "brand": "LOIVA",
+    "model": "LOIVA GL-2610-S CORD",
+    "name": "LOIVA GL-2610-S CORD",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva GL-2610-S CORD machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "GL-2610-S-CORD"
+  },
+  {
+    "id": "loiva-iex52-16s2-1-5-dm-3-th-o-l-built-in-con-box",
+    "brand": "LOIVA",
+    "model": "LOIVA IEX52-16S2-1.5-DM (3 TH O/L BUILT IN CON BOX)",
+    "name": "LOIVA IEX52-16S2-1.5-DM (3 TH O/L BUILT IN CON BOX)",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva IEX52-16S2-1.5-DM machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "IEX52-16S2"
+  },
+  {
+    "id": "loiva-iex-52-52-2x4-dm-hutang",
+    "brand": "LOIVA",
+    "model": "LOIVA IEX-52-52-2X4 DM (HUTANG)",
+    "name": "LOIVA IEX-52-52-2X4 DM (HUTANG)",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva IEX-52-52-2X4 DM (HUTANG) machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "IEX-52-52"
+  },
+  {
+    "id": "loiva-la-5200d",
+    "brand": "LOIVA",
+    "model": "LOIVA LA 5200D",
+    "name": "LOIVA LA 5200D",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva LA 5200D machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "LA-5200D"
+  },
+  {
+    "id": "loiva-la-9800-hb-d3",
+    "brand": "LOIVA",
+    "model": "Loiva LA 9800-HB-D3",
+    "name": "LOIVA LA 9800-HB-D3",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva LA 9800-HB-D3 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "LA-9800"
+  },
+  {
+    "id": "loiva-la-0303-d3",
+    "brand": "LOIVA",
+    "model": "LOIVA LA-0303 D3",
+    "name": "LOIVA LA-0303 D3",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva LA-0303 D3 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "LA-0303"
+  },
+  {
+    "id": "loiva-la-20-hot-melt-automatic-buckle-winding-mach",
+    "brand": "LOIVA",
+    "model": "LOIVA LA-20 HOT MELT AUTOMATIC BUCKLE WINDING MACH.",
+    "name": "LOIVA LA-20 HOT MELT AUTOMATIC BUCKLE WINDING MACH.",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva LA-20 hot melt automatic buckle winding machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "LA-20"
+  },
+  {
+    "id": "loiva-la50h",
+    "brand": "LOIVA",
+    "model": "LOIVA LA50H",
+    "name": "LOIVA LA50H",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1qyAyu10Sjxtx7x_pj0pOT70iyixQcuEE/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva LA50H machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "LA50H"
+  },
+  {
+    "id": "loiva-la-50xh",
+    "brand": "LOIVA",
+    "model": "LOIVA LA-50XH",
+    "name": "LOIVA LA-50XH",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1qLnwd2kQUvpptVXgiUDEow852b2_XUfB/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva LA-50XH machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "LA-50XH"
+  },
+  {
+    "id": "loiva-la8842",
+    "brand": "LOIVA",
+    "model": "LOIVA -LA8842",
+    "name": "LOIVA -LA8842",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva -LA8842 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "LA8842"
+  },
+  {
+    "id": "loiva-la-971",
+    "brand": "LOIVA",
+    "model": "LOIVA LA-971",
+    "name": "LOIVA LA-971",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva LA-971 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "LA-971"
+  },
+  {
+    "id": "loiva-model-4406p-utc",
+    "brand": "LOIVA",
+    "model": "LOIVA MODEL 4406P/UTC",
+    "name": "LOIVA MODEL 4406P/UTC",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva model 4406P/UTC machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "4406P"
+  },
+  {
+    "id": "loiva-nf-1106-632-254p-dm-pl",
+    "brand": "LOIVA",
+    "model": "LOIVA -NF 1106-632-254P-DM/PL",
+    "name": "LOIVA -NF 1106-632-254P-DM/PL",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva NF 1106-632-254P-DM/PL machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "NF-1106"
+  },
+  {
+    "id": "loiva-st-21-button-wrapping",
+    "brand": "LOIVA",
+    "model": "LOIVA ST-21 Button Wrapping",
+    "name": "LOIVA ST-21 BUTTON WRAPPING",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva ST-21 button wrapping machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "ST-21"
+  },
+  {
+    "id": "loiva-st-23",
+    "brand": "LOIVA",
+    "model": "LOIVA ST-23",
+    "name": "LOIVA ST-23",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Loiva ST-23 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "ST-23"
+  },
+  {
+    "id": "loiva-t03-318-550w-dd-motor",
+    "brand": "LOIVA",
+    "model": "LOIVA T03-318(550W) DD MOTOR",
+    "name": "LOIVA T03-318(550W) DD MOTOR",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Motor",
+    "description": "Loiva T03-318 (550W) DD motor.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "T03-550W"
+  },
+  {
+    "id": "loiva-t03-318-750w-dd-motor",
+    "brand": "LOIVA",
+    "model": "LOIVA T03-318(750W ) DD MOTOR",
+    "name": "LOIVA T03-318(750W ) DD MOTOR",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Motor",
+    "description": "Loiva T03-318 (750W) DD motor.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "T03-750W"
+  },
+  {
+    "id": "loiva-t05-la451-550w",
+    "brand": "LOIVA",
+    "model": "LOIVA T05-LA451 (550W)",
+    "name": "LOIVA T05-LA451 (550W)",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Motor",
+    "description": "Loiva T05-LA451 (550W) unit.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "loiva"
+    ],
+    "key": "T05-LA451"
+  },
+  {
+    "id": "jk-t9280d-73-2pl-three-needle-feed-off-a",
+    "brand": "JUITA",
+    "model": "JK-T9280D-73-2PL THREE NEEDLE FEED OFF A",
+    "name": "JK-T9280D-73-2PL THREE NEEDLE FEED OFF A",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "JK-T9280D-73-2PL three needle feed off arm machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "juita"
+    ],
+    "key": "T9280D"
+  },
+  {
+    "id": "juita-jta3-5030s",
+    "brand": "JUITA",
+    "model": "JUITA JTA3-5030S",
+    "name": "JUITA JTA3-5030S",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Template Sewing Machine",
+    "description": "Juita JTA3-5030S template sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "juita"
+    ],
+    "key": "JTA3-5030S"
+  },
+  {
+    "id": "juita-jtk18f-130100a",
+    "brand": "JUITA",
+    "model": "JUITA JTK18F-130100A",
+    "name": "JUITA JTK18F-130100A",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Juita JTK18F-130100A machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "juita"
+    ],
+    "key": "JTK18F-130100A"
+  },
+  {
+    "id": "juita-jtk18f-130100aj",
+    "brand": "JUITA",
+    "model": "JUITA JTK18F-130100AJ",
+    "name": "JUITA JTK18F-130100AJ",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Juita JTK18F-130100AJ machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "juita"
+    ],
+    "key": "JTK18F-130100AJ"
+  },
+  {
+    "id": "juita-jtk8t-8045a",
+    "brand": "JUITA",
+    "model": "JUITA JTK8T-8045A",
+    "name": "JUITA JTK8T-8045A",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Template Sewing Machine",
+    "description": "Juita JTK8T-8045A template sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "juita"
+    ],
+    "key": "JTK8T-8045A"
+  },
+  {
+    "id": "juita-jtk8t-90a",
+    "brand": "JUITA",
+    "model": "JUITA JTK8T-90A",
+    "name": "JUITA JTK8T-90A",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Template Sewing Machine",
+    "description": "Juita JTK8T-90A template sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "juita"
+    ],
+    "key": "JTK8T-90A"
+  },
+  {
+    "id": "juita-jtk8t-9aj",
+    "brand": "JUITA",
+    "model": "JUITA JTK8T-9AJ",
+    "name": "JUITA JTK8T-9AJ",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Template Sewing Machine",
+    "description": "Juita JTK8T-9AJ template sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "juita"
+    ],
+    "key": "JTK8T-9AJ"
+  },
+  {
+    "id": "juita-jtk8t-9aj-intelligent-template-sewing-machine",
+    "brand": "JUITA",
+    "model": "JUITA JTK8T-9AJ INTELLIGENT TEMPLATE SEWING MACHINE",
+    "name": "JUITA JTK8T-9AJ INTELLIGENT TEMPLATE SEWING MACHINE",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Template Sewing Machine",
+    "description": "Juita intelligent template sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "juita"
+    ],
+    "key": "JTK8T-9AJ"
+  },
+  {
+    "id": "juita-jtk8t-f900a",
+    "brand": "JUITA",
+    "model": "JUITA JTK8T-F900A",
+    "name": "JUITA JTK8T-F900A",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Template Sewing Machine",
+    "description": "Juita JTK8T-F900A template sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "juita"
+    ],
+    "key": "JTK8T-F900A"
+  },
+  {
+    "id": "juita-jtk8t-f900aj",
+    "brand": "JUITA",
+    "model": "JUITA JTK8T-F900AJ",
+    "name": "JUITA JTK8T-F900AJ",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Template Sewing Machine",
+    "description": "Juita JTK8T-F900AJ template sewing machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "juita"
+    ],
+    "key": "JTK8T-F900AJ"
+  },
+  {
+    "id": "juita-jta-3-06",
+    "brand": "JUITA",
+    "model": "JUITA-JTA-3-06",
+    "name": "JUITA-JTA-3-06",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Juita JTA-3-06 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "juita"
+    ],
+    "key": "JTA-3-06"
+  },
+  {
+    "id": "juita-jta-3-07",
+    "brand": "JUITA",
+    "model": "JUITA-JTA-3-07",
+    "name": "JUITA-JTA-3-07",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Juita JTA-3-07 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "juita"
+    ],
+    "key": "JTA-3-07"
+  },
+  {
+    "id": "k1-pattern-cutting-machine",
+    "brand": "JUITA",
+    "model": "K1 PATTERN CUTTING MACHINE",
+    "name": "K1 PATTERN CUTTING MACHINE",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Pattern Cutting Machine",
+    "description": "K1 pattern cutting machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "juita"
+    ],
+    "key": "K1-PATTERN"
+  },
+  {
+    "id": "k-1-racing-model",
+    "brand": "JUITA",
+    "model": "K-1# RACING MODEL",
+    "name": "K-1# RACING MODEL",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Pattern Cutting Machine",
+    "description": "K-1 racing model machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "juita"
+    ],
+    "key": "K1-RACING"
+  },
+  {
+    "id": "hutang-bl210-02-064c-10-dm",
+    "brand": "HUTANG",
+    "model": "HUTANG #BL210-02-064C/10-DM",
+    "name": "HUTANG #BL210-02-064C/10-DM",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hutang BL210-02-064C/10-DM machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hutang"
+    ],
+    "key": "BL-210-064C-10DM"
+  },
+  {
+    "id": "hutang-bl210-02-064c-10-dm-tka",
+    "brand": "HUTANG",
+    "model": "HUTANG BL210-02-064C/10-DM TKA (2NEEDLE FLAT BED)",
+    "name": "HUTANG BL210-02-064C/10-DM TKA (2NEEDLE FLAT BED)",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Flat Bed Sewing Machine",
+    "description": "Hutang BL210-02-064C/10-DM TKA two needle flat bed machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hutang"
+    ],
+    "key": "BL210-TKA"
+  },
+  {
+    "id": "hutang-fb450-06-064p-dm",
+    "brand": "HUTANG",
+    "model": "HUTANG FB450-06-064P-DM",
+    "name": "HUTANG FB450-06-064P-DM",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hutang FB450-06-064P-DM machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hutang"
+    ],
+    "key": "FB450-06"
+  },
+  {
+    "id": "hutang-fb450-08-064p-dm",
+    "brand": "HUTANG",
+    "model": "HUTANG FB450-08-064P-DM",
+    "name": "HUTANG FB450-08-064P-DM",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hutang FB450-08-064P-DM machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hutang"
+    ],
+    "key": "FB450-08"
+  },
+  {
+    "id": "hutang-fb450-12-064p-dm",
+    "brand": "HUTANG",
+    "model": "HUTANG FB450-12-064P-DM",
+    "name": "HUTANG FB450-12-064P-DM",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hutang FB450-12-064P-DM machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hutang"
+    ],
+    "key": "FB450-12"
+  },
+  {
+    "id": "hutang-iw500-23bb-256dm",
+    "brand": "HUTANG",
+    "model": "HUTANG IW500-23BB-256DM",
+    "name": "HUTANG IW500-23BB-256DM",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hutang IW500-23BB-256DM machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hutang"
+    ],
+    "key": "IW500"
+  },
+  {
+    "id": "hutang-nf1106-0632-254p-dm-pl",
+    "brand": "HUTANG",
+    "model": "HUTANG NF1106-0632-254P-DM/PL",
+    "name": "HUTANG NF1106-0632-254P-DM/PL",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hutang NF1106-0632-254P-DM/PL machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hutang"
+    ],
+    "key": "NF-1106"
+  },
+  {
+    "id": "hikari-hx-6816td-03utd-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI  HX 6816TD-03UTD/AK",
+    "name": "HIKARI  HX 6816TD-03UTD/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX 6816TD-03UTD/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-6816TD"
+  },
+  {
+    "id": "hikari-ask-a-hk-2903-a-button-stitch",
+    "brand": "HIKARI",
+    "model": "HIKARI ASK-A (HK-2903-A BUTTON STITCH)",
+    "name": "HIKARI ASK-A (HK-2903-A BUTTON STITCH)",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Button Stitch Machine",
+    "description": "Hikari ASK-A button stitch machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HK2903"
+  },
+  {
+    "id": "hikari-h8800f-7c-5-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI H8800F-7C-5/AK",
+    "name": "HIKARI H8800F-7C-5/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari H8800F-7C-5/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "H8800F"
+  },
+  {
+    "id": "hikari-h89s-7c-5-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI H89S-7C-5/AK",
+    "name": "HIKARI H89S-7C-5/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari H89S-7C-5/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "H89S"
+  },
+  {
+    "id": "hikari-h93s-7d-5-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI H93S-7D-5/AK",
+    "name": "HIKARI H93S-7D-5/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari H93S-7D-5/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "H93S"
+  },
+  {
+    "id": "hikari-h99s-7c-5-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI H99S-7C-5/AK",
+    "name": "HIKARI H99S-7C-5/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari H99S-7C-5/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "H99S"
+  },
+  {
+    "id": "hikari-hbh-1790d-k",
+    "brand": "HIKARI",
+    "model": "HIKARI HBH-1790D-K",
+    "name": "HIKARI HBH-1790D-K",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Buttonhole Machine",
+    "description": "Hikari HBH-1790D-K buttonhole machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HBH-1790"
+  },
+  {
+    "id": "hikari-hbh-1790ds",
+    "brand": "HIKARI",
+    "model": "HIKARI HBH-1790DS",
+    "name": "HIKARI HBH-1790DS",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Buttonhole Machine",
+    "description": "Hikari HBH-1790DS buttonhole machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HBH-1790DS"
+  },
+  {
+    "id": "hikari-hbh-1790e-k",
+    "brand": "HIKARI",
+    "model": "HIKARI HBH-1790E-K",
+    "name": "HIKARI HBH-1790E-K",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Buttonhole Machine",
+    "description": "Hikari HBH-1790E-K buttonhole machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HBH-1790E-K"
+  },
+  {
+    "id": "hikari-hbh-1790e-s",
+    "brand": "HIKARI",
+    "model": "HIKARI HBH-1790E-S",
+    "name": "HIKARI HBH-1790E-S",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Buttonhole Machine",
+    "description": "Hikari HBH-1790E-S buttonhole machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HBH-1790"
+  },
+  {
+    "id": "hikari-hk2900ahs-1",
+    "brand": "HIKARI",
+    "model": "HIKARI HK2900AHS-1",
+    "name": "HIKARI HK2900AHS-1",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Button Stitch Machine",
+    "description": "Hikari HK2900AHS-1 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HK2900AHS"
+  },
+  {
+    "id": "hikari-hk2900ass-1",
+    "brand": "HIKARI",
+    "model": "HIKARI HK2900ASS-1",
+    "name": "HIKARI HK2900ASS-1",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Button Stitch Machine",
+    "description": "Hikari HK2900ASS-1 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HK2900"
+  },
+  {
+    "id": "hikari-hk2903ass-1",
+    "brand": "HIKARI",
+    "model": "HIKARI HK2903ASS-1",
+    "name": "HIKARI HK2903ASS-1",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Button Stitch Machine",
+    "description": "Hikari HK2903ASS-1 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HK2903"
+  },
+  {
+    "id": "hikari-hsat-k9-c",
+    "brand": "HIKARI",
+    "model": "HIKARI HSAT-K9-C",
+    "name": "HIKARI HSAT-K9-C",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HSAT-K9-C machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HSAT-K9"
+  },
+  {
+    "id": "hikari-ht9220tc-7p-5-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI HT9220TC-7P-5/AK",
+    "name": "HIKARI HT9220TC-7P-5/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HT9220TC-7P-5/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HT9220"
+  },
+  {
+    "id": "hikari-ht9250tah-7p-3-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI HT9250TAH-7P-3/AK",
+    "name": "HIKARI HT9250TAH-7P-3/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HT9250TAH-7P-3/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HT9250"
+  },
+  {
+    "id": "hikari-hw712ta-01-356utc-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI HW712TA-01 356UTC/AK",
+    "name": "HIKARI HW712TA-01 356UTC/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HW712TA-01 356UTC/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HW712TA"
+  },
+  {
+    "id": "hikari-hw-762t-1-2-1x356-uad-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI HW-762T-1.2-1x356 UAD/AK",
+    "name": "HIKARI HW-762T-1.2-1X356 UAD/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HW-762T-1.2-1x356 UAD/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HW762T"
+  },
+  {
+    "id": "hikari-hw782t-35b-356lv1-utc-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI HW782T-35B-356LV1/UTC/AK",
+    "name": "HIKARI HW782T-35B-356LV1/UTC/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HW782T-35B-356LV1/UTC/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HW782T-UTC"
+  },
+  {
+    "id": "hikari-hw782t-35bx356lv1-uac2-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI HW782T-35Bx356LV1/UAC2/AK",
+    "name": "HIKARI HW782T-35BX356LV1/UAC2/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HW782T-35Bx356LV1/UAC2/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HW782T-UAC"
+  },
+  {
+    "id": "hikari-hw782ta-01x356-utc-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI HW782TA-01X356/UTC/AK",
+    "name": "HIKARI HW782TA-01X356/UTC/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HW782TA-01X356/UTC/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HW782T-AK"
+  },
+  {
+    "id": "hikari-hx-6814td-03utc-3-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI HX 6814TD-03UTC-3/AK",
+    "name": "HIKARI HX 6814TD-03UTC-3/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX 6814TD-03UTC-3/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-6814TD"
+  },
+  {
+    "id": "hikari-hx6814td03utd3-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI HX6814TD03UTD3/AK",
+    "name": "HIKARI HX6814TD03UTD3/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX6814TD03UTD3/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-6814TD-UTD3"
+  },
+  {
+    "id": "hikari-hx-6814td-84bl-utc3-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI HX-6814TD-84BL/UTC3/AK",
+    "name": "HIKARI HX-6814TD-84BL/UTC3/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX-6814TD-84BL/UTC3/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-6814TD-AK"
+  },
+  {
+    "id": "hikari-hx6814tdv-03",
+    "brand": "HIKARI",
+    "model": "HIKARI HX6814TDV-03",
+    "name": "HIKARI HX6814TDV-03",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX6814TDV-03 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-6814TDV"
+  },
+  {
+    "id": "hikari-hx-6816td-03-utc3-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI HX-6816TD-03 UTC3/AK",
+    "name": "HIKARI HX-6816TD-03 UTC3/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX-6816TD-03 UTC3/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-6816TD"
+  },
+  {
+    "id": "hikari-hx6816td-03utd3-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI HX6816TD-03UTD3/AK",
+    "name": "HIKARI HX6816TD-03UTD3/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX6816TD-03UTD3/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-6816TD-UTD"
+  },
+  {
+    "id": "hikari-hx6816td-04utc3-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI HX6816TD-04UTC3/AK",
+    "name": "HIKARI HX6816TD-04UTC3/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX6816TD-04UTC3/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-6816TD-UTC"
+  },
+  {
+    "id": "hikari-hx6816tdv-03",
+    "brand": "HIKARI",
+    "model": "HIKARI HX6816TDV-03",
+    "name": "HIKARI HX6816TDV-03",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX6816TDV-03 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-6816TD"
+  },
+  {
+    "id": "hikari-hx6816tdv-03d-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI HX6816TDV-03D/AK",
+    "name": "HIKARI HX6816TDV-03D/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX6816TDV-03D/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-6816TD-AK"
+  },
+  {
+    "id": "hikari-hx6818td-03utc3-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI HX6818TD-03UTC3/AK",
+    "name": "HIKARI HX6818TD-03UTC3/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX6818TD-03UTC3/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-6818TD-UTC3"
+  },
+  {
+    "id": "hikari-hx6818tdv-03d-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI HX6818TDV-03D/AK",
+    "name": "HIKARI HX6818TDV-03D/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX6818TDV-03D/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-6818TD"
+  },
+  {
+    "id": "hikari-hx688t-14-03utc3-ak-ds",
+    "brand": "HIKARI",
+    "model": "HIKARI HX688T-14-03UTC3/AK/DS",
+    "name": "HIKARI HX688T-14-03UTC3/AK/DS",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX688T-14-03UTC3/AK/DS machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-688T"
+  },
+  {
+    "id": "hikari-hx68s-14-03",
+    "brand": "HIKARI",
+    "model": "HIKARI HX68S-14-03",
+    "name": "HIKARI HX68S-14-03",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX68S-14-03 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-68S"
+  },
+  {
+    "id": "hikari-hx68s-14-03c",
+    "brand": "HIKARI",
+    "model": "HIKARI HX68S-14-03C",
+    "name": "HIKARI HX68S-14-03C",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX68S-14-03C machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-68S-14"
+  },
+  {
+    "id": "hikari-hx68s-16-04c",
+    "brand": "HIKARI",
+    "model": "HIKARI HX68S-16-04C",
+    "name": "HIKARI HX68S-16-04C",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX68S-16-04C machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-68S-16"
+  },
+  {
+    "id": "hikari-hx6914t-04ksc-ak",
+    "brand": "HIKARI",
+    "model": "HIKARI HX6914T-04KSC/AK",
+    "name": "HIKARI HX6914T-04KSC/AK",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX6914T-04KSC/AK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-6914T"
+  },
+  {
+    "id": "hikari-hx8v-14-03",
+    "brand": "HIKARI",
+    "model": "HIKARI HX8V-14-03",
+    "name": "HIKARI HX8V-14-03",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX8V-14-03 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-8V"
+  },
+  {
+    "id": "hikari-hx8v-14-03c",
+    "brand": "HIKARI",
+    "model": "HIKARI HX8V-14-03C",
+    "name": "HIKARI HX8V-14-03C",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX8V-14-03C machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-8V-14"
+  },
+  {
+    "id": "hikari-hx8v-16-03",
+    "brand": "HIKARI",
+    "model": "HIKARI HX8V-16-03",
+    "name": "HIKARI HX8V-16-03",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX8V-16-03 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-8V-16-03"
+  },
+  {
+    "id": "hikari-hx8v-16-04",
+    "brand": "HIKARI",
+    "model": "HIKARI HX8V-16-04",
+    "name": "HIKARI HX8V-16-04",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX8V-16-04 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-8V-16-04"
+  },
+  {
+    "id": "hikari-hx8v-16-04c",
+    "brand": "HIKARI",
+    "model": "HIKARI HX8V-16-04C",
+    "name": "HIKARI HX8V-16-04C",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Hikari HX8V-16-04C machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "hikari"
+    ],
+    "key": "HX-8V-16-04C"
+  },
+  {
+    "id": "highlead-gc24698-brhl",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD  GC24698-BRHL",
+    "name": "HIGHLEAD  GC24698-BRHL",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC24698-BRHL machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC24698"
+  },
+  {
+    "id": "highlead-hlk-g3520r",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD  HLK-G3520R",
+    "name": "HIGHLEAD  HLK-G3520R",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1d1Qf4XhxaeqB6lkR8Ra5qHtU93pHB5Pt/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Highlead HLK-G3520R machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "HLK-G3520R"
+  },
+  {
+    "id": "highlead-dy-850",
+    "brand": "HIGHLEAD",
+    "model": "Highlead # DY 850",
+    "name": "HIGHLEAD # DY 850",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead DY 850 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "DY-850"
+  },
+  {
+    "id": "highlead-gk-0068-2z",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD # GK-0068-2Z",
+    "name": "HIGHLEAD # GK-0068-2Z",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GK-0068-2Z machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GK-0068"
+  },
+  {
+    "id": "highlead-4214p",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD 4214P",
+    "name": "HIGHLEAD 4214P",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead 4214P machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "4214P"
+  },
+  {
+    "id": "highlead-dy-850-2",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD DY-850",
+    "name": "HIGHLEAD DY-850",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead DY-850 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "DY-850-2"
+  },
+  {
+    "id": "highlead-ga-0688-1",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GA-0688-1",
+    "name": "HIGHLEAD GA-0688-1",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GA-0688-1 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GA-0688"
+  },
+  {
+    "id": "highlead-gc-0318-1",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 0318-1",
+    "name": "HIGHLEAD GC 0318-1",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC 0318-1 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-0318"
+  },
+  {
+    "id": "highlead-gc-0518a-d3",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 0518A-D3",
+    "name": "HIGHLEAD GC 0518A-D3",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC 0518A-D3 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-0518"
+  },
+  {
+    "id": "highlead-gc-0518-h",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 0518-H",
+    "name": "HIGHLEAD GC 0518-H",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC 0518-H machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-0518-H"
+  },
+  {
+    "id": "highlead-gc-128b",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 128B",
+    "name": "HIGHLEAD GC 128B",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC 128B machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-128B"
+  },
+  {
+    "id": "highlead-gc-188-mc",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 188 MC",
+    "name": "HIGHLEAD GC 188 MC",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC 188 MC machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-188"
+  },
+  {
+    "id": "highlead-gc-188-mcdzy",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 188 MCDZY",
+    "name": "HIGHLEAD GC 188 MCDZY",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC 188 MCDZY machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-188-MCDZY"
+  },
+  {
+    "id": "highlead-gc-188-md",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 188 MD",
+    "name": "HIGHLEAD GC 188 MD",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC 188 MD machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-188-MD"
+  },
+  {
+    "id": "highlead-gc-188-mdz",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 188 MDZ",
+    "name": "HIGHLEAD GC 188 MDZ",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC 188 MDZ machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-188-MDZ"
+  },
+  {
+    "id": "highlead-gc-198-3",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 198-3",
+    "name": "HIGHLEAD GC 198-3",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC 198-3 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-198"
+  },
+  {
+    "id": "highlead-gc-20518-b",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 20518 B",
+    "name": "HIGHLEAD GC 20518 B",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC 20518 B machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-20518"
+  },
+  {
+    "id": "highlead-gc-20518-hz",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 20518-HZ",
+    "name": "HIGHLEAD GC 20518-HZ",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1WTZqImZd1SEg19hURBWDWzO3LZf_vX6T/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC 20518-HZ machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-20518-HZ"
+  },
+  {
+    "id": "highlead-gc-20528-b",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 20528 B",
+    "name": "HIGHLEAD GC 20528 B",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1grtT7zqayztI2tjBAkW3EjKTD3Rjv7mm/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC 20528 B machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-20528"
+  },
+  {
+    "id": "highlead-gc-20698-1",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 20698-1",
+    "name": "HIGHLEAD GC 20698-1",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1D_yaiwS2NTDBIFxH_dsU4NXpTC4jeDeG/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC 20698-1 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-20698"
+  },
+  {
+    "id": "highlead-gc-2268",
+    "brand": "HIGHLEAD",
+    "model": "Highlead GC 2268",
+    "name": "HIGHLEAD GC 2268",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC 2268 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-2268"
+  },
+  {
+    "id": "highlead-gc-24018-sp-s",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 24018-SP/S",
+    "name": "HIGHLEAD GC 24018-SP/S",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1eAHmFQXVnkELoz1zv92VQat4T_h6CKBr/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC 24018-SP/S machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-24018"
+  },
+  {
+    "id": "highlead-gc-24618-1",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 24618-1",
+    "name": "HIGHLEAD GC 24618-1",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1bCamBvsFON423AMTQbByNZcL48HmmCfk/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC 24618-1 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-24618"
+  },
+  {
+    "id": "highlead-gc-298-2b",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 298-2B",
+    "name": "HIGHLEAD GC 298-2B",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC 298-2B machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-298"
+  },
+  {
+    "id": "highlead-gc-0318-1c",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-0318-1C",
+    "name": "HIGHLEAD GC-0318-1C",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC-0318-1C machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-0318"
+  },
+  {
+    "id": "highlead-gc0318-1ce",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC0318-1CE",
+    "name": "HIGHLEAD GC0318-1CE",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC0318-1CE machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-0318-1CE"
+  },
+  {
+    "id": "highlead-gc0318-2adzy",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC0318-2ADZY",
+    "name": "HIGHLEAD GC0318-2ADZY",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC0318-2ADZY machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-0318-ADZY"
+  },
+  {
+    "id": "highlead-gc-0518",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-0518",
+    "name": "HIGHLEAD GC-0518",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC-0518 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-0518"
+  },
+  {
+    "id": "highlead-gc-0518-mc",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-0518 MC",
+    "name": "HIGHLEAD GC-0518 MC",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC-0518 MC machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-0518-MC"
+  },
+  {
+    "id": "highlead-gc-0518b",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-0518B",
+    "name": "HIGHLEAD GC-0518B",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC-0518B machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-0518-B"
+  },
+  {
+    "id": "highlead-gc0618-1",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC0618-1",
+    "name": "HIGHLEAD GC0618-1",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC0618-1 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-0618"
+  },
+  {
+    "id": "highlead-gc1088m",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC1088M",
+    "name": "HIGHLEAD GC1088M",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC1088M machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-1088"
+  },
+  {
+    "id": "highlead-gc1088ms",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC1088MS",
+    "name": "HIGHLEAD GC1088MS",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC1088MS machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-1088MS"
+  },
+  {
+    "id": "highlead-yxp-18",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD YXP-18",
+    "name": "HIGHLEAD YXP-18",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "Highlead YXP-18 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "YXP-18"
+  },
+  {
+    "id": "grand-gt12-a2",
+    "brand": "GRAND",
+    "model": "GRAND GT12-A2",
+    "name": "GRAND GT12-A2",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Grand GT12-A2 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "grand"
+    ],
+    "key": "GT12-A2"
+  },
+  {
+    "id": "grand-gt12-at",
+    "brand": "GRAND",
+    "model": "GRAND GT12-AT",
+    "name": "GRAND GT12-AT",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Grand GT12-AT machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "grand"
+    ],
+    "key": "GT12-AT"
+  },
+  {
+    "id": "grand-gt-250-2",
+    "brand": "GRAND",
+    "model": "GRAND GT-250-2",
+    "name": "GRAND GT-250-2",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Grand GT-250-2 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "grand"
+    ],
+    "key": "GT-250-2"
+  },
+  {
+    "id": "grand-gt-26-1bl",
+    "brand": "GRAND",
+    "model": "Grand GT-26-1BL",
+    "name": "GRAND GT-26-1BL",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Grand GT-26-1BL machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "grand"
+    ],
+    "key": "GT26-1BL"
+  },
+  {
+    "id": "grand-gt26-1bln",
+    "brand": "GRAND",
+    "model": "GRAND GT26-1BLN",
+    "name": "GRAND GT26-1BLN",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Grand GT26-1BLN machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "grand"
+    ],
+    "key": "GT26-1BLN"
+  },
+  {
+    "id": "grand-t-20e-bl",
+    "brand": "GRAND",
+    "model": "GRAND T-20E-BL",
+    "name": "GRAND T-20E-BL",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Grand T-20E-BL machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "grand"
+    ],
+    "key": "T20E-BL"
+  },
+  {
+    "id": "grand-t-22-ed-bl",
+    "brand": "GRAND",
+    "model": "Grand T-22 ED-BL",
+    "name": "GRAND T-22 ED-BL",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Grand T-22 ED-BL machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "grand"
+    ],
+    "key": "T22ED-BL"
+  },
+  {
+    "id": "grand-t22e-bl",
+    "brand": "GRAND",
+    "model": "Grand T22E-BL",
+    "name": "GRAND T22E-BL",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Grand T22E-BL machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "grand"
+    ],
+    "key": "T22E-BL"
+  },
+  {
+    "id": "grand-t-22e-bln",
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN",
+    "name": "GRAND T-22E-BLN",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Grand T-22E-BLN machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "grand"
+    ],
+    "key": "T22E-BLN"
+  },
+  {
+    "id": "epa-306-collar-cuff-press-machine",
+    "brand": "EPA",
+    "model": "EPA 306 COLLAR & CUFF PRESS MACHINE",
+    "name": "EPA 306 COLLAR & CUFF PRESS MACHINE",
+    "category": "finishing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Collar & Cuff Press Machine",
+    "description": "EPA 306 Collar & Cuff Press Machine.",
+    "spec": {},
+    "features": [],
+    "application": "Collar and cuff pressing",
+    "tags": [
+      "epa"
+    ],
+    "key": "306"
+  },
+  {
+    "id": "epa-model-305",
+    "brand": "EPA",
+    "model": "EPA MODEL 305",
+    "name": "EPA MODEL 305",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "EPA Model 305 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "epa"
+    ],
+    "key": "305"
+  },
+  {
+    "id": "epa-model-400-05",
+    "brand": "EPA",
+    "model": "EPA MODEL-400-05",
+    "name": "EPA MODEL-400-05",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "EPA Model-400-05 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "epa"
+    ],
+    "key": "400-05"
+  },
+  {
+    "id": "epa-203",
+    "brand": "EPA",
+    "model": "EPA-203",
+    "name": "EPA-203",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "EPA-203 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "epa"
+    ],
+    "key": "203"
+  },
+  {
+    "id": "epa-405",
+    "brand": "EPA",
+    "model": "EPA-405",
+    "name": "EPA-405",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Machine",
+    "description": "EPA-405 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "epa"
+    ],
+    "key": "405"
+  },
+  {
+    "id": "epa-405-gmmac-cuff-forming",
+    "brand": "EPA",
+    "model": "EPA-405/GMMAC (CUFF FORMING)",
+    "name": "EPA-405/GMMAC (CUFF FORMING)",
+    "category": "finishing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Cuff Forming Machine",
+    "description": "EPA-405/GMMAC cuff forming machine.",
+    "spec": {},
+    "features": [],
+    "application": "Cuff forming",
+    "tags": [
+      "epa"
+    ],
+    "key": "405-CUFF"
+  }
+]

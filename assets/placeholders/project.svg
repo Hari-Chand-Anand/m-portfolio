@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffcf5a" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#6aa6ff" stop-opacity="0.22"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="#0f1b33"/>
+  <rect x="24" y="24" width="752" height="452" rx="26" fill="url(#g)" stroke="rgba(255,255,255,0.10)"/>
+  <g fill="rgba(255,255,255,0.75)" font-family="Arial, Helvetica, sans-serif">
+    <text x="60" y="120" font-size="40" font-weight="700">Project Hero Placeholder</text>
+    <text x="60" y="170" font-size="20" opacity="0.75">Replace with a project/line visual or product image</text>
+  </g>
+  <g opacity="0.28" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2">
+    <rect x="70" y="230" width="200" height="70" rx="14"/>
+    <rect x="300" y="230" width="200" height="70" rx="14"/>
+    <rect x="530" y="230" width="200" height="70" rx="14"/>
+    <path d="M270 265 H300"/>
+    <path d="M500 265 H530"/>
+  </g>
+</svg>

@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects • HCA Internal Portfolio</title>
+
+  <!-- Ikaros Font -->
+  <link href="https://fonts.cdnfonts.com/css/ikaros" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css" />
+
+  <style>
+
+    body{
+      margin:0;
+      font-family: 'Ikaros', sans-serif;
+      background:#050b1c;
+      color:white;
+    }
+
+    /* ===== HERO HEADER ===== */
+
+    .heroRow{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:40px 0;
+    }
+
+    .heroTitle{
+      margin:0;
+      font-family:'Ikaros', sans-serif;
+      font-weight:400;
+      letter-spacing:6px;
+      font-size:36px;
+      color:rgba(255,255,255,.92);
+    }
+
+    .heroHome{
+      font-family:'Ikaros', sans-serif;
+      letter-spacing:4px;
+      font-size:16px;
+      color:rgba(255,255,255,.75);
+      text-decoration:none;
+      transition:all .25s ease;
+    }
+
+    .heroHome:hover{
+      color:#2f6cff;
+      transform:translateY(-2px);
+    }
+
+    /* ===== CARDS ===== */
+
+    .project-card{
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      min-height:300px;
+      padding:24px;
+      cursor:pointer;
+      background:rgba(255,255,255,0.03);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:22px;
+      backdrop-filter: blur(20px);
+      transition:all .3s ease;
+    }
+
+    .project-card:hover{
+      transform:translateY(-6px);
+      border:1px solid rgba(47,108,255,0.6);
+    }
+
+    .project-name{
+      margin:0;
+      font-size:16px;
+      letter-spacing:3px;
+      text-transform:uppercase;
+      color:rgba(255,255,255,.92);
+    }
+
+    .modelWrap{
+      width:100%;
+      height:170px;
+      margin-top:20px;
+      border-radius:18px;
+      overflow:hidden;
+      background:rgba(255,255,255,0.04);
+    }
+
+    model-viewer{
+      width:100%;
+      height:100%;
+      background:transparent;
+    }
+
+    .project-open{
+      margin-top:20px;
+      font-size:14px;
+      letter-spacing:2px;
+      color:rgba(255,255,255,.7);
+    }
+
+    /* ===== GRID ===== */
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap:30px;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    /* ===== MODAL ===== */
+
+    .modalOverlay{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,.7);
+      backdrop-filter: blur(12px);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      z-index:9999;
+    }
+
+    .modalOverlay.show{
+      display:flex;
+    }
+
+    .modalCard{
+      width:90%;
+      max-width:1100px;
+      height:80vh;
+      border-radius:22px;
+      overflow:hidden;
+      background:#0c1226;
+      border:1px solid rgba(255,255,255,0.1);
+    }
+
+    .modalTopbar{
+      height:50px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 20px;
+      border-bottom:1px solid rgba(255,255,255,0.1);
+    }
+
+    .modalBody{
+      height:calc(100% - 50px);
+    }
+
+    .modalBody iframe{
+      width:100%;
+      height:100%;
+      border:none;
+    }
+
+    .closeBtn{
+      cursor:pointer;
+      font-size:14px;
+      letter-spacing:2px;
+    }
+
+  </style>
+
+  <!-- model viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Vanta Background -->
+  <div id="vantaBg" style="position:fixed; inset:0; z-index:-1;"></div>
+
+  <main class="container">
+
+    <div class="heroRow">
+      <h1 class="heroTitle">PROJECTS</h1>
+      <a class="heroHome" href="index.html">HOME</a>
+    </div>
+
+    <div class="grid" id="list"></div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modalOverlay" id="modal">
+    <div class="modalCard">
+      <div class="modalTopbar">
+        <div id="modalTitle">Catalog</div>
+        <div class="closeBtn" onclick="closeModal()">CLOSE</div>
+      </div>
+      <div class="modalBody" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
+
+  <!-- Vanta -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+  <script>
+
+    function toDrivePreview(url){
+      const m = url.match(/file\/d\/([^\/]+)/);
+      return m ? `https://drive.google.com/file/d/${m[1]}/preview` : url;
+    }
+
+    function openModal(title, url){
+      document.getElementById("modalTitle").innerText = title;
+      document.getElementById("modalBody").innerHTML =
+        `<iframe src="${toDrivePreview(url)}"></iframe>`;
+      document.getElementById("modal").classList.add("show");
+      document.body.style.overflow="hidden";
+    }
+
+    function closeModal(){
+      document.getElementById("modal").classList.remove("show");
+      document.getElementById("modalBody").innerHTML="";
+      document.body.style.overflow="";
+    }
+
+    (async () => {
+
+      VANTA.NET({
+        el: "#vantaBg",
+        mouseControls: true,
+        touchControls: true,
+        color: 0x2f6cff,
+        backgroundColor: 0x050b1c,
+        points: 10.0,
+        maxDistance: 22.0,
+        spacing: 18.0
+      });
+
+      const projects = await loadData('data/projects.json');
+      const list = document.getElementById('list');
+
+      list.innerHTML = projects.map(p => `
+        <div class="project-card" onclick="openModal('${p.title}','${p.catalogUrl}')">
+          <h3 class="project-name">${p.title}</h3>
+
+          <div class="modelWrap">
+            <model-viewer
+              src="${p.model}"
+              camera-controls
+              auto-rotate
+              rotation-per-second="20deg"
+              interaction-prompt="none"
+              exposure="1.1"
+              environment-image="neutral">
+            </model-viewer>
+          </div>
+
+          <div class="project-open">OPEN</div>
+        </div>
+      `).join('');
+
+    })();
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HCA Internal Portfolio</title>
+
+  <!-- Same font as other pages -->
+  <link href="https://fonts.cdnfonts.com/css/ikaros" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css" />
+
+  <!-- ✅ Force homepage typography here only -->
+  <style>
+    body{
+      font-family:'Ikaros', sans-serif;
+    }
+
+    /* Tile headings */
+    .home-tiles .tile h3{
+      font-family:'Ikaros', sans-serif;
+      text-transform:uppercase;
+      letter-spacing:8px;
+      font-weight:400;
+    }
+
+    /* Open text */
+    .home-tiles .tile-cta{
+      font-family:'Ikaros', sans-serif;
+      text-transform:uppercase;
+      letter-spacing:4px;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container home">
+
+    <!-- Vanta background -->
+    <div id="vanta-bg" aria-hidden="true"></div>
+
+    <section class="home-tiles">
+
+      <a class="tile" href="machines.html" style="--img:url('assets/home/machines.jpg')">
+        <div class="tile-img" aria-hidden="true"></div>
+        <div class="tile-body">
+          <h3>MACHINES</h3>
+          <span class="tile-cta">OPEN →</span>
+        </div>
+      </a>
+
+      <a class="tile" href="projects.html" style="--img:url('assets/home/projects.jpg')">
+        <div class="tile-img" aria-hidden="true"></div>
+        <div class="tile-body">
+          <h3>PROJECTS</h3>
+          <span class="tile-cta">OPEN →</span>
+        </div>
+      </a>
+
+      <a class="tile" href="map.html" style="--img:url('assets/home/map.jpg')">
+        <div class="tile-img" aria-hidden="true"></div>
+        <div class="tile-body">
+          <h3>MAP</h3>
+          <span class="tile-cta">OPEN →</span>
+        </div>
+      </a>
+
+    </section>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="assets/app.js"></script>
+
+  <!-- Vanta -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+  <script>
+    document.body.classList.add("vanta-on");
+
+    VANTA.NET({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      color: 0x2f6cff,
+      backgroundColor: 0x050b1c,
+      points: 10.0,
+      maxDistance: 22.0,
+      spacing: 18.0
+    });
+  </script>
+
+</body>
+</html>

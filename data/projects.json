@@ -1,0 +1,21 @@
+[
+  {
+    "id": "cap-line",
+    "title": "CAP MAKING LINE",
+    "catalogUrl": "https://drive.google.com/file/d/XXXXXXXXXXXX/view?usp=sharing",
+    "model": "models/projects/cap.glb"
+
+  },
+  {
+    "id": "men's-shirt-line",
+    "title": "MEN'S SHIRT LINE",
+    "catalogUrl": "https://drive.google.com/file/d/1kZ-wPM0Bv0btCkOm-uZ8gWUy2kOIg54f/view?usp=drive_link",
+    "model": "models/projects/polo.glb"
+  },
+  {
+    "id": "denim-line",
+    "title": "DENIM / JEANS MANUFACTURING LINE",
+    "catalogUrl": "https://drive.google.com/file/d/15HYtSjadPVpYWhElxzdbUJGrZ2BIhCOW/view?usp=sharing",
+    "model": "models/projects/jeans.glb"
+  }
+]

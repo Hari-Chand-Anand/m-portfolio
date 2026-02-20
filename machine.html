@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Machine • HCA Internal Portfolio</title>
+
+  <link href="https://fonts.cdnfonts.com/css/ikaros" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+
+  <style>
+    :root{
+      --bg:#050b1c;
+      --blue:#2f6cff;
+
+      /* ultra transparent glass (like your screenshot) */
+      --glass: rgba(255,255,255,0.010);
+      --glassHover: rgba(255,255,255,0.016);
+
+      --stroke: rgba(255,255,255,0.070);
+      --strokeHover: rgba(255,255,255,0.140);
+
+      --strokeSoft: rgba(255,255,255,0.055);
+
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.62);
+    }
+
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:'Ikaros', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x:hidden;
+    }
+
+    #vantaBg{
+      position:fixed;
+      inset:0;
+      z-index:-1;
+    }
+
+    .container{
+      width:min(1200px, 92vw);
+      margin: 0 auto;
+      padding: 26px 0 36px;
+      position:relative;
+      z-index:1;
+    }
+
+    /* ===== Header ===== */
+    .heroRow{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:18px;
+      padding: 6px 0 14px;
+    }
+
+    .heroTitle{
+      margin:0;
+      font-weight:400;
+      letter-spacing:8px;
+      font-size:44px;
+      text-transform:uppercase;
+      line-height:1;
+      text-shadow: 0 12px 40px rgba(0,0,0,0.35);
+    }
+
+    .heroSub{
+      margin-top:10px;
+      font-size:14px;
+      letter-spacing:2px;
+      color: rgba(255,255,255,.55);
+      max-width: 70ch;
+      line-height:1.45;
+    }
+
+    .navRight{
+      display:flex;
+      gap:28px;
+      align-items:flex-start;
+      padding-top: 8px;
+    }
+
+    .navText{
+      letter-spacing:4px;
+      font-size:16px;
+      color: rgba(255,255,255,.75);
+      text-decoration:none;
+      transition: all .25s ease;
+      text-transform:uppercase;
+      white-space:nowrap;
+      display:inline-flex;
+      align-items:center;
+      gap:12px;
+      position:relative;
+      will-change: transform;
+    }
+    .navText:hover{
+      color: rgba(255,255,255,.95);
+      transform: translateY(-2px);
+    }
+    .navText::after{
+      content:"";
+      position:absolute;
+      left:0; right:0;
+      bottom:-6px;
+      height:1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+      opacity:0;
+      transform: scaleX(.85);
+      transition: all .25s ease;
+    }
+    .navText:hover::after{
+      opacity:1;
+      transform: scaleX(1);
+    }
+
+    /* ===== Layout ===== */
+    .detail-wrap{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:18px;
+      margin-top: 10px;
+      align-items: stretch; /* ✅ equal height */
+    }
+    @media (max-width: 980px){
+      .detail-wrap{ grid-template-columns: 1fr; }
+      .heroTitle{ font-size: 38px; }
+    }
+
+    /* ===== Ultra-transparent Apple glass card + hover light sweep ===== */
+    .panel{
+      position:relative;
+      border-radius:26px;
+      border:1px solid var(--stroke);
+      background: var(--glass);
+
+      /* super subtle blur (no fog) */
+      backdrop-filter: blur(7px);
+      -webkit-backdrop-filter: blur(7px);
+
+      padding:22px;
+      height:100%;
+
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+
+      box-shadow: 0 18px 60px rgba(0,0,0,0.45);
+      overflow:hidden;
+
+      transition:
+        transform .28s ease,
+        box-shadow .28s ease,
+        border-color .28s ease,
+        background .28s ease;
+    }
+
+    /* border glow layer (subtle border animation) */
+    .panel::before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      border-radius:28px;
+      background:
+        radial-gradient(650px 220px at 20% 0%, rgba(47,108,255,0.30), transparent 60%),
+        radial-gradient(520px 220px at 85% 35%, rgba(255,255,255,0.16), transparent 55%);
+      opacity:0;
+      filter: blur(18px);
+      transition: opacity .28s ease;
+      pointer-events:none;
+    }
+
+    /* light sweep */
+    .panel::after{
+      content:"";
+      position:absolute;
+      top:-60%;
+      left:-70%;
+      width:70%;
+      height:220%;
+      transform: rotate(18deg);
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.10), transparent);
+      opacity:0;
+      pointer-events:none;
+    }
+
+    @keyframes sheenSweep {
+      0%   { transform: translateX(0) rotate(18deg); opacity:0; }
+      20%  { opacity:.22; }
+      60%  { opacity:.14; }
+      100% { transform: translateX(240%) rotate(18deg); opacity:0; }
+    }
+
+    .panel:hover{
+      transform: translateY(-6px);
+      border-color: var(--strokeHover);
+      background: var(--glassHover);
+
+      box-shadow:
+        0 30px 95px rgba(0,0,0,0.62),
+        0 0 0 1px rgba(47,108,255,0.08);
+    }
+    .panel:hover::before{ opacity:1; }
+    .panel:hover::after{ animation: sheenSweep 900ms ease-out 1; }
+
+    /* Mobile: natural height */
+    @media (max-width: 980px){
+      .panel{ height:auto; }
+    }
+
+    .sectionLabel{
+      font-size:11px;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      color: rgba(255,255,255,.62);
+      margin: 6px 6px 10px;
+    }
+
+    .sectionBlock{ margin-bottom:18px; }
+
+    /* Inner transparent pills */
+    .valueBox, .descBox{
+      border-radius:20px;
+      border:1px solid var(--strokeSoft);
+      background: rgba(255,255,255,0.008);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+
+      padding:22px 20px;
+      display:flex;
+      align-items:center;
+
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.02);
+      transition: border-color .25s ease, background .25s ease;
+    }
+    .panel:hover .valueBox,
+    .panel:hover .descBox{
+      border-color: rgba(255,255,255,0.075);
+      background: rgba(255,255,255,0.010);
+    }
+
+    .valueBox{ min-height:88px; }
+
+    .bigValue{
+      font-size:34px;
+      letter-spacing:.10em;
+      line-height:1.05;
+      text-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+
+    .descBox{
+      min-height:140px;
+      color: rgba(255,255,255,0.72);
+      letter-spacing:.04em;
+      line-height:1.6;
+    }
+
+    .actionsRow{
+      display:flex;
+      gap:28px;
+      align-items:center;
+      flex-wrap:wrap;
+      padding: 8px 6px 0;
+    }
+
+    .actionsRow .navText{
+      font-size:14px;
+      letter-spacing:.22em;
+      color: rgba(255,255,255,.70);
+    }
+    .actionsRow .navText:hover{
+      color: rgba(255,255,255,.95);
+      text-shadow: 0 0 24px rgba(47,108,255,0.22);
+    }
+
+    /* ===== 3D Modal ===== */
+    .mv-modal{ display:none; position:fixed; inset:0; z-index:50; }
+    .mv-modal.is-open{ display:block; }
+
+    .mv-backdrop{
+      position:absolute; inset:0;
+      background: rgba(0,0,0,0.62);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .mv-panel{
+      position:absolute;
+      left:50%; top:50%;
+      transform: translate(-50%,-50%);
+      width:min(1100px, 92vw);
+      height:min(720px, 86vh);
+      border-radius: 24px;
+      border:1px solid rgba(255,255,255,0.14);
+      background: rgba(10,14,22,0.82);
+      overflow:hidden;
+      box-shadow: 0 28px 90px rgba(0,0,0,0.72);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .mv-header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:14px 16px;
+      border-bottom:1px solid rgba(255,255,255,0.10);
+    }
+
+    .mv-title{
+      font-size: 12px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      opacity:.85;
+    }
+
+    .mv-close{
+      border:1px solid rgba(255,255,255,0.14);
+      background: rgba(255,255,255,0.06);
+      color:inherit;
+      border-radius: 14px;
+      padding: 8px 12px;
+      cursor:pointer;
+      transition: transform .2s ease, background .2s ease;
+    }
+    .mv-close:hover{
+      transform: translateY(-1px);
+      background: rgba(255,255,255,0.09);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="vantaBg" aria-hidden="true"></div>
+
+  <main class="container">
+    <div class="heroRow">
+      <div>
+        <h1 class="heroTitle" id="heroTitle">MACHINE</h1>
+        <div class="heroSub" id="heroSub"></div>
+      </div>
+
+      <div class="navRight">
+        <a class="navText" href="index.html">HOME</a>
+        <a class="navText" href="machines.html" id="backLink">BACK</a>
+      </div>
+    </div>
+
+    <section class="detail-wrap">
+      <!-- LEFT -->
+      <div class="panel">
+        <div>
+          <div class="sectionBlock">
+            <div class="sectionLabel">PRICE</div>
+            <div class="valueBox">
+              <div class="bigValue" id="priceVal">—</div>
+            </div>
+          </div>
+
+          <div class="sectionBlock" style="margin-bottom:0;">
+            <div class="sectionLabel">STOCK</div>
+            <div class="valueBox">
+              <div class="bigValue" id="stockVal">—</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="panel">
+        <div>
+          <div class="sectionBlock">
+            <div class="sectionLabel">ACTIONS</div>
+            <div class="actionsRow">
+              <a id="videoLink" class="navText" href="#" target="_blank" rel="noreferrer" style="opacity:.65;">VIDEO</a>
+              <a id="catalogLink" class="navText" href="#" style="opacity:.65;">CATALOG</a>
+              <a id="model3dLink" class="navText" href="#" style="opacity:.65;">3D MODEL</a>
+            </div>
+          </div>
+
+          <div class="sectionBlock" style="margin-bottom:0;">
+            <div class="sectionLabel">DESCRIPTION</div>
+            <div class="descBox" id="longDesc"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 3D Modal -->
+  <div id="viewerModal" class="mv-modal" aria-hidden="true">
+    <div class="mv-backdrop" id="close3dBackdrop"></div>
+    <div class="mv-panel" role="dialog" aria-modal="true" aria-label="3D Viewer">
+      <div class="mv-header">
+        <div class="mv-title">3D View</div>
+        <button class="mv-close" id="close3dBtn" type="button">✕</button>
+      </div>
+      <div id="mvMount" style="width:100%;height:calc(100% - 54px);background:#0b0f17;"></div>
+    </div>
+  </div>
+
+  <script>
+    const PRODUCTS_URL = "./products.json";
+
+    // ===== Google Sheets Pricing (live) =====
+    const PRICING_SHEET_ID = "1ZgrFVcvyDhrDNVorfkYJ4xDG-b2mhu96_ihGAQlNtvQ";
+    const PRICING_GID = "0";
+    const PRICING_CSV_URL = `https://docs.google.com/spreadsheets/d/${PRICING_SHEET_ID}/gviz/tq?tqx=out:csv&gid=${PRICING_GID}`;
+
+    function normKey(k){ return String(k ?? "").trim().toUpperCase(); }
+    function parseNumber(x){
+      const n = Number(String(x ?? "").replace(/[₹,\s]/g, ""));
+      return Number.isFinite(n) ? n : null;
+    }
+
+    function parseCsv(text){
+      const rows = [];
+      let row = [];
+      let cur = "";
+      let inQuotes = false;
+
+      for (let i = 0; i < text.length; i++){
+        const ch = text[i];
+        const next = text[i+1];
+
+        if (ch === '"' ){
+          if (inQuotes && next === '"'){ cur += '"'; i++; }
+          else { inQuotes = !inQuotes; }
+          continue;
+        }
+
+        if (!inQuotes && (ch === ',' || ch === '\n' || ch === '\r')){
+          if (ch === ',' ){
+            row.push(cur); cur = "";
+          } else {
+            if (ch === '\r' && next === '\n') i++;
+            row.push(cur);
+            rows.push(row);
+            row = [];
+            cur = "";
+          }
+          continue;
+        }
+        cur += ch;
+      }
+
+      if (cur.length || row.length){
+        row.push(cur);
+        rows.push(row);
+      }
+      return rows.filter(r => r.some(c => String(c).trim() !== ""));
+    }
+
+    async function loadPriceMap(){
+      const res = await fetch(PRICING_CSV_URL, { cache: "no-store" });
+      if (!res.ok) throw new Error("Failed to load pricing sheet CSV");
+      const csv = await res.text();
+      const rows = parseCsv(csv);
+      if (!rows.length) return {};
+
+      const header = rows[0].map(h => String(h).trim().toLowerCase());
+      const idxKey = header.indexOf("key");
+      const idxQuote = header.indexOf("quote price");
+      const idxOverride = header.indexOf("fx_override (for testing)");
+      if (idxKey === -1) return {};
+
+      const map = {};
+      for (let i = 1; i < rows.length; i++){
+        const r = rows[i];
+        const k = normKey(r[idxKey]);
+        if (!k) continue;
+
+        let price = null;
+        if (idxOverride !== -1) {
+          const rawOverride = r[idxOverride];
+          if (rawOverride && String(rawOverride).trim() !== "") {
+            price = parseNumber(rawOverride);
+          }
+        }
+        if (price == null && idxQuote !== -1) {
+          price = parseNumber(r[idxQuote]);
+        }
+        if (price != null) map[k] = Math.round(price);
+      }
+      return map;
+    }
+
+    const $ = (s) => document.querySelector(s);
+
+    function safeText(s){
+      return String(s ?? "").replace(/[&<>"']/g, m => ({
+        "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+      }[m]));
+    }
+
+    function getParam(key){
+      const u = new URL(location.href);
+      return u.searchParams.get(key);
+    }
+
+    function moneyINR(n){
+      if (n == null || !Number.isFinite(Number(n))) return "—";
+      return "₹ " + Number(n).toLocaleString("en-IN", { maximumFractionDigits: 0 });
+    }
+
+    function youtubeWatchUrl(youtubeId) {
+      if (!youtubeId) return "";
+      const [id, rest] = String(youtubeId).split("&");
+      return `https://www.youtube.com/watch?v=${id}${rest ? "&" + rest : ""}`;
+    }
+
+    function normalizeBrandKey(brand){
+      return String(brand || "").trim().toUpperCase().replace(/\s+/g, "");
+    }
+
+    function normalizeAssetPath(p){
+      if (!p) return "";
+      let s = String(p).trim();
+      s = s.replace(/^\.?\/*assets\/models\//i, "assets/3d/");
+      return s;
+    }
+
+    async function loadProducts() {
+      const res = await fetch(PRODUCTS_URL, { cache: "no-store" });
+      if (!res.ok) throw new Error("Failed to load products.json");
+      return await res.json();
+    }
+
+    async function ensureModelViewerScript() {
+      if (window.customElements && window.customElements.get("model-viewer")) return;
+      await new Promise((resolve, reject) => {
+        const s = document.createElement("script");
+        s.type = "module";
+        s.src = "https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js";
+        s.onload = resolve;
+        s.onerror = reject;
+        document.head.appendChild(s);
+      });
+    }
+
+    (async () => {
+      const id = getParam("id");
+      const brandFromUrl = normalizeBrandKey((getParam("brand") || "").trim());
+
+      $("#heroTitle").textContent = "MACHINE";
+      $("#heroSub").textContent = "";
+      $("#backLink").href = "machines.html";
+
+      const products = await loadProducts();
+      if (!id) throw new Error("Missing machine id");
+
+      let m = products.find(p => String(p.id) === String(id));
+      if (!m) throw new Error("Machine not found");
+
+      const foundBrandKey = normalizeBrandKey(m.brand);
+      if (brandFromUrl && foundBrandKey && brandFromUrl !== foundBrandKey) {
+        throw new Error("Brand mismatch for this machine id");
+      }
+
+      const brandKey = brandFromUrl || normalizeBrandKey(m.brand) || "MACHINES";
+      const model = (m.model || "").toUpperCase();
+      const subtitle = m.name || m.short || m.tagline || "";
+
+      $("#backLink").href = `machines.html?brand=${encodeURIComponent(brandKey)}`;
+      document.title = `${brandKey} • ${model}`;
+      $("#heroTitle").textContent = `${brandKey} • ${model}`;
+      $("#heroSub").textContent = subtitle;
+
+      // Price (live from Google Sheet if available)
+      let sheetPrice = null;
+      try {
+        const priceMap = await loadPriceMap();
+        const priceKey = normKey(m.key || m.priceKey || m.model);
+        sheetPrice = priceMap[priceKey] ?? null;
+      } catch (e) {
+        console.warn("Pricing sheet not reachable, using JSON priceINR.", e);
+      }
+
+      const finalPrice = (sheetPrice != null) ? sheetPrice : m.priceINR;
+      $("#priceVal").textContent = (finalPrice != null) ? moneyINR(Number(finalPrice)) : "—";
+
+      // Stock
+      $("#stockVal").textContent = (m.stockQty != null) ? String(Number(m.stockQty)) : "—";
+
+      // Description
+      $("#longDesc").textContent = m.description || "";
+
+      // VIDEO
+      const videoUrl = youtubeWatchUrl(m.media && m.media.youtubeId) || m.videoUrl || "";
+      const videoLink = $("#videoLink");
+      if (videoUrl) {
+        videoLink.href = videoUrl;
+        videoLink.style.opacity = "1";
+        videoLink.style.pointerEvents = "auto";
+      } else {
+        videoLink.removeAttribute("href");
+        videoLink.style.opacity = ".35";
+        videoLink.style.pointerEvents = "none";
+        videoLink.title = "Video not available";
+      }
+
+      // CATALOG
+      const catalogUrlReal =
+        (m.media && m.media.catalogUrl) || m.catalogUrl || m.catalogueUrl || m.catalog || "";
+      const catalogLink = $("#catalogLink");
+      if (catalogUrlReal) {
+        catalogLink.href = catalogUrlReal;
+        catalogLink.target = "_self";
+        catalogLink.style.opacity = "1";
+        catalogLink.style.pointerEvents = "auto";
+        catalogLink.rel = "noreferrer";
+      } else {
+        catalogLink.removeAttribute("href");
+        catalogLink.style.opacity = ".35";
+        catalogLink.style.pointerEvents = "none";
+        catalogLink.title = "Catalog not available";
+      }
+
+      // 3D MODEL
+      const glbUrlReal = normalizeAssetPath(
+        (m.media && m.media.glbUrl) || m.glbUrl || m.model3dUrl || m.glb || ""
+      );
+
+      const viewerModal = $("#viewerModal");
+      const mvMount = $("#mvMount");
+      const model3dLink = $("#model3dLink");
+
+      model3dLink.addEventListener("click", async (e) => {
+        e.preventDefault();
+        if (!glbUrlReal) return;
+
+        viewerModal.classList.add("is-open");
+        viewerModal.setAttribute("aria-hidden","false");
+
+        mvMount.innerHTML = `<div class="muted" style="padding:14px;opacity:.8;">Loading 3D viewer…</div>`;
+        await ensureModelViewerScript();
+
+        mvMount.innerHTML = `
+          <model-viewer
+            src="${safeText(glbUrlReal)}"
+            alt="Machine 3D model"
+            camera-controls
+            auto-rotate
+            shadow-intensity="1"
+            exposure="1"
+            environment-image="neutral"
+            style="width:100%; height:100%; background:#0b0f17;">
+          </model-viewer>
+        `;
+      });
+
+      if (glbUrlReal) {
+        model3dLink.style.opacity = "1";
+        model3dLink.style.pointerEvents = "auto";
+      } else {
+        model3dLink.style.opacity = ".35";
+        model3dLink.style.pointerEvents = "none";
+        model3dLink.title = "3D model not available";
+      }
+
+      function close3d() {
+        viewerModal.classList.remove("is-open");
+        viewerModal.setAttribute("aria-hidden","true");
+        mvMount.innerHTML = "";
+      }
+      $("#close3dBtn").addEventListener("click", close3d);
+      $("#close3dBackdrop").addEventListener("click", close3d);
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          if (viewerModal.classList.contains("is-open")) close3d();
+        }
+      });
+
+    })().catch(err => {
+      console.error(err);
+      $("#heroTitle").textContent = "MACHINE";
+      $("#heroSub").textContent = "Failed to load machine data.";
+      $("#priceVal").textContent = "—";
+      $("#stockVal").textContent = "—";
+      $("#longDesc").textContent = "";
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script>
+    VANTA.NET({
+      el: "#vantaBg",
+      mouseControls: true,
+      touchControls: true,
+      color: 0x2f6cff,
+      backgroundColor: 0x050b1c,
+      points: 10.0,
+      maxDistance: 22.0,
+      spacing: 18.0
+    });
+  </script>
+</body>
+</html>

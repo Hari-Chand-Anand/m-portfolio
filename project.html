@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project • HCA Internal Portfolio</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+ <!-- <header class="topbar">
+    <div class="row">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div class="title" id="ptitle">Project</div>
+          <div class="subtitle" id="psub">Step-wise machines</div>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="machines.html">Machines</a>
+        <a href="projects.html">Projects</a>
+        <a href="map.html">Map</a>
+      </nav>
+      <button class="btn primary" id="copy">Copy link</button>
+    </div>
+  </header> -->
+
+  <main class="container">
+    <section class="hero">
+      <h1 id="h1">Loading…</h1>
+      <p id="summary"></p>
+      <div id="resources" class="resources" aria-label="Project resources"></div>
+      <div class="kpis" id="kpis"></div>
+    </section>
+
+    <section style="margin-top:14px" class="split">
+      <aside class="side">
+        <h4>Steps</h4>
+        <div id="stepsNav"></div>
+        <div class="divider"></div>
+        <a href="projects.html" class="btn link" style="display:block; text-align:center">← Back to Projects</a>
+      </aside>
+
+      <div id="steps"></div>
+    </section>
+
+    <div class="footer">Internal use only • Share this page during customer visits.</div>
+  </main>
+
+  <!-- In-page document viewer (Google Drive PDFs / reference docs) -->
+  <div class="modal" id="docModal" aria-hidden="true">
+    <div class="modal-backdrop" id="docCloseBackdrop" aria-hidden="true"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Document viewer">
+      <div class="modal-head">
+        <div class="modal-title" id="docTitle">Reference</div>
+        <div style="display:flex; gap:10px; align-items:center;">
+          <a class="btn" id="docOpenNew" href="#" target="_blank" rel="noreferrer">Open in new tab</a>
+          <button class="btn primary" id="docClose">Close</button>
+        </div>
+      </div>
+      <iframe id="docFrame" title="Reference document" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    (async () => {
+      const id = getParam('id');
+      const projects = await loadData('data/projects.json');
+      const machines = await loadData('data/machines.json');
+      const mById = new Map(machines.map(m => [m.id, m]));
+
+      const project = projects.find(p => p.id === id) || projects[0];
+      if (!project) throw new Error('No project found');
+
+      // Defensive norssmalizers (prevents "Project not found" due to shape mistakes in JSON)
+      const asArray = (v) => Array.isArray(v) ? v : (v && typeof v === 'object' ? [v] : []);
+      const steps = asArray(project.steps);
+
+      document.title = `${project.title} • Projects`;
+      $('#ptitle').textContent = project.title;
+      $('#h1').textContent = project.title;
+      $('#summary').textContent = project.summary || '';
+
+      // Resources / reference links (e.g., Google Drive PDF)
+      const resources = asArray(project.resources);
+      const resEl = $('#resources');
+      if (resources.length) {
+        resEl.innerHTML = `
+          <div class="res-title">Reference</div>
+          <div class="res-actions">
+            ${resources.map(r => {
+              const label = safeText(r.label || 'Open');
+              const url = safeText(r.url || '#');
+              return `<button class="btn" type="button" data-doc-url="${url}" data-doc-label="${label}">${label}</button>`;
+            }).join('')}
+          </div>
+        `;
+      } else {
+        resEl.innerHTML = '';
+      }
+
+      // In-page document viewer (preferred: Google Drive preview in iframe)
+      const toDrivePreview = (url) => {
+        if (!url) return '';
+        // Already a drive preview link
+        if (url.includes('drive.google.com') && url.includes('/preview')) return url;
+        // Extract file id from common Drive share formats
+        const m1 = url.match(/\/file\/d\/([^\/]+)/);
+        const m2 = url.match(/[?&]id=([^&]+)/);
+        const id = (m1 && m1[1]) || (m2 && m2[1]) || '';
+        if (id) return `https://drive.google.com/file/d/${id}/preview`;
+        return url; // fallback (can embed any public URL)
+      };
+
+      const modal = $('#docModal');
+      const frame = $('#docFrame');
+      const titleEl = $('#docTitle');
+      const openNew = $('#docOpenNew');
+      const closeBtn = $('#docClose');
+      const closeBackdrop = $('#docCloseBackdrop');
+
+      const openDoc = ({label, url}) => {
+        const src = toDrivePreview(url);
+        titleEl.textContent = label || 'Reference';
+        openNew.href = url || '#';
+        frame.src = src || '';
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      };
+
+      const closeDoc = () => {
+        modal.classList.remove('open');
+        modal.setAttribute('aria-hidden', 'true');
+        frame.src = '';
+        document.body.style.overflow = '';
+      };
+
+      // Wire up resource buttons
+      $all('#resources [data-doc-url]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          openDoc({
+            label: btn.getAttribute('data-doc-label') || 'Reference',
+            url: btn.getAttribute('data-doc-url') || ''
+          });
+        });
+      });
+
+      closeBtn.addEventListener('click', closeDoc);
+      closeBackdrop.addEventListener('click', closeDoc);
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('open')) closeDoc();
+      });
+
+      const machineCount = steps.reduce((s,st)=>s+asArray(st.machines).length,0);
+      $('#kpis').innerHTML = [
+        {label:'Steps', value:steps.length},
+        {label:'Machines in flow', value:machineCount}
+      ].map(x => `
+        <div class="kpi"><div class="label">${safeText(x.label)}</div><div class="value">${safeText(x.value)}</div></div>
+      `).join('');
+
+      // Nav
+      const nav = $('#stepsNav');
+      nav.innerHTML = steps.map((st, idx) => {
+        const no = (st && (st.no ?? st.stepNo ?? st.step_number)) ?? (idx + 1);
+        const title = (st && (st.title || st.name)) || `Step ${no}`;
+        return `
+          <a href="#step-${safeText(no)}" data-step="${safeText(no)}">
+            Step ${safeText(no)} • ${safeText(title)}
+          </a>
+        `;
+      }).join('');
+
+      // Steps
+      const stepsWrap = $('#steps');
+      stepsWrap.innerHTML = steps.map((st, idx) => {
+        const no = (st && (st.no ?? st.stepNo ?? st.step_number)) ?? (idx + 1);
+        const title = (st && (st.title || st.name)) || `Step ${no}`;
+        const description = (st && (st.description || st.desc)) || '';
+        const machinesInStep = asArray(st && st.machines);
+
+        const cards = machinesInStep.map(x => {
+          const machineId = (x && (x.machineId || x.id || x.machine_id)) || '';
+          const m = mById.get(machineId);
+          if (!m) {
+            return `<div class="card"><h3>Unknown machine</h3><p>Machine ID: ${safeText(machineId || '(missing)')}</p></div>`;
+          }
+          const pill = stockPill(m.stockQty);
+          return `
+            <div class="card">
+              <div class="machine-card">
+                <div class="thumb" aria-hidden="true"></div>
+                <div class="content">
+                  <div class="title">${safeText(m.brand)} • ${safeText(m.model)}</div>
+                  <div class="sub">${safeText(m.type)} • ${safeText(x.role || m.short || '')}</div>
+                  <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-bottom:10px">
+                    <span class="pill"><span class="dot ${pill.cls}"></span>${safeText(pill.label)}</span>
+                    <span class="pill">Price: <b style="color:var(--text)">${moneyINR(m.priceINR)}</b></span>
+                  </div>
+                  <div class="actions">
+                    <a href="machine.html?id=${encodeURIComponent(m.id)}">Open</a>
+                    <a href="${safeText(m.videoUrl)}" target="_blank" rel="noreferrer">Video</a>
+                    <a href="${safeText(m.catalogUrl)}" target="_blank" rel="noreferrer">Catalog</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        return `
+          <section id="step-${safeText(no)}" class="card" style="margin-bottom:14px">
+            <h3>Step ${safeText(no)}: ${safeText(title)}</h3>
+            <p>${safeText(description)}</p>
+            <div class="divider"></div>
+            <div class="grid cols-2">${cards}</div>
+          </section>
+        `;
+      }).join('');
+
+      // Active nav highlighting on scroll
+      const navLinks = $all('#stepsNav a');
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            navLinks.forEach(a => a.classList.remove('active'));
+            const stepNo = (e.target.id || '').replace('step-','');
+            const link = navLinks.find(a => a.dataset.step === stepNo);
+            if (link) link.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-50% 0px -40% 0px', threshold: 0.1 });
+
+      $all('[id^="step-"]').forEach(el => io.observe(el));
+
+      // Copy link
+      $('#copy').addEventListener('click', async () => {
+        const text = location.href;
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(text);
+            $('#copy').textContent = 'Copied ✓';
+            setTimeout(()=>$('#copy').textContent='Copy link', 1200);
+          } else {
+            window.prompt('Copy this link:', text);
+          }
+        } catch {
+          window.prompt('Copy this link:', text);
+        }
+      });
+
+    })().catch(err => {
+      console.error(err);
+      $('#h1').textContent = 'Project not found';
+      $('#summary').textContent = 'Check the URL or projects.json.';
+    });
+  </script>
+</body>
+</html>
