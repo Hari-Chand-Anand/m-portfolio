@@ -185,40 +185,82 @@
       <a class="navText" href="index.html">HOME</a>
     </div>
 
-    <!-- ✅ First card: title only (no long text) -->
+    <!-- Title only -->
     <section class="glass heroCard">
       <h1>WHERE MACHINES ARE RUNNING</h1>
     </section>
 
-    <!-- ✅ Transparent toolbar card -->
+    <!-- Toolbar -->
     <div class="glass toolbar">
       <select id="machine"></select>
       <span class="resetText" id="reset">RESET</span>
       <span class="small" id="hint"></span>
     </div>
 
-    <!-- ✅ India map (Leaflet) inside glass -->
+    <!-- Map -->
     <div class="glass" id="mapWrap">
       <div id="map" role="application" aria-label="Installations map"></div>
+    </div>
+
+    <!-- Total machines -->
+    <div class="glass" style="margin-top:14px; padding:14px 18px; border-radius:18px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;">
+        <div id="brandTotalLabel"
+             style="letter-spacing:3px; text-transform:uppercase; font-size:12px; color:rgba(255,255,255,.7);">
+          TOTAL MACHINES INSTALLED
+        </div>
+        <div id="brandTotal"
+             style="font-size:22px; font-weight:700; color:rgba(255,255,255,.92);">
+          —
+        </div>
+      </div>
     </div>
 
   </main>
 
   <script src="assets/app.js"></script>
+
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
 
   <script>
+    // ✅ Deterministic jitter so multiple models in the same city appear as multiple dots (not one big bubble)
+    function hash32(str){
+      let h = 2166136261;
+      for (let i=0;i<str.length;i++){ h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); }
+      return h >>> 0;
+    }
+    function rand01(seed){
+      let x = seed || 123456789;
+      x ^= x << 13; x ^= x >>> 17; x ^= x << 5;
+      return ((x >>> 0) / 4294967296);
+    }
+
+    // ✅ Normalize brand values (fixes DUKEJIA not appearing)
+    function normBrand(v){
+      return String(v || "")
+        .replace(/[\u200B-\u200D\uFEFF]/g, "") // remove zero-width chars
+        .replace(/\s+/g, " ")                 // collapse multiple spaces
+        .trim()
+        .toUpperCase();
+    }
+
     (async () => {
-      const machines = await loadData('data/machines.json');
-      const installs = await loadData('data/installations.json');
+      const rows = await loadData('data/brand_model_city_counts_correct.json');
 
       const sel = document.querySelector('#machine');
-      sel.innerHTML = ['All machines', ...machines.map(m => `${m.id} — ${m.brand} ${m.model}`)]
-        .map((x,i) => `<option value="${i===0?'ALL':safeText(x.split(' — ')[0])}">${safeText(x)}</option>`)
+
+      // ✅ Dropdown: BRANDS ONLY (normalized)
+      const brands = Array.from(
+        new Set(rows.map(r => normBrand(r.brand)).filter(Boolean))
+      ).sort((a,b) => a.localeCompare(b));
+
+      sel.innerHTML = ['ALL BRANDS', ...brands]
+        .map((b,i) => `<option value="${i===0?'ALL':safeText(b)}">${safeText(b)}</option>`)
         .join('');
 
-      // ✅ India map focus
+      // ✅ India map focus (unchanged)
       const map = L.map('map', { scrollWheelZoom: true }).setView([22.9734, 78.6569], 5);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -229,28 +271,52 @@
       let markers = [];
       function clearMarkers(){ markers.forEach(m => map.removeLayer(m)); markers = []; }
 
-      // ✅ Aggregated city/cluster markers only (no customer info)
-      function render(machineId){
+      function render(brand){
         clearMarkers();
 
-        const rows = installs.filter(x => machineId==='ALL' ? true : x.machineId===machineId);
+        const filtered = (brand === 'ALL')
+          ? rows
+          : rows.filter(r => normBrand(r.brand) === normBrand(brand));
 
-        rows.forEach(x => {
-          const m = machines.find(mm => mm.id === x.machineId);
-          const label = m ? `${m.brand} ${m.model}` : x.machineId;
+        // ✅ Bottom total (sum of counts for selected brand)
+        const total = filtered.reduce((sum, r) => sum + (Number(r.count || 0) || 0), 0);
+        const totalEl = document.querySelector('#brandTotal');
+        if (totalEl) totalEl.textContent = total.toLocaleString("en-IN");
 
-          const mk = L.circleMarker([x.lat, x.lng], {
-            radius: Math.min(18, 6 + (x.count || 1)),
+        // ✅ Label shows which brand is selected
+        const labelEl = document.querySelector('#brandTotalLabel');
+        if (labelEl){
+          labelEl.textContent = (brand === 'ALL')
+            ? 'TOTAL MACHINES INSTALLED (ALL BRANDS)'
+            : `TOTAL MACHINES INSTALLED (${normBrand(brand)})`;
+        }
+
+        filtered.forEach(r => {
+          const model = String(r.model || '').trim();
+          const city  = String(r.city  || '').trim();
+          const state = String(r.state || '').trim();
+          const lat0  = Number(r.lat);
+          const lng0  = Number(r.lng);
+
+          if (!model || !city || !state || !Number.isFinite(lat0) || !Number.isFinite(lng0)) return;
+
+          const seed = hash32(`${normBrand(r.brand)}|${model}|${city}|${state}`);
+          const j1 = rand01(seed);
+          const j2 = rand01(seed ^ 0x9e3779b9);
+          const jitter = 0.10;
+          const lat = lat0 + (j1 - 0.5) * jitter;
+          const lng = lng0 + (j2 - 0.5) * jitter;
+
+          const mk = L.circleMarker([lat, lng], {
+            radius: 6,
             weight: 1,
             opacity: 0.9,
             fillOpacity: 0.35
           }).addTo(map);
 
           mk.bindPopup(`
-            <b>${safeText(label)}</b><br/>
-            ${safeText(x.city)}, ${safeText(x.state)}<br/>
-            Installations (agg.): <b>${safeText(x.count || 0)}</b><br/>
-            <a href="machine.html?id=${encodeURIComponent(x.machineId)}">Open machine</a>
+            <b>${safeText(model)}</b><br/>
+            ${safeText(city)}, ${safeText(state)}
           `);
 
           markers.push(mk);
