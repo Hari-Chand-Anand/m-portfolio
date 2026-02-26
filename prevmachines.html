@@ -117,6 +117,7 @@
       margin: 8px 0 18px;
       flex-wrap:wrap;
 
+      /* ✅ ultra transparent long glass bar feel */
       background: var(--glass);
       border: 1px solid var(--stroke);
       border-radius: 26px;
@@ -129,6 +130,7 @@
       overflow:hidden;
     }
 
+    /* subtle animated border glow on hover */
     .toolbar::before{
       content:"";
       position:absolute;
@@ -142,6 +144,7 @@
       transition: opacity .28s ease;
       pointer-events:none;
     }
+
     .toolbar:hover::before{ opacity:1; }
 
     .toolbar-left{
@@ -180,6 +183,13 @@
       margin-left:auto;
     }
 
+    .small{
+      font-size:12px;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      color: rgba(255,255,255,.55);
+    }
+
     /* ===== Grid ===== */
     .grid{
       display:grid;
@@ -196,13 +206,13 @@
       .heroTitle{ font-size: 34px; }
     }
 
-    /* ===== Cards ===== */
+    /* ===== Cards: ultra-transparent + Apple hover ===== */
     .project-card{
       display:flex;
       flex-direction:column;
       justify-content:space-between;
-      min-height:200px;
-      padding:18px;
+      min-height:240px;
+      padding:24px;
       cursor:pointer;
 
       background: var(--glass);
@@ -226,7 +236,7 @@
       will-change: transform;
     }
 
-    /* border glow layer (default cards: hover) */
+    /* border glow layer */
     .project-card::before{
       content:"";
       position:absolute;
@@ -241,71 +251,8 @@
       pointer-events:none;
     }
 
-    /* ===== HERO: Elegant gradient border ONLY (premium / Apple-like) ===== */
-    @keyframes heroBorderShift {
-      0%   { background-position: 0% 50%; }
-      50%  { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    .project-card.hero{
-      overflow: visible;
-      border: 1px solid rgba(255,255,255,0.08);
-      background: var(--glass);
-      box-shadow: 0 22px 80px rgba(0,0,0,0.55);
-      z-index: 0;
-    }
-
-    .project-card.hero::before{
-      opacity: 1 !important;
-      inset: -1px;
-      border-radius: calc(var(--radius) + 1px);
-
-      background: linear-gradient(
-        110deg,
-        rgba(47,108,255,0.95),
-        rgba(135,84,255,0.75),
-        rgba(47,108,255,0.85)
-      );
-      background-size: 200% 200%;
-      animation: heroBorderShift 5.5s ease-in-out infinite;
-
-      filter: none;
-      pointer-events:none;
-
-      padding: 1px;
-      -webkit-mask:
-        linear-gradient(#000 0 0) content-box,
-        linear-gradient(#000 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-    }
-
-    .project-card.hero::after{
-      content:"";
-      position:absolute;
-      inset:-10px;
-      border-radius: calc(var(--radius) + 10px);
-      background: radial-gradient(
-        60% 60% at 30% 20%,
-        rgba(47,108,255,0.22),
-        transparent 60%
-      );
-      filter: blur(18px);
-      opacity: .55;
-      z-index:-1;
-      pointer-events:none;
-    }
-
-    .project-card.hero:hover{
-      transform: translateY(-6px);
-      background: var(--glassHover);
-      box-shadow:
-        0 34px 110px rgba(0,0,0,0.68),
-        0 0 0 1px rgba(47,108,255,0.10);
-    }
-
-    .project-card:not(.hero)::after{
+    /* light sweep */
+    .project-card::after{
       content:"";
       position:absolute;
       top:-60%;
@@ -335,56 +282,81 @@
         0 0 0 1px rgba(47,108,255,0.08);
     }
     .project-card:hover::before{ opacity:1; }
-    .project-card:hover:not(.hero)::after{ animation: sheenSweep 900ms ease-out 1; }
+    .project-card:hover::after{ animation: sheenSweep 900ms ease-out 1; }
 
     .project-name{
       margin:0;
-      font-size:15px;
+      font-size:16px;
       letter-spacing:3px;
       text-transform:uppercase;
       color:rgba(255,255,255,.92);
       line-height:1.35;
     }
 
-    /* ✅ Center-align the info under model name */
     .card-sub{
-      margin-top:8px;
-      font-size:12px;
+      margin-top:10px;
+      font-size:13px;
       letter-spacing:2px;
       color:rgba(255,255,255,.62);
       line-height:1.5;
-      text-align:center;           /* ✅ requested */
-      width:100%;
     }
 
-    .soldCount{ color: rgba(255,255,255,.72); }
-
-    /* ✅ Footer at extreme left/right */
-    .card-footer{
-      margin-top: 14px;
+    .metaRow{
+      margin-top:16px;
       display:flex;
+      gap:10px;
+      flex-wrap:wrap;
       align-items:center;
-      justify-content:space-between;
-      width:100%;
-      gap:12px;
-      padding: 0 2px;             /* tiny edge breathing */
     }
 
-    .installedCount{
-      color: rgba(255,255,255,.72);
-      letter-spacing: 2px;
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+
+      background: rgba(255,255,255,0.010);
+      border:1px solid var(--strokeSoft);
+
+      color:rgba(255,255,255,.75);
+      letter-spacing:2px;
       font-size:12px;
       text-transform:uppercase;
-      text-align:left;
+
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
     }
 
+    .dot{
+      width:8px;
+      height:8px;
+      border-radius:999px;
+      display:inline-block;
+    }
+    .dot.green{ background:#33d17a; }
+    .dot.yellow{ background:#f9c74f; }
+    .dot.red{ background:#ff4d4d; }
+
     .project-open{
-      font-size:13px;
+      margin-top:20px;
+      font-size:14px;
       letter-spacing:2px;
       color:rgba(255,255,255,.7);
       text-transform:uppercase;
-      margin:0;
-      text-align:right;
+    }
+
+    .cornerArrow{
+      position:absolute;
+      right:18px;
+      bottom:18px;
+      font-size:22px;
+      color:rgba(255,255,255,.45);
+      transition:all .25s ease;
+    }
+    .project-card:hover .cornerArrow{
+      transform:translateX(6px);
+      color:rgba(255,255,255,.75);
     }
 
     @media (max-width: 560px){
@@ -412,11 +384,13 @@
         <input class="input" id="q" placeholder="Search model / id..." style="display:none;" />
         <select id="type" style="display:none;"></select>
 
+        <!-- ✅ CLEAR / BACK as text like HOME -->
         <div class="actions">
           <a class="heroHome" href="#" id="clearLink">CLEAR</a>
           <a class="heroHome" href="machines.html" id="backToBrands" style="display:none;">BACK</a>
         </div>
       </div>
+      <span class="small" id="count" style="display:none;"></span>
     </div>
 
     <section id="list" class="grid"></section>
@@ -429,8 +403,13 @@
         "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
       }[m]));
     }
+    function moneyINR(n){
+      if (!Number.isFinite(n)) return "—";
+      return "₹ " + n.toLocaleString("en-IN", { maximumFractionDigits: 0 });
+    }
 
     function normalizeBrandKey(brand){
+      // "DUKE JIA" -> "DUKEJIA" (matches your UI screenshots)
       return String(brand || "")
         .trim()
         .toUpperCase()
@@ -438,15 +417,10 @@
     }
 
     // ===== Google Sheets Pricing (live) =====
+    // Your sheet must be shared as "Anyone with the link can view"
     const PRICING_SHEET_ID = "2PACX-1vS0ZUrXsnXZNQzSbuZgvaPQWv-8fV8BBdW9o7FI5Its9zwztKYvITxbJofE_rQuHGDaJJRAOekzMNRe";
-    const PRICING_GID = "0";
+    const PRICING_GID = "0"; // first tab
     const PRICING_CSV_URL = `https://docs.google.com/spreadsheets/d/${PRICING_SHEET_ID}/gviz/tq?tqx=out:csv&gid=${PRICING_GID}`;
-
-    // ===== Google Sheets Installed Counts (LIVE) =====
-    // Sheet columns: id, installed
-    const INSTALLED_SHEET_ID = "1tY0vScYiUMXkG-juvew55Bb0_fqr_3BluNa-OGbQ0NE";
-    const INSTALLED_GID = "0";
-    const INSTALLED_CSV_URL = `https://docs.google.com/spreadsheets/d/${INSTALLED_SHEET_ID}/gviz/tq?tqx=out:csv&gid=${INSTALLED_GID}`;
 
     function normKey(k){ return String(k ?? "").trim().toUpperCase(); }
 
@@ -455,6 +429,7 @@
       return Number.isFinite(n) ? n : null;
     }
 
+    // Minimal CSV parser (handles quotes + commas)
     function parseCsv(text){
       const rows = [];
       let row = [];
@@ -524,35 +499,6 @@
       return map;
     }
 
-    async function loadInstalledMap(){
-      if (!INSTALLED_SHEET_ID || INSTALLED_SHEET_ID.includes("PASTE_YOUR")) return {};
-
-      const res = await fetch(INSTALLED_CSV_URL, { cache: "no-store" });
-      if (!res.ok) throw new Error("Failed to load installed-count sheet CSV");
-
-      const csv = await res.text();
-      const rows = parseCsv(csv);
-      if (!rows.length) return {};
-
-      const header = rows[0].map(h => String(h).trim().toLowerCase());
-      const idxId = header.indexOf("id");
-      const idxInstalled = header.indexOf("installed");
-      if (idxId === -1 || idxInstalled === -1) return {};
-
-      const map = {};
-      for (let i = 1; i < rows.length; i++){
-        const r = rows[i];
-        const id = String(r[idxId] ?? "").trim();
-        if (!id) continue;
-
-        const n = Number(String(r[idxInstalled] ?? "").replace(/[,\s]/g, ""));
-        if (!Number.isFinite(n)) continue;
-
-        map[id] = Math.round(n);
-      }
-      return map;
-    }
-
     (async () => {
       const list = document.getElementById('list');
       const q = document.getElementById('q');
@@ -598,6 +544,7 @@
 
         const data = await fetchJsonWithFallback(candidates);
 
+        // de-dupe by id
         const seen = new Set();
         const unique = [];
         for (const p of data) {
@@ -607,27 +554,35 @@
           unique.push(p);
         }
 
+        // map into view-model
         return unique.map(p => {
           const brandKey = normalizeBrandKey(p.brand);
           return {
             id: p.id,
-            brandKey,
-            brandDisplay: brandKey,
+            brandKey,                  // used for routing / filtering
+            brandDisplay: brandKey,    // show like "DUKEJIA", "VIOS"
             model: p.model || "",
             short: p.description || "",
             type: p.operation || p.category || "Machine",
             priceKey: p.key || p.priceKey || p.model || "",
             priceINR: p.priceINR,
-            soldCount: p.soldCount,
-            installedCount: p.installedCount
+            stockQty: p.stockQty
           };
         });
+      }
+
+      function stockDot(qty){
+        const n = Number(qty || 0);
+        if (n >= 10) return { cls: "green", label: "STOCK" };
+        if (n >= 1)  return { cls: "yellow", label: "LOW" };
+        return { cls: "red", label: "OUT" };
       }
 
       function renderBrandsView(machines) {
         heroTitle.textContent = "BRANDS";
         toolbar.style.display = "none";
 
+        // Group by brandKey
         const map = new Map();
         for (const m of machines) {
           if (!m.brandKey) continue;
@@ -644,10 +599,8 @@
               <h3 class="project-name">${safeText(b.brandKey)}</h3>
               <div class="card-sub">${safeText(b.count)} MACHINES AVAILABLE</div>
             </div>
-            <div class="card-footer">
-              <div></div>
-              <div class="project-open">OPEN</div>
-            </div>
+            <div class="project-open">OPEN</div>
+            <div class="cornerArrow">→</div>
           </a>
         `).join("");
 
@@ -658,21 +611,11 @@
                 <h3 class="project-name">NO BRANDS</h3>
                 <div class="card-sub">PRODUCTS.JSON HAS NO VALID BRAND DATA.</div>
               </div>
-              <div class="card-footer">
-                <div></div>
-                <div class="project-open">—</div>
-              </div>
+              <div class="project-open">—</div>
             </div>
           `;
         }
       }
-
-      const HERO_BY_BRAND = {
-        "DUKE": ["dy9503d2","dy9503d5","dy282bd4","dy9503d4","dy282md4","dy03181","dy128b","dy9503d1"],
-        "HIGHLEAD": ["highlead-gc-298-3","highlead-gc-298-2b","highlead-gc-128-b","highlead-gc-198-2","highlead-gc-0318-1","highlead-gc-20578-m"],
-        "HIKARI": ["hikari-h93s-7d-5-ak"],
-        "LOIVA": ["loiva-t03-318-550w-dd-motor"]
-      };
 
       function renderBrandDetail(machines, brandKey) {
         heroTitle.textContent = brandKey;
@@ -699,38 +642,22 @@
               || (m.id || '').toLowerCase().includes(term);
           });
 
-          const heroIds = HERO_BY_BRAND[brandKey] || [];
-          const heroRank = new Map(heroIds.map((id, idx) => [String(id), idx]));
-          filtered.forEach(m => { m.isHero = heroRank.has(String(m.id)); });
-
-          filtered.sort((a,b) => {
-            const ah = heroRank.has(String(a.id));
-            const bh = heroRank.has(String(b.id));
-            if (ah && bh) return heroRank.get(String(a.id)) - heroRank.get(String(b.id));
-            if (ah) return -1;
-            if (bh) return 1;
-            return String(a.model||'').localeCompare(String(b.model||''));
-          });
+          filtered.sort((a,b) => String(a.model||'').localeCompare(String(b.model||'')));
 
           list.innerHTML = filtered.map(m => {
-            const installed = (m.installedCount != null)
-              ? `INSTALLED: ${Number(m.installedCount).toLocaleString("en-IN")}`
-              : "";
+            const price = (m.priceINR != null) ? moneyINR(Number(m.priceINR)) : "—";
+            const qty = (m.stockQty != null) ? Number(m.stockQty) : 0;
+            const dot = stockDot(qty);
 
             return `
-              <a class="project-card${m.isHero ? " hero" : ""}" href="machine.html?id=${encodeURIComponent(m.id)}&brand=${encodeURIComponent(brandKey)}">
+              <a class="project-card" href="machine.html?id=${encodeURIComponent(m.id)}&brand=${encodeURIComponent(brandKey)}">
                 <div>
                   <h3 class="project-name">${safeText(m.brandDisplay)} • ${safeText(m.model)}</h3>
-                  <div class="card-sub">
-                    ${safeText(m.type)}${m.short ? " • " + safeText(m.short) : ""}
-                    ${(m.isHero && m.soldCount != null) ? ` • <span class="soldCount">${Number(m.soldCount).toLocaleString("en-IN")} machines</span>` : ""}
-                  </div>
+                  <div class="card-sub">${safeText(m.type)}${m.short ? " • " + safeText(m.short) : ""}</div>
                 </div>
 
-                <div class="card-footer">
-                  <div class="installedCount">${installed}</div>
-                  <div class="project-open">OPEN</div>
-                </div>
+                <div class="project-open">OPEN</div>
+                <div class="cornerArrow">→</div>
               </a>
             `;
           }).join('');
@@ -742,15 +669,13 @@
                   <h3 class="project-name">NO RESULTS</h3>
                   <div class="card-sub">TRY CLEARING SEARCH / TYPE FILTERS.</div>
                 </div>
-                <div class="card-footer">
-                  <div></div>
-                  <div class="project-open">—</div>
-                </div>
+                <div class="project-open">—</div>
               </div>
             `;
           }
         }
 
+        // ✅ CLEAR as text link
         clearLink.onclick = (e) => {
           e.preventDefault();
           q.value = '';
@@ -767,17 +692,15 @@
 
       const machines = await loadProducts();
 
-      // Apply live prices from Google Sheet
-      try { await loadPriceMap(); } catch(e){ console.warn(e); }
-
-      // Apply LIVE installed counts from Google Sheet
+      // Apply live prices from Google Sheet (by KEY). If sheet fails, UI falls back to products.json prices.
       try {
-        const installedMap = await loadInstalledMap();
+        const priceMap = await loadPriceMap();
         for (const m of machines) {
-          if (installedMap[m.id] != null) m.installedCount = installedMap[m.id];
+          const k = normKey(m.priceKey || m.model);
+          if (priceMap[k] != null) m.priceINR = priceMap[k];
         }
       } catch (e) {
-        console.warn("Installed count sheet not reachable.", e);
+        console.warn("Pricing sheet not reachable, using JSON priceINR.", e);
       }
 
       const brandKey = getBrandParam();
@@ -785,6 +708,7 @@
       if (!brandKey) {
         renderBrandsView(machines);
       } else {
+        // If invalid brand -> go back to brands
         const exists = machines.some(m => m.brandKey === brandKey);
         if (!exists) {
           location.href = "machines.html";
@@ -802,10 +726,7 @@
             <h3 class="project-name">ERROR</h3>
             <div class="card-sub">FAILED TO LOAD PRODUCTS.JSON</div>
           </div>
-          <div class="card-footer">
-            <div></div>
-            <div class="project-open">—</div>
-          </div>
+          <div class="project-open">—</div>
         </div>
       `;
     });

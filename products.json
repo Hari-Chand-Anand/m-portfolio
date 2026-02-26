@@ -2,8 +2,8 @@
   {
     "id": "duke-dk-1201-embroidery-machine",
     "brand": "DUKEJIA",
-    "model": "DUKE DK-1201 EMBROIDERY MACHINE",
-    "name": "DUKE DK-1201 EMBROIDERY MACHINE",
+    "model": " DY-1201 EMBROIDERY MACHINE",
+    "name": " DY-1201 EMBROIDERY MACHINE",
     "category": "embroidery",
     "thumbnail": "",
     "popularity": "standard",
@@ -33,7 +33,7 @@
     },
     "features": [],
     "application": "",
-    "tags": [                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+    "tags": [
       "embroidery"
     ],
     "key": "DK-1201"
@@ -41,8 +41,8 @@
   {
     "id": "duke-dy-1201h-embroidery-machine",
     "brand": "DUKEJIA",
-    "model": "DUKE DY-1201H EMBROIDERY MACHINE",
-    "name": "DUKE DY-1201H EMBROIDERY MACHINE",
+    "model": " DY-1201H EMBROIDERY MACHINE",
+    "name": " DY-1201H EMBROIDERY MACHINE",
     "category": "embroidery",
     "thumbnail": "",
     "popularity": "standard",
@@ -64,8 +64,8 @@
   {
     "id": "duke-dy904-120-embroidery-machine",
     "brand": "DUKEJIA",
-    "model": "DUKE DY904-120 EMBROIDERY MACHINE",
-    "name": "DUKE DY904-120 EMBROIDERY MACHINE",
+    "model": " DY904-120 EMBROIDERY MACHINE",
+    "name": " DY904-120 EMBROIDERY MACHINE",
     "category": "embroidery",
     "thumbnail": "",
     "popularity": "standard",
@@ -87,8 +87,8 @@
   {
     "id": "duke-dy-904-150-embroidery-machine",
     "brand": "DUKEJIA",
-    "model": "DUKE DY-904-150 EMBROIDERY MACHINE",
-    "name": "DUKE DY-904-150 EMBROIDERY MACHINE",
+    "model": " DY-904-150 EMBROIDERY MACHINE",
+    "name": "DY-904-150 EMBROIDERY MACHINE",
     "category": "embroidery",
     "thumbnail": "",
     "popularity": "standard",
@@ -110,8 +110,8 @@
   {
     "id": "duke-dy924-120-embroidery-machine",
     "brand": "DUKEJIA",
-    "model": "DUKE DY924-120 EMBROIDERY MACHINE",
-    "name": "DUKE DY924-120 EMBROIDERY MACHINE",
+    "model": " DY924-120 EMBROIDERY MACHINE",
+    "name": " DY924-120 EMBROIDERY MACHINE",
     "category": "embroidery",
     "thumbnail": "",
     "popularity": "standard",
@@ -133,8 +133,8 @@
   {
     "id": "duke-embroidery-machine-400x-500",
     "brand": "DUKEJIA",
-    "model": "DUKE EMBROIDERY MACHINE ( 400X 500)",
-    "name": "DUKE EMBROIDERY MACHINE ( 400X 500)",
+    "model": " EMBROIDERY MACHINE ( 400X 500)",
+    "name": " EMBROIDERY MACHINE ( 400X 500)",
     "category": "embroidery",
     "thumbnail": "",
     "popularity": "standard",
@@ -156,8 +156,8 @@
   {
     "id": "duke-es-1300",
     "brand": "DUKEJIA",
-    "model": "DUKE ES-1300",
-    "name": "DUKE ES-1300",
+    "model": " ES-1300",
+    "name": " ES-1300",
     "category": "embroidery",
     "thumbnail": "images/es-1300.png",
     "popularity": "medium",
@@ -293,8 +293,8 @@
     "thumbnail": "images/vios-867.png",
     "popularity": "medium",
     "media": {
-      "youtubeId": "2Nod9pUuz24",
-      "catalogUrl": "assets/catalogs/vios-867.pdf",
+      "youtubeId": "wO6--hJj-jw",
+      "catalogUrl": "",
       "glbUrl": "assets/3d/VIOS867.glb"
     },
     "operation": "Lockstitch",
@@ -327,7 +327,7 @@
     "thumbnail": "images/vios-699.png",
     "popularity": "standard",
     "media": {
-      "youtubeId": "2Nod9pUuz24",
+      "youtubeId": "Q1c0g0SUFXA",
       "catalogUrl": "https://drive.google.com/file/d/1qNVuwzY4J3twJkTVwJnD8ZiktNBC5pyl/view?usp=sharing",
       "glbUrl": "assets/3d/VIOS699.glb"
     },
@@ -626,7 +626,7 @@
     "tags": [
       "pfaff"
     ],
-    "key": "1245-601"
+    "key": "1245-CLPMN8"
   },
   {
     "id": "pfaff-2481-2-01-980-30-bs-n3-5",
@@ -775,7 +775,7 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
+      "youtubeId": "PEPv68U3wxU",
       "catalogUrl": "",
       "glbUrl": ""
     },
@@ -1040,7 +1040,7 @@
     "tags": [
       "loiva"
     ],
-    "key": "FB400"
+    "key": "FB400-0664"
   },
   {
     "id": "loiva-fs-967",
@@ -1479,75 +1479,9 @@
     ],
     "key": "ST-23"
   },
-  {
-    "id": "loiva-t03-318-550w-dd-motor",
-    "brand": "LOIVA",
-    "model": "LOIVA T03-318(550W) DD MOTOR",
-    "name": "LOIVA T03-318(550W) DD MOTOR",
-    "category": "industrial",
-    "thumbnail": "",
-    "popularity": "standard",
-    "media": {
-      "youtubeId": "",
-      "catalogUrl": "",
-      "glbUrl": ""
-    },
-    "operation": "Motor",
-    "description": "Loiva T03-318 (550W) DD motor.",
-    "spec": {},
-    "features": [],
-    "application": "",
-    "tags": [
-      "loiva"
-    ],
-    "key": "T03-550W"
-  },
-  {
-    "id": "loiva-t03-318-750w-dd-motor",
-    "brand": "LOIVA",
-    "model": "LOIVA T03-318(750W ) DD MOTOR",
-    "name": "LOIVA T03-318(750W ) DD MOTOR",
-    "category": "industrial",
-    "thumbnail": "",
-    "popularity": "standard",
-    "media": {
-      "youtubeId": "",
-      "catalogUrl": "",
-      "glbUrl": ""
-    },
-    "operation": "Motor",
-    "description": "Loiva T03-318 (750W) DD motor.",
-    "spec": {},
-    "features": [],
-    "application": "",
-    "tags": [
-      "loiva"
-    ],
-    "key": "T03-750W"
-  },
-  {
-    "id": "loiva-t05-la451-550w",
-    "brand": "LOIVA",
-    "model": "LOIVA T05-LA451 (550W)",
-    "name": "LOIVA T05-LA451 (550W)",
-    "category": "industrial",
-    "thumbnail": "",
-    "popularity": "standard",
-    "media": {
-      "youtubeId": "",
-      "catalogUrl": "",
-      "glbUrl": ""
-    },
-    "operation": "Motor",
-    "description": "Loiva T05-LA451 (550W) unit.",
-    "spec": {},
-    "features": [],
-    "application": "",
-    "tags": [
-      "loiva"
-    ],
-    "key": "T05-LA451"
-  },
+
+
+
   {
     "id": "jk-t9280d-73-2pl-three-needle-feed-off-a",
     "brand": "JUITA",
@@ -1824,52 +1758,8 @@
     ],
     "key": "JTA-3-07"
   },
-  {
-    "id": "k1-pattern-cutting-machine",
-    "brand": "JUITA",
-    "model": "K1 PATTERN CUTTING MACHINE",
-    "name": "K1 PATTERN CUTTING MACHINE",
-    "category": "industrial",
-    "thumbnail": "",
-    "popularity": "standard",
-    "media": {
-      "youtubeId": "",
-      "catalogUrl": "",
-      "glbUrl": ""
-    },
-    "operation": "Pattern Cutting Machine",
-    "description": "K1 pattern cutting machine.",
-    "spec": {},
-    "features": [],
-    "application": "",
-    "tags": [
-      "juita"
-    ],
-    "key": "K1-PATTERN"
-  },
-  {
-    "id": "k-1-racing-model",
-    "brand": "JUITA",
-    "model": "K-1# RACING MODEL",
-    "name": "K-1# RACING MODEL",
-    "category": "industrial",
-    "thumbnail": "",
-    "popularity": "standard",
-    "media": {
-      "youtubeId": "",
-      "catalogUrl": "",
-      "glbUrl": ""
-    },
-    "operation": "Pattern Cutting Machine",
-    "description": "K-1 racing model machine.",
-    "spec": {},
-    "features": [],
-    "application": "",
-    "tags": [
-      "juita"
-    ],
-    "key": "K1-RACING"
-  },
+
+
   {
     "id": "hutang-bl210-02-064c-10-dm",
     "brand": "HUTANG",
@@ -2052,7 +1942,7 @@
     "tags": [
       "hikari"
     ],
-    "key": "HX-6816TD"
+    "key": "HX-6816TD-03UTD-AK"
   },
   {
     "id": "hikari-ask-a-hk-2903-a-button-stitch",
@@ -2190,7 +2080,7 @@
     "tags": [
       "hikari"
     ],
-    "key": "HBH-1790"
+    "key": "HBH-1790D-K"
   },
   {
     "id": "hikari-hbh-1790ds",
@@ -2443,10 +2333,10 @@
     "tags": [
       "hikari"
     ],
-    "key": "HW762T"
+    "key": "HW762T-1-2-1x356-UAD-AK"
   },
   {
-    "id": "hikari-hw782t-35b-356lv1-utc-ak",
+    "id": "hikari-hw-35b-356lv1-utc-ak",
     "brand": "HIKARI",
     "model": "HIKARI HW782T-35B-356LV1/UTC/AK",
     "name": "HIKARI HW782T-35B-356LV1/UTC/AK",
@@ -2512,7 +2402,7 @@
     "tags": [
       "hikari"
     ],
-    "key": "HW782T-AK"
+    "key": "HW782T-01x356-AK"
   },
   {
     "id": "hikari-hx-6814td-03utc-3-ak",
@@ -2535,7 +2425,7 @@
     "tags": [
       "hikari"
     ],
-    "key": "HX-6814TD"
+    "key": "HX-6814TD-03UTC-3/AK"
   },
   {
     "id": "hikari-hx6814td03utd3-ak",
@@ -2558,7 +2448,7 @@
     "tags": [
       "hikari"
     ],
-    "key": "HX-6814TD-UTD3"
+    "key": "HX-6814TD-03UTD3"
   },
   {
     "id": "hikari-hx-6814td-84bl-utc3-ak",
@@ -2581,7 +2471,7 @@
     "tags": [
       "hikari"
     ],
-    "key": "HX-6814TD-AK"
+    "key": "HX-6814TD-84BL/AK"
   },
   {
     "id": "hikari-hx6814tdv-03",
@@ -2627,7 +2517,7 @@
     "tags": [
       "hikari"
     ],
-    "key": "HX-6816TD"
+    "key": "HX-6816TD-03-UTC3-AK"
   },
   {
     "id": "hikari-hx6816td-03utd3-ak",
@@ -2650,7 +2540,7 @@
     "tags": [
       "hikari"
     ],
-    "key": "HX-6816TD-UTD"
+    "key": "HX-6816TD-03UTD3"
   },
   {
     "id": "hikari-hx6816td-04utc3-ak",
@@ -2673,7 +2563,7 @@
     "tags": [
       "hikari"
     ],
-    "key": "HX-6816TD-UTC"
+    "key": "HX-6816TD-04UTC3"
   },
   {
     "id": "hikari-hx6816tdv-03",
@@ -2719,7 +2609,7 @@
     "tags": [
       "hikari"
     ],
-    "key": "HX-6816TD-AK"
+    "key": "HX-6816TDV-03/AK"
   },
   {
     "id": "hikari-hx6818td-03utc3-ak",
@@ -2811,7 +2701,7 @@
     "tags": [
       "hikari"
     ],
-    "key": "HX-68S"
+    "key": "HX-68S-14-03"
   },
   {
     "id": "hikari-hx68s-14-03c",
@@ -2834,7 +2724,7 @@
     "tags": [
       "hikari"
     ],
-    "key": "HX-68S-14"
+    "key": "HX-68S-14-03C"
   },
   {
     "id": "hikari-hx68s-16-04c",
@@ -2857,7 +2747,7 @@
     "tags": [
       "hikari"
     ],
-    "key": "HX-68S-16"
+    "key": "HX-68S-16-04C"
   },
   {
     "id": "hikari-hx6914t-04ksc-ak",
@@ -2903,7 +2793,7 @@
     "tags": [
       "hikari"
     ],
-    "key": "HX-8V"
+    "key": "HX-8V-14-03"
   },
   {
     "id": "hikari-hx8v-14-03c",
@@ -2926,7 +2816,7 @@
     "tags": [
       "hikari"
     ],
-    "key": "HX-8V-14"
+    "key": "HX-8V-14-03C"
   },
   {
     "id": "hikari-hx8v-16-03",
@@ -3007,7 +2897,7 @@
     "popularity": "standard",
     "media": {
       "youtubeId": "",
-      "catalogUrl": "",
+      "catalogUrl": "https://drive.google.com/file/d/1XdZ81p7XEq2y7Bi9egTdbBAQZrDR1Qmr/view?usp=sharing",
       "glbUrl": ""
     },
     "operation": "Industrial Sewing Machine",
@@ -3018,7 +2908,7 @@
     "tags": [
       "highlead"
     ],
-    "key": "GC24698"
+    "key": "GC24698BRHL"
   },
   {
     "id": "highlead-hlk-g3520r",
@@ -3106,7 +2996,7 @@
     "description": "Highlead 4214P machine.",
     "spec": {},
     "features": [],
-    "application": "",
+    "application": "https://drive.google.com/file/d/1_m7G5SxbCQvl9y_IsHYZKRWQGkb2dLgu/view?usp=drive_link",
     "tags": [
       "highlead"
     ],
@@ -3156,7 +3046,7 @@
     "tags": [
       "highlead"
     ],
-    "key": "GA-0688"
+    "key": "GA-0688-1"
   },
   {
     "id": "highlead-gc-0318-1",
@@ -3168,7 +3058,7 @@
     "popularity": "standard",
     "media": {
       "youtubeId": "",
-      "catalogUrl": "",
+      "catalogUrl": "https://drive.google.com/file/d/1411pcyytvBspwVaZ0x_HJ2tX46QNCLII/view?usp=drive_link",
       "glbUrl": ""
     },
     "operation": "Industrial Sewing Machine",
@@ -3179,7 +3069,7 @@
     "tags": [
       "highlead"
     ],
-    "key": "GC-0318"
+    "key": "GC-0318-1"
   },
   {
     "id": "highlead-gc-0518a-d3",
@@ -3191,7 +3081,7 @@
     "popularity": "standard",
     "media": {
       "youtubeId": "",
-      "catalogUrl": "",
+      "catalogUrl": "https://drive.google.com/file/d/16MnsQaoQsFcv_srqyMXAdjCMf55vtEQV/view?usp=drive_link",
       "glbUrl": ""
     },
     "operation": "Industrial Sewing Machine",
@@ -3237,7 +3127,7 @@
     "popularity": "standard",
     "media": {
       "youtubeId": "",
-      "catalogUrl": "",
+      "catalogUrl": "https://drive.google.com/file/d/1Of8bfYa3iltwY_uxT8MDEsF2JdkrbIox/view?usp=drive_link",
       "glbUrl": ""
     },
     "operation": "Industrial Sewing Machine",
@@ -3260,7 +3150,7 @@
     "popularity": "standard",
     "media": {
       "youtubeId": "",
-      "catalogUrl": "",
+      "catalogUrl": "https://drive.google.com/file/d/1xpHPVOI25dJJPQ1aDsWpTDI4tKaUuioS/view?usp=drive_link",
       "glbUrl": ""
     },
     "operation": "Industrial Sewing Machine",
@@ -3283,7 +3173,7 @@
     "popularity": "standard",
     "media": {
       "youtubeId": "",
-      "catalogUrl": "",
+      "catalogUrl": "https://drive.google.com/file/d/1xpHPVOI25dJJPQ1aDsWpTDI4tKaUuioS/view?usp=drive_link",
       "glbUrl": ""
     },
     "operation": "Industrial Sewing Machine",
@@ -3306,7 +3196,7 @@
     "popularity": "standard",
     "media": {
       "youtubeId": "",
-      "catalogUrl": "",
+      "catalogUrl": "https://drive.google.com/file/d/1xpHPVOI25dJJPQ1aDsWpTDI4tKaUuioS/view?usp=drive_link",
       "glbUrl": ""
     },
     "operation": "Industrial Sewing Machine",
@@ -3536,7 +3426,7 @@
     "popularity": "standard",
     "media": {
       "youtubeId": "",
-      "catalogUrl": "",
+      "catalogUrl": "https://drive.google.com/file/d/1bcFapzl4CAdld7IwTAhHqCAedQqGjk4G/view?usp=sharing",
       "glbUrl": ""
     },
     "operation": "Industrial Sewing Machine",
@@ -3547,7 +3437,31 @@
     "tags": [
       "highlead"
     ],
-    "key": "GC-298"
+    "key": "GC-298-2B"
+  },
+
+    {
+    "id": "highlead-gc-298-3",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 298-3",
+    "name": "HIGHLEAD GC 298-3",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1b-y0aFgOlojolg6KlkzwqAX33V7VoX54/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "Highlead GC 298-2B machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-298-3"
   },
   {
     "id": "highlead-gc-0318-1c",
@@ -3996,7 +3910,7 @@
     "popularity": "standard",
     "media": {
       "youtubeId": "",
-      "catalogUrl": "",
+      "catalogUrl": "https://drive.google.com/file/d/1niq9me3bx8kC1fyeHDsYQsZAhalzmIab/view?usp=sharing",
       "glbUrl": ""
     },
     "operation": "Collar & Cuff Press Machine",
@@ -4019,7 +3933,7 @@
     "popularity": "standard",
     "media": {
       "youtubeId": "",
-      "catalogUrl": "",
+      "catalogUrl": "https://drive.google.com/file/d/15t7tLdiUIS5zj81sJlwnT48z_71TmCS6/view?usp=drive_link",
       "glbUrl": ""
     },
     "operation": "Industrial Machine",
@@ -4064,8 +3978,8 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
-      "catalogUrl": "",
+      "youtubeId": "TWKg-XsZ3VQ",
+      "catalogUrl": "https://drive.google.com/file/d/14t8qJDdatYhrgfKerPQ9o4jbNvJG9txp/view?usp=drive_link",
       "glbUrl": ""
     },
     "operation": "Industrial Machine",
@@ -4124,760 +4038,1292 @@
     ],
     "key": "405-CUFF"
   },
-
-{
-  "id": "0303d12",
-  "brand": "DUKE",
-  "model": "DUKE 0303D-12",
-  "name": "DUKE 0303D-12",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1JMqmgz9-uGv8y6VhnRE8vpxuOk-_FHz4/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE 0303D-12 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "0303d12"
-},
-{
-  "id": "1411psfd",
-  "brand": "DUKE",
-  "model": "DUKE 1411PSF-D",
-  "name": "DUKE 1411PSF-D",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/13zt1U8ZpwAd22h6udwBlcfYHCSXYVMFV/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE 1411PSF-D machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "1411psfd"
-},
-{
-  "id": "1412ptvd",
-  "brand": "DUKE",
-  "model": "DUKE 1412PTV-D",
-  "name": "DUKE 1412PTV-D",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1xiu8zm7vqvqD2R7LgDv3EnjQaMIerCcJ/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE 1412PTV-D machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "1412ptvd"
-},
-{
-  "id": "1721",
-  "brand": "DUKE",
-  "model": "DUKE 1721",
-  "name": "DUKE 1721",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/18kkrDvbArChjX4Cxw7wvgkdEOo_gR7Tg/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE 1721 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "1721"
-},
-{
-  "id": "220",
-  "brand": "DUKE",
-  "model": "DUKE 220",
-  "name": "DUKE 220",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1rW872yxq_TJZAIhTXvD91XxeL9AbRNZ3/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE 220 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "220"
-},
-{
-  "id": "bt220",
-  "brand": "DUKE",
-  "model": "DUKE BT-220",
-  "name": "DUKE BT-220",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1bRC_lJNIanLa5ZsG_UUf8agnLjemsyfq/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE BT-220 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "bt220"
-},
-{
-  "id": "csl1721pk",
-  "brand": "DUKE",
-  "model": "DUKE CSL-1721PK",
-  "name": "DUKE CSL-1721PK",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE CSL-1721PK machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "csl1721pk"
-},
-{
-  "id": "dk38",
-  "brand": "DUKE",
-  "model": "DUKE DK-38",
-  "name": "DUKE DK-38",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DK-38 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dk38"
-},
-{
-  "id": "dk808",
-  "brand": "DUKE",
-  "model": "DUKE DK-808",
-  "name": "DUKE DK-808",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DK-808 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dk808"
-},
-{
-  "id": "dk933",
-  "brand": "DUKE",
-  "model": "DUKE DK-933",
-  "name": "DUKE DK-933",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DK-933 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dk933"
-},
-
-{
-  "id": "dlp703pagxg4460dsplavd",
-  "brand": "DUKE",
-  "model": "DUKE DLP-703P-A-GX-G4-460-DS-PLA-VD",
-  "name": "DUKE DLP-703P-A-GX-G4-460-DS-PLA-VD",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DLP-703P-A-GX-G4-460-DS-PLA-VD machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dlp703pagxg4460dsplavd"
-},
-{
-  "id": "dy03181",
-  "brand": "DUKE",
-  "model": "DUKE DY-0318-1",
-  "name": "DUKE DY-0318-1",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1vNpv7jJcvGTD-U9OGLQo7tdtJAKkE_E2/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-0318-1 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy03181"
-},
-{
-  "id": "dy0318dz",
-  "brand": "DUKE",
-  "model": "DUKE DY-0318DZ",
-  "name": "DUKE DY-0318DZ",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "HbCVdZL4SDM", "catalogUrl": "https://drive.google.com/file/d/1vQgnB91TgjDVQZTW_KlSQ94aIkQmOt6Y/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-0318DZ machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy0318dz"
-},
-{
-  "id": "dy110",
-  "brand": "DUKE",
-  "model": "DUKE DY-110",
-  "name": "DUKE DY-110",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1n1Yr5ruo8p0Yujb8Fe9HibQYiNXyu7Tv/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-110 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy110"
-},
-{
-  "id": "dy110lr",
-  "brand": "DUKE",
-  "model": "DUKE DY-110LR",
-  "name": "DUKE DY-110LR",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1ljwBGX8uUvQhMwznYoLUXrTqODefKTLJ/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-110LR machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy110lr"
-},
-{
-  "id": "dy128b",
-  "brand": "DUKE",
-  "model": "DUKE DY-128-B",
-  "name": "DUKE DY-128-B",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1J3xCZwhcL15FraU5TS4FkiqG1tNM65MF/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-128-B machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy128b"
-},
-{
-  "id": "dy16020",
-  "brand": "DUKE",
-  "model": "DUKE DY-160-20",
-  "name": "DUKE DY-160-20",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1Tp5frbGnyOKbr5Hgy3KnaqNX4mbZXHxC/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-160-20 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy16020"
-},
-{
-  "id": "dy1721",
-  "brand": "DUKE",
-  "model": "DUKE DY-1721",
-  "name": "DUKE DY-1721",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/18kkrDvbArChjX4Cxw7wvgkdEOo_gR7Tg/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-1721 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy1721"
-},
-{
-  "id": "dy3020",
-  "brand": "DUKE",
-  "model": "DUKE DY-3020",
-  "name": "DUKE DY-3020",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-3020 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy3020"
-},
-{
-  "id": "dy3020m",
-  "brand": "DUKE",
-  "model": "DUKE DY-3020M",
-  "name": "DUKE DY-3020M",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1OUdX2eH8bTkZO9d5TfVX_Dpue5IsUcbU/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-3020M machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy3020m"
-},
-{
-  "id": "dlp703pagxg4460dsplavd",
-  "brand": "DUKE",
-  "model": "DUKE DLP-703P-A-GX-G4-460-DS-PLA-VD",
-  "name": "DUKE DLP-703P-A-GX-G4-460-DS-PLA-VD",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1YM4hL6JtZNkO_FFdduOmeqYviMUBJfkd/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DLP-703P-A-GX-G4-460-DS-PLA-VD machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dlp703pagxg4460dsplavd"
-},
-{
-  "id": "dy03181",
-  "brand": "DUKE",
-  "model": "DUKE DY-0318-1",
-  "name": "DUKE DY-0318-1",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1vNpv7jJcvGTD-U9OGLQo7tdtJAKkE_E2/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-0318-1 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy03181"
-},
-{
-  "id": "dy0318dz",
-  "brand": "DUKE",
-  "model": "DUKE DY-0318DZ",
-  "name": "DUKE DY-0318DZ",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1vQgnB91TgjDVQZTW_KlSQ94aIkQmOt6Y/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-0318DZ machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy0318dz"
-},
-{
-  "id": "dy110",
-  "brand": "DUKE",
-  "model": "DUKE DY-110",
-  "name": "DUKE DY-110",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1n1Yr5ruo8p0Yujb8Fe9HibQYiNXyu7Tv/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-110 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy110"
-},
-{
-  "id": "dy110lr",
-  "brand": "DUKE",
-  "model": "DUKE DY-110LR",
-  "name": "DUKE DY-110LR",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1ljwBGX8uUvQhMwznYoLUXrTqODefKTLJ/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-110LR machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy110lr"
-},
-{
-  "id": "dy128b",
-  "brand": "DUKE",
-  "model": "DUKE DY-128-B",
-  "name": "DUKE DY-128-B",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1J3xCZwhcL15FraU5TS4FkiqG1tNM65MF/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-128-B machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy128b"
-},
-{
-  "id": "dy16020",
-  "brand": "DUKE",
-  "model": "DUKE DY-160-20",
-  "name": "DUKE DY-160-20",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1Tp5frbGnyOKbr5Hgy3KnaqNX4mbZXHxC/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-160-20 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy16020"
-},
-{
-  "id": "dy1721",
-  "brand": "DUKE",
-  "model": "DUKE DY-1721",
-  "name": "DUKE DY-1721",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/18kkrDvbArChjX4Cxw7wvgkdEOo_gR7Tg/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-1721 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy1721"
-},
-{
-  "id": "dy3020",
-  "brand": "DUKE",
-  "model": "DUKE DY-3020",
-  "name": "DUKE DY-3020",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-3020 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy3020"
-},
-{
-  "id": "dy3020m",
-  "brand": "DUKE",
-  "model": "DUKE DY-3020M",
-  "name": "DUKE DY-3020M",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1OUdX2eH8bTkZO9d5TfVX_Dpue5IsUcbU/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-3020M machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy3020m"
-},
-{
-  "id": "dy438gt",
-  "brand": "DUKE",
-  "model": "DUKE DY-438GT",
-  "name": "DUKE DY-438GT",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1fEMvOoKzS5b927b3Xx_kVW5umVIDTqbx/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-438GT machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy438gt"
-},
-{
-  "id": "dy450ms",
-  "brand": "DUKE",
-  "model": "DUKE DY-450MS",
-  "name": "DUKE DY-450MS",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1lY7kmTlh-h65VKcK_9xU4BON3eJkHMfm/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-450MS machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy450ms"
-},
-{
-  "id": "dy5007",
-  "brand": "DUKE",
-  "model": "DUKE DY-500-7",
-  "name": "DUKE DY-500-7",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1cFVCzvSZX0bL25O5n1B4E9FmuW6cYl8M/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-500-7 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy5007"
-},
-{
-  "id": "dy500d01x356",
-  "brand": "DUKE",
-  "model": "DUKE DY-500D-01X356",
-  "name": "DUKE DY-500D-01X356",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1cw6gN1aKAWdvlxmBttItZn9dnxNhII19/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-500D-01X356 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy500d01x356"
-},
-{
-  "id": "dy600d35zd",
-  "brand": "DUKE",
-  "model": "DUKE DY-600D-35ZD",
-  "name": "DUKE DY-600D-35ZD",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/13wuNIQINpaNDywX7DCErefeVJkZqgSu5/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-600D-35ZD machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy600d35zd"
-},
-{
-  "id": "dy630gt",
-  "brand": "DUKE",
-  "model": "DUKE DY-630GT",
-  "name": "DUKE DY-630GT",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1z1VqF2L_WLDGQp_eC-2kDFw0PvAbLCQ2/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-630GT machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy630gt"
-},
-{
-  "id": "dy630h",
-  "brand": "DUKE",
-  "model": "DUKE DY-630H",
-  "name": "DUKE DY-630H",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1d02isJLOec_NmBgvPFB9i2bfX-i74Nwu/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-630H machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy630h"
-},
-{
-  "id": "dy928xh2pld",
-  "brand": "DUKE",
-  "model": "DUKE DY-928XH-2PL-D",
-  "name": "DUKE DY-928XH-2PL-D",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/12gq6G9kY4ULe3b9LI8Z0im-VoEj4UK3D/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-928XH-2PL-D machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy928xh2pld"
-},
-{
-  "id": "dy9503d1",
-  "brand": "DUKE",
-  "model": "DUKE DY-9503-D1",
-  "name": "DUKE DY-9503-D1",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1JNyfbsZfaOGwE76IWttlHQZ8MjG_aSxW/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-9503-D1 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy9503d1"
-},
-{
-  "id": "dy9888",
-  "brand": "DUKE",
-  "model": "DUKE DY-988-8",
-  "name": "DUKE DY-988-8",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1u46xfYV9AswCEM19mY9qBOXvqneKCMCk/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE DY-988-8 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "dy9888"
-},
-{
-  "id": "gk0058",
-  "brand": "DUKE",
-  "model": "DUKE GK-0058",
-  "name": "DUKE GK-0058",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE GK-0058 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "gk0058"
-},
-{
-  "id": "gk00583",
-  "brand": "DUKE",
-  "model": "DUKE GK-0058-3",
-  "name": "DUKE GK-0058-3",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE GK-0058-3 machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "gk00583"
-},
-{
-  "id": "h928m",
-  "brand": "DUKE",
-  "model": "DUKE H-928M",
-  "name": "DUKE H-928M",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE H-928M machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "h928m"
-},
-{
-  "id": "h928xh",
-  "brand": "DUKE",
-  "model": "DUKE H-928XH",
-  "name": "DUKE H-928XH",
-  "category": "sewing",
-  "thumbnail": "",
-  "popularity": "standard",
-  "media": { "youtubeId": "", "catalogUrl": "https://drive.google.com/file/d/1N69f1fjwU7PLWJjYxvC3QRtBY7L7r6aN/view?usp=sharing", "glbUrl": "" },
-  "operation": "",
-  "description": "DUKE H-928XH machine.",
-  "spec": {},
-  "features": [],
-  "application": "",
-  "tags": ["duke"],
-  "key": "h928xh"
-}
-
-
-
-
-
-
+  {
+    "id": "0303d12",
+    "brand": "DUKE",
+    "model": "DUKE 0303D-12",
+    "name": "DUKE 0303D-12",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1JMqmgz9-uGv8y6VhnRE8vpxuOk-_FHz4/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE 0303D-12 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "0303d12"
+  },
+  {
+    "id": "1411psfd",
+    "brand": "DUKE",
+    "model": "DUKE 1411PSF-D",
+    "name": "DUKE 1411PSF-D",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/13zt1U8ZpwAd22h6udwBlcfYHCSXYVMFV/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE 1411PSF-D machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "1411psfd"
+  },
+  {
+    "id": "1412ptvd",
+    "brand": "DUKE",
+    "model": "DUKE 1412PTV-D",
+    "name": "DUKE 1412PTV-D",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1xiu8zm7vqvqD2R7LgDv3EnjQaMIerCcJ/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE 1412PTV-D machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "1412ptvd"
+  },
+  {
+    "id": "1721",
+    "brand": "DUKE",
+    "model": "DUKE 1721",
+    "name": "DUKE 1721",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/18kkrDvbArChjX4Cxw7wvgkdEOo_gR7Tg/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE 1721 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "1721"
+  },
+  {
+    "id": "220",
+    "brand": "DUKE",
+    "model": "DUKE 220",
+    "name": "DUKE 220",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1rW872yxq_TJZAIhTXvD91XxeL9AbRNZ3/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE 220 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "220"
+  },
+  {
+    "id": "bt220",
+    "brand": "DUKE",
+    "model": "DUKE BT-220",
+    "name": "DUKE BT-220",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1bRC_lJNIanLa5ZsG_UUf8agnLjemsyfq/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE BT-220 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "bt220"
+  },
+  {
+    "id": "csl1721pk",
+    "brand": "DUKE",
+    "model": "DUKE CSL-1721PK",
+    "name": "DUKE CSL-1721PK",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE CSL-1721PK machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "csl1721pk"
+  },
+  {
+    "id": "dk38",
+    "brand": "DUKE",
+    "model": "DUKE DK-38",
+    "name": "DUKE DK-38",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DK-38 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dk38"
+  },
+  {
+    "id": "dk808",
+    "brand": "DUKE",
+    "model": "DUKE DK-808",
+    "name": "DUKE DK-808",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DK-808 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dk808"
+  },
+  {
+    "id": "dk933",
+    "brand": "DUKE",
+    "model": "DUKE DK-933",
+    "name": "DUKE DK-933",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DK-933 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dk933"
+  },
+  {
+    "id": "dlp703pagxg4460dsplavd",
+    "brand": "DUKE",
+    "model": "DUKE DLP-703P-A-GX-G4-460-DS-PLA-VD",
+    "name": "DUKE DLP-703P-A-GX-G4-460-DS-PLA-VD",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DLP-703P-A-GX-G4-460-DS-PLA-VD machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dlp703pagxg4460dsplavd"
+  },
+  {
+    "id": "dy03181",
+    "brand": "DUKE",
+    "model": "DUKE DY-0318-1",
+    "name": "DUKE DY-0318-1",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1vNpv7jJcvGTD-U9OGLQo7tdtJAKkE_E2/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-0318-1 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy03181"
+  },
+  {
+    "id": "dy0318dz",
+    "brand": "DUKE",
+    "model": "DUKE DY-0318DZ",
+    "name": "DUKE DY-0318DZ",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "HbCVdZL4SDM",
+      "catalogUrl": "https://drive.google.com/file/d/1vQgnB91TgjDVQZTW_KlSQ94aIkQmOt6Y/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-0318DZ machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy0318dz"
+  },
+  {
+    "id": "dy110",
+    "brand": "DUKE",
+    "model": "DUKE DY-110",
+    "name": "DUKE DY-110",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1n1Yr5ruo8p0Yujb8Fe9HibQYiNXyu7Tv/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-110 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy110"
+  },
+  {
+    "id": "dy110lr",
+    "brand": "DUKE",
+    "model": "DUKE DY-110LR",
+    "name": "DUKE DY-110LR",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1ljwBGX8uUvQhMwznYoLUXrTqODefKTLJ/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-110LR machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy110lr"
+  },
+  {
+    "id": "dy128b",
+    "brand": "DUKE",
+    "model": "DUKE DY-128-B",
+    "name": "DUKE DY-128-B",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1J3xCZwhcL15FraU5TS4FkiqG1tNM65MF/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-128-B machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy128b"
+  },
+  {
+    "id": "dy16020",
+    "brand": "DUKE",
+    "model": "DUKE DY-160-20",
+    "name": "DUKE DY-160-20",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1Tp5frbGnyOKbr5Hgy3KnaqNX4mbZXHxC/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-160-20 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy16020"
+  },
+  {
+    "id": "dy1721",
+    "brand": "DUKE",
+    "model": "DUKE DY-1721",
+    "name": "DUKE DY-1721",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/18kkrDvbArChjX4Cxw7wvgkdEOo_gR7Tg/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-1721 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy1721"
+  },
+  {
+    "id": "dy3020",
+    "brand": "DUKE",
+    "model": "DUKE DY-3020",
+    "name": "DUKE DY-3020",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-3020 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy3020"
+  },
+  {
+    "id": "dy3020m",
+    "brand": "DUKE",
+    "model": "DUKE DY-3020M",
+    "name": "DUKE DY-3020M",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1OUdX2eH8bTkZO9d5TfVX_Dpue5IsUcbU/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-3020M machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy3020m"
+  },
+  {
+    "id": "dlp703pagxg4460dsplavd",
+    "brand": "DUKE",
+    "model": "DUKE DLP-703P-A-GX-G4-460-DS-PLA-VD",
+    "name": "DUKE DLP-703P-A-GX-G4-460-DS-PLA-VD",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1YM4hL6JtZNkO_FFdduOmeqYviMUBJfkd/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DLP-703P-A-GX-G4-460-DS-PLA-VD machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dlp703pagxg4460dsplavd"
+  },
+  {
+    "id": "dy03181",
+    "brand": "DUKE",
+    "model": "DUKE DY-0318-1",
+    "name": "DUKE DY-0318-1",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1vNpv7jJcvGTD-U9OGLQo7tdtJAKkE_E2/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-0318-1 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy03181"
+  },
+  {
+    "id": "dy0318dz",
+    "brand": "DUKE",
+    "model": "DUKE DY-0318DZ",
+    "name": "DUKE DY-0318DZ",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1vQgnB91TgjDVQZTW_KlSQ94aIkQmOt6Y/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-0318DZ machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy0318dz"
+  },
+  {
+    "id": "dy110",
+    "brand": "DUKE",
+    "model": "DUKE DY-110",
+    "name": "DUKE DY-110",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1n1Yr5ruo8p0Yujb8Fe9HibQYiNXyu7Tv/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-110 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy110"
+  },
+  {
+    "id": "dy110lr",
+    "brand": "DUKE",
+    "model": "DUKE DY-110LR",
+    "name": "DUKE DY-110LR",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1ljwBGX8uUvQhMwznYoLUXrTqODefKTLJ/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-110LR machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy110lr"
+  },
+  {
+    "id": "dy128b",
+    "brand": "DUKE",
+    "model": "DUKE DY-128-B",
+    "name": "DUKE DY-128-B",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1J3xCZwhcL15FraU5TS4FkiqG1tNM65MF/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-128-B machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy128b"
+  },
+  {
+    "id": "dy16020",
+    "brand": "DUKE",
+    "model": "DUKE DY-160-20",
+    "name": "DUKE DY-160-20",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1Tp5frbGnyOKbr5Hgy3KnaqNX4mbZXHxC/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-160-20 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy16020"
+  },
+  {
+    "id": "dy1721",
+    "brand": "DUKE",
+    "model": "DUKE DY-1721",
+    "name": "DUKE DY-1721",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/18kkrDvbArChjX4Cxw7wvgkdEOo_gR7Tg/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-1721 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy1721"
+  },
+  {
+    "id": "dy3020",
+    "brand": "DUKE",
+    "model": "DUKE DY-3020",
+    "name": "DUKE DY-3020",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-3020 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy3020"
+  },
+  {
+    "id": "dy3020m",
+    "brand": "DUKE",
+    "model": "DUKE DY-3020M",
+    "name": "DUKE DY-3020M",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1OUdX2eH8bTkZO9d5TfVX_Dpue5IsUcbU/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-3020M machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy3020m"
+  },
+  {
+    "id": "dy438gt",
+    "brand": "DUKE",
+    "model": "DUKE DY-438GT",
+    "name": "DUKE DY-438GT",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1fEMvOoKzS5b927b3Xx_kVW5umVIDTqbx/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-438GT machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy438gt"
+  },
+  {
+    "id": "dy450ms",
+    "brand": "DUKE",
+    "model": "DUKE DY-450MS",
+    "name": "DUKE DY-450MS",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1lY7kmTlh-h65VKcK_9xU4BON3eJkHMfm/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-450MS machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy450ms"
+  },
+  {
+    "id": "dy5007",
+    "brand": "DUKE",
+    "model": "DUKE DY-500-7",
+    "name": "DUKE DY-500-7",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1cFVCzvSZX0bL25O5n1B4E9FmuW6cYl8M/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-500-7 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy5007"
+  },
+  {
+    "id": "dy500d01x356",
+    "brand": "DUKE",
+    "model": "DUKE DY-500D-01X356",
+    "name": "DUKE DY-500D-01X356",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1cw6gN1aKAWdvlxmBttItZn9dnxNhII19/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-500D-01X356 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy500d01x356"
+  },
+  {
+    "id": "dy600d35zd",
+    "brand": "DUKE",
+    "model": "DUKE DY-600D-35ZD",
+    "name": "DUKE DY-600D-35ZD",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/13wuNIQINpaNDywX7DCErefeVJkZqgSu5/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-600D-35ZD machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy600d35zd"
+  },
+  {
+    "id": "dy630gt",
+    "brand": "DUKE",
+    "model": "DUKE DY-630GT",
+    "name": "DUKE DY-630GT",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1z1VqF2L_WLDGQp_eC-2kDFw0PvAbLCQ2/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-630GT machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy630gt"
+  },
+  {
+    "id": "dy630h",
+    "brand": "DUKE",
+    "model": "DUKE DY-630H",
+    "name": "DUKE DY-630H",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1d02isJLOec_NmBgvPFB9i2bfX-i74Nwu/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-630H machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy630h"
+  },
+  {
+    "id": "dy928xh2pld",
+    "brand": "DUKE",
+    "model": "DUKE DY-928XH-2PL-D",
+    "name": "DUKE DY-928XH-2PL-D",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/12gq6G9kY4ULe3b9LI8Z0im-VoEj4UK3D/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-928XH-2PL-D machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy928xh2pld"
+  },
+  {
+    "id": "dy9503d1",
+    "brand": "DUKE",
+    "model": "DUKE DY-9503-D1",
+    "name": "DUKE DY-9503-D1",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1JNyfbsZfaOGwE76IWttlHQZ8MjG_aSxW/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-9503-D1 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy9503d1"
+  },
+  {
+    "id": "dy9888",
+    "brand": "DUKE",
+    "model": "DUKE DY-988-8",
+    "name": "DUKE DY-988-8",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1u46xfYV9AswCEM19mY9qBOXvqneKCMCk/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-988-8 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy9888"
+  },
+  {
+    "id": "gk0058",
+    "brand": "DUKE",
+    "model": "DUKE GK-0058",
+    "name": "DUKE GK-0058",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE GK-0058 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "gk0058"
+  },
+  {
+    "id": "gk00583",
+    "brand": "DUKE",
+    "model": "DUKE GK-0058-3",
+    "name": "DUKE GK-0058-3",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE GK-0058-3 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "gk00583"
+  },
+  {
+    "id": "h928m",
+    "brand": "DUKE",
+    "model": "DUKE H-928M",
+    "name": "DUKE H-928M",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE H-928M machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "h928m"
+  },
+  {
+    "id": "h928xh",
+    "brand": "DUKE",
+    "model": "DUKE H-928XH",
+    "name": "DUKE H-928XH",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1N69f1fjwU7PLWJjYxvC3QRtBY7L7r6aN/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE H-928XH machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "h928xh"
+  },
+  {
+    "id": "ls6022",
+    "brand": "LENSH",
+    "model": "LENSH LS-6022",
+    "name": "LENSH LS-6022",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "LENSH LS-6022 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "lensh"
+    ],
+    "key": "ls6022"
+  },
+  {
+    "id": "ls6021np",
+    "brand": "LENSH",
+    "model": "LENSH LS-6021NP",
+    "name": "LENSH LS-6021NP",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "LENSH LS-6021NP machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "lensh"
+    ],
+    "key": "ls6021np"
+  },
+  {
+    "id": "ls6021s",
+    "brand": "LENSH",
+    "model": "LENSH LS-6021S",
+    "name": "LENSH LS-6021S",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "LENSH LS-6021S machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "lensh"
+    ],
+    "key": "ls6021s"
+  },
+  {
+    "id": "ls9231c",
+    "brand": "LENSH",
+    "model": "LENSH LS-9231C",
+    "name": "LENSH LS-9231C",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "LENSH LS-9231C machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "lensh"
+    ],
+    "key": "ls9231c"
+  },
+  {
+    "id": "dy9503d2",
+    "brand": "DUKE",
+    "model": "DUKE DY-9503-D2",
+    "name": "DUKE DY-9503-D2",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-9503-D2 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy9503d2"
+  },
+  {
+    "id": "dy9503d4",
+    "brand": "DUKE",
+    "model": "DUKE DY-9503-D4",
+    "name": "DUKE DY-9503-D4",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-9503-D4 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy9503d4"
+  },
+  {
+    "id": "dy9503d5",
+    "brand": "DUKE",
+    "model": "DUKE DY-9503-D5",
+    "name": "DUKE DY-9503-D5",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-9503-D5 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy9503d5"
+  },
+  {
+    "id": "dy282bd4",
+    "brand": "DUKE",
+    "model": "DUKE DY282B-D4",
+    "name": "DUKE DY282B-D4",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY282B-D4 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy282bd4"
+  },
+  {
+    "id": "dy282md4",
+    "brand": "DUKE",
+    "model": "DUKE DY-282M-D4",
+    "name": "DUKE DY-282M-D4",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-282M-D4 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dy282md4"
+  },
+  {
+    "id": "highlead-gc-298-3",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 298-3",
+    "name": "HIGHLEAD GC 298-3",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "HIGHLEAD GC 298-3 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-298-3"
+  },
+  {
+    "id": "highlead-gc-198-2",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-198-2",
+    "name": "HIGHLEAD GC-198-2",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "HIGHLEAD GC-198-2 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC-198-2"
+  },
+  {
+    "id": "highlead-gc-20578-m",
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC20578-M",
+    "name": "HIGHLEAD GC20578-M",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "HIGHLEAD GC20578-M machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "highlead"
+    ],
+    "key": "GC20578-M"
+  }
 ]

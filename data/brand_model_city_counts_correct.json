@@ -2945,7 +2945,7 @@
     "count": 1.0
   },
   {
-    "brand": "DUKE",
+    "brand": "DUKEJIA",
     "model": "DY-904-150 EMBROIDERY MACHINE",
     "city": "Indore",
     "state": "Madhya Pradesh",
@@ -3251,7 +3251,7 @@
     "count": 4.0
   },
   {
-    "brand": "DUKE",
+    "brand": "DUKEJIA",
     "model": "DY904-120 EMBROIDERY MACHINE",
     "city": "Gurugram",
     "state": "Haryana",
@@ -3260,7 +3260,7 @@
     "count": 1.0
   },
   {
-    "brand": "DUKE",
+    "brand": "DUKEJIA",
     "model": "DY924-120 EMBROIDERY MACHINE",
     "city": "Gurugram",
     "state": "Haryana",
@@ -3287,7 +3287,7 @@
     "count": 2.0
   },
   {
-    "brand": "DUKE",
+    "brand": "DUKEJIA",
     "model": "EMBROIDERY MACHINE ( 400X 500)",
     "city": "Gurugram",
     "state": "Haryana",
@@ -3296,7 +3296,7 @@
     "count": 1.0
   },
   {
-    "brand": "DUKE",
+    "brand": "DUKEJIA",
     "model": "ES-1300",
     "city": "Delhi",
     "state": "Delhi",
@@ -3305,7 +3305,7 @@
     "count": 2.0
   },
   {
-    "brand": "DUKE",
+    "brand": "DUKEJIA",
     "model": "ES-1300",
     "city": "Ghaziabad",
     "state": "Uttar Pradesh",
@@ -3323,7 +3323,7 @@
     "count": 1.0
   },
   {
-    "brand": "DUKE",
+    "brand": "DUKEJIA",
     "model": "EXCEL EMBROIDERY MACHINE",
     "city": "Faridabad",
     "state": "Haryana",
@@ -3332,7 +3332,7 @@
     "count": 4.0
   },
   {
-    "brand": "DUKE",
+    "brand": "DUKEJIA",
     "model": "EXCEL EMBROIDERY MACHINE",
     "city": "Noida",
     "state": "Uttar Pradesh",
@@ -8407,7 +8407,2861 @@
     "lat": null,
     "lng": null,
     "count": 1.0
+  },
+
+  
+  {
+    "brand": "DUKE",
+    "model": "DUKE DQ-1 Snap Button M/c",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "lat": 12.9716,
+    "lng": 77.5946,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D2",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D2",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "lat": 11.0168,
+    "lng": 76.9558,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI H8800F-7C-5/AK",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "LOIVA",
+    "model": "Loiva LA 9800-HB-D3",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D4",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "lat": 11.0168,
+    "lng": 76.9558,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 198-3",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "lat": 12.9716,
+    "lng": 77.5946,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI H8800F-7C-5/AK",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI H8800F-7C-5/AK",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN @18%",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN @18%",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN @18%",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN @18%",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI H8800F-7C-5/AK",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX6814TD03UTD3/AK",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "lat": 12.9716,
+    "lng": 77.5946,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-120L",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "lat": 12.9716,
+    "lng": 77.5946,
+    "count": 1.0
+  },
+
+
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN @18%",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 2.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN @18%",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 2.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "PK  HIGHLEAD GM988-4DZ (RED.DD MOTOR)",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "Highlead- GK 0058-3",
+    "city": "Coimbatore",
+    "state": "",
+    "lat": 11.0168,
+    "lng": 76.9558,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "PK  HIGHLEAD GM988-4DZ (RED.DD MOTOR)",
+    "city": "Coimbatore",
+    "state": "",
+    "lat": 11.0168,
+    "lng": 76.9558,
+    "count": 1.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 3.0
+  },
+
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN @18%",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 4.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN @18%",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 4.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN @18%",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 4.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 861",
+    "city": "Tiruppur",
+    "state": "Tamil Nadu",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-430GT-02",
+    "city": "Coimbatore",
+    "state": "",
+    "lat": 11.0168,
+    "lng": 76.9558,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-438GT",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+
+  
+
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-430GT-02",
+    "city": "Chennai",
+    "state": "",
+    "lat": 13.0827,
+    "lng": 80.2707,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX6914T-04KSC/AK",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 5.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 5.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN @18%",
+    "city": "Kolkata",
+    "state": "",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 7.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-438GT",
+    "city": "Chennai",
+    "state": "",
+    "lat": 13.0827,
+    "lng": 80.2707,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "Duke DK 933",
+    "city": "Thoothukudi",
+    "state": "",
+    "lat": 8.7642,
+    "lng": 78.1348,
+    "count": 2.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN @18%",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 6.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN @18%",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "lat": 12.9716,
+    "lng": 77.5946,
+    "count": 8.0
+  },
+  {
+    "brand": "LOIVA",
+    "model": "LOIVA ST-21 Button Wrapping",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "lat": 12.9716,
+    "lng": 77.5946,
+    "count": 2.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "Duke Dy 1790A-S",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 160-20",
+    "city": "Vallioor",
+    "state": "",
+    "lat": 8.3843,
+    "lng": 77.6178,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-430GT-02",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 2.0
+  },
+  {
+    "brand": "MERROW",
+    "model": "MERROW 70D-3B2 SEWING MACHINE",
+    "city": "Palladam",
+    "state": "Tamil Nadu",
+    "lat": 10.9912,
+    "lng": 77.2868,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX6914T-04KSC/AK",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 2.0
+  },
+  {
+    "brand": "LOIVA",
+    "model": "LOIVA ST-21 Button Wrapping",
+    "city": "Coimbatore",
+    "state": "",
+    "lat": 11.0168,
+    "lng": 76.9558,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HW782TA-01X356/UTC/AK",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "lat": 28.6139,
+    "lng": 77.209,
+    "count": 3.0
+  },
+  {
+    "brand": "MERROW",
+    "model": "MERROW MG -3U",
+    "city": "Tiruppur",
+    "state": "Tamil Nadu",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-G3020R-AL",
+    "city": "Tiruppur",
+    "state": "Tamil Nadu",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "MERROW",
+    "model": "MERROW MG -3U",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 1033 PSSM",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX68S-14-03C",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "lat": 28.6139,
+    "lng": 77.209,
+    "count": 7.0
+  },
+  {
+    "brand": "MERROW",
+    "model": "MERROW MG -3U-V",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "MERROW",
+    "model": "MERROW 70-Y3B-2",
+    "city": "Palladam",
+    "state": "",
+    "lat": 10.9912,
+    "lng": 77.2868,
+    "count": 1.0
+  },
+  {
+    "brand": "MERROW",
+    "model": "MERROW MG -3U-V",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "MERROW",
+    "model": "MERROW 70-Y3B-2",
+    "city": "Hosur",
+    "state": "",
+    "lat": 12.7409,
+    "lng": 77.8253,
+    "count": 1.0
+  },
+  {
+    "brand": "MERROW",
+    "model": "MERROW 70-Y3B-2",
+    "city": "Karur",
+    "state": "",
+    "lat": 10.9601,
+    "lng": 78.0766,
+    "count": 1.0
+  },
+  {
+    "brand": "MERROW",
+    "model": "MERROW MG -3U",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "MERROW",
+    "model": "MERROW MG -3U",
+    "city": "Njarakkal",
+    "state": "Kerala",
+    "lat": 10.027,
+    "lng": 76.229,
+    "count": 1.0
+  },
+  {
+    "brand": "MERROW",
+    "model": "MERROW MG -3U",
+    "city": "Tiruppur",
+    "state": "",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "count": 1.0
+  },
+  {
+    "brand": "JUITA",
+    "model": "JUITA JTK8T-9AJ Intelligent Template Sewing Machine",
+    "city": "Chengalpattu",
+    "state": "",
+    "lat": 12.684,
+    "lng": 79.983,
+    "count": 1.0
+  },
+
+  {
+    "brand": "MERROW",
+    "model": "MERROW 70-Y3B-2",
+    "city": "Perundurai",
+    "state": "Tamil Nadu",
+    "lat": 11.275,
+    "lng": 77.582,
+    "count": 3.0
+  },
+
+  
+  {
+    "brand": "DUKE",
+    "model": "DUKE V-6+ HOT AIR SEAM SEALING MACHINE",
+    "city": "Ambur",
+    "state": "Tamil Nadu",
+    "lat": 12.7916,
+    "lng": 78.7166,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX6816TDV-03",
+    "city": "Vellore",
+    "state": "Tamil Nadu",
+    "lat": 12.9165,
+    "lng": 79.1325,
+    "count": 1.0
+  },
+  {
+    "brand": "JTK8T-F900A",
+    "model": "JTK8T-F900A AUTO TEMPLATE MACHINE",
+    "city": "Sahib",
+    "state": "",
+    "lat": null,
+    "lng": null,
+    "count": 5.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE GT- 261",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "lat": 13.0827,
+    "lng": 80.2707,
+    "count": 1.0
+  },
+  {
+    "brand": "LENSH",
+    "model": "LENSH LS-6021NP",
+    "city": "Nadu",
+    "state": "Tamil Nadu",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-128 B",
+    "city": "",
+    "state": "",
+    "lat": null,
+    "lng": null,
+    "count": 2.0
+  },
+
+
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-0518B",
+    "city": "",
+    "state": "",
+    "lat": null,
+    "lng": null,
+    "count": 6.0
+  },
+
+
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-0518B",
+    "city": "Melvisharam",
+    "state": "Tamil Nadu",
+    "lat": 12.907,
+    "lng": 79.259,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GG24698-BRHL",
+    "city": "Gujrat",
+    "state": "Gujarat",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC0318-1CE",
+    "city": "Viluppuram",
+    "state": "",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-20618-1",
+    "city": "Viluppuram",
+    "state": "",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC0318-1CE",
+    "city": "Viluppuram",
+    "state": "",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 0318-1",
+    "city": "Viluppuram",
+    "state": "",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+  {
+    "brand": "MERROW",
+    "model": "MERROW-70D3B-2",
+    "city": "",
+    "state": "",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD 4214P",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "lat": 26.4499,
+    "lng": 80.3319,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GA-2688-L",
+    "city": "Gurgaon",
+    "state": "Haryana",
+    "lat": 28.4595,
+    "lng": 77.0266,
+    "count": 1.0
+  },
+  {
+    "brand": "JUITA",
+    "model": "JUITA JTK10-13085AJ AUTO TEMPLATE MACHINE",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "lat": 13.0827,
+    "lng": 80.2707,
+    "count": 1.0
+  },
+
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 905R",
+    "city": "Perambakkam",
+    "state": "Tamil Nadu",
+    "lat": 13.111,
+    "lng": 80.024,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DLT  9000 LOOP CUTTING",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "lat": 13.0827,
+    "lng": 80.2707,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DQ-1",
+    "city": "Madurai",
+    "state": "Tamil Nadu",
+    "lat": 9.9252,
+    "lng": 78.1198,
+    "count": 2.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-0518B",
+    "city": "Ranipet",
+    "state": "Tamil Nadu",
+    "lat": 12.9279,
+    "lng": 79.3333,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-20618-1",
+    "city": "Ranipet",
+    "state": "Tamil Nadu",
+    "lat": 12.9279,
+    "lng": 79.3333,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-630GT",
+    "city": "Vellore",
+    "state": "Tamil Nadu",
+    "lat": 12.9165,
+    "lng": 79.1325,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 905R",
+    "city": "Perambakkam",
+    "state": "Tamil Nadu",
+    "lat": 13.111,
+    "lng": 80.024,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-669",
+    "city": "",
+    "state": "",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-669",
+    "city": "Poonamallee",
+    "state": "Tamil Nadu",
+    "lat": 13.0489,
+    "lng": 80.0947,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GG0028-1",
+    "city": "Vellore",
+    "state": "Tamil Nadu",
+    "lat": 12.9165,
+    "lng": 79.1325,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GG0028-1",
+    "city": "Vellore",
+    "state": "Tamil Nadu",
+    "lat": 12.9165,
+    "lng": 79.1325,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-20618-1",
+    "city": "Ranipet",
+    "state": "Tamil Nadu",
+    "lat": 12.9279,
+    "lng": 79.3333,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D4",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "lat": 13.0827,
+    "lng": 80.2707,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-630GT",
+    "city": "Vellore",
+    "state": "Tamil Nadu",
+    "lat": 12.9165,
+    "lng": 79.1325,
+    "count": 3.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 3020",
+    "city": "Pallavaram",
+    "state": "Tamil Nadu",
+    "lat": 12.9675,
+    "lng": 80.1491,
+    "count": 1.0
+  },
+
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 3020",
+    "city": "Pallavaram",
+    "state": "Tamil Nadu",
+    "lat": 12.9675,
+    "lng": 80.1491,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-20618-1",
+    "city": "Ranipet",
+    "state": "Tamil Nadu",
+    "lat": 12.9279,
+    "lng": 79.3333,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-669",
+    "city": "",
+    "state": "",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+
+
+  {
+    "brand": "LENSH",
+    "model": "LENSH LS-9231C",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "lat": 11.0168,
+    "lng": 76.9558,
+    "count": 1.0
+  },
+  {
+    "brand": "JUITA",
+    "model": "JUITA JTK10-13085AJ AUTO TEMPLATE MACHINE",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "lat": 13.0827,
+    "lng": 80.2707,
+    "count": 4.0
+  },
+
+  {
+    "brand": "JUITA",
+    "model": "JUITA JTK10-13085AJ AUTO TEMPLATE MACHINE",
+    "city": "Kanchipuram",
+    "state": "Tamil Nadu",
+    "lat": 12.8342,
+    "lng": 79.7036,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-630GT-01A",
+    "city": "Ambur",
+    "state": "Tamil Nadu",
+    "lat": 12.7916,
+    "lng": 78.7166,
+    "count": 4.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-630GT-01A",
+    "city": "Vellore",
+    "state": "Tamil Nadu",
+    "lat": 12.9165,
+    "lng": 79.1325,
+    "count": 3.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE VIM V2+ ( HOT & SEAM SEALING MACHINE)",
+    "city": "Kanchipuram",
+    "state": "Tamil Nadu",
+    "lat": 12.8342,
+    "lng": 79.7036,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY630 GT-01S",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "lat": 22.7196,
+    "lng": 75.8577,
+    "count": 3.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-128 B",
+    "city": "Ranipet",
+    "state": "Tamil Nadu",
+    "lat": 12.9279,
+    "lng": 79.3333,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-0518B",
+    "city": "Ranipet",
+    "state": "Tamil Nadu",
+    "lat": 12.9279,
+    "lng": 79.3333,
+    "count": 8.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-669",
+    "city": "Kanchipuram",
+    "state": "Tamil Nadu",
+    "lat": 12.8342,
+    "lng": 79.7036,
+    "count": 6.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-530GT",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 2.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-438GT",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 2.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 1790A-K",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 2.0
+  },
+
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-430GT-06",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 4.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 25.0
+  },
+
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-0518B",
+    "city": "Melvisharam",
+    "state": "Tamil Nadu",
+    "lat": 12.907,
+    "lng": 79.259,
+    "count": 1.0
+  },
+
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI H99S-7C-5/AK",
+    "city": "Nawakheda",
+    "state": "Madhya Pradesh",
+    "lat": null,
+    "lng": null,
+    "count": 4.0
+  },
+
+
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC20618-2Z",
+    "city": "Ambur",
+    "state": "Tamil Nadu",
+    "lat": 12.7916,
+    "lng": 78.7166,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-438GT",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 3.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-430GT-02",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 3.0
+  },
+  {
+    "brand": "VIOS",
+    "model": "VIOS 669-110126",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 3.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-430AT-06",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 20.0
+  },
+  {
+    "brand": "JUITA",
+    "model": "JUITA JTK10-13085AJ AUTO TEMPLATE MACHINE",
+    "city": "Kanchipuram",
+    "state": "Tamil Nadu",
+    "lat": 12.8342,
+    "lng": 79.7036,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-664PD-35AC X 356 /FT/RP/UT",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE 4406P-D 1/4",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 3.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE VIM V2+ ( HOT & SEAM SEALING MACHINE)",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 2.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY630 GT-01S",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 8.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-630GT",
+    "city": "Vellore",
+    "state": "Tamil Nadu",
+    "lat": 12.9165,
+    "lng": 79.1325,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-3020G",
+    "city": "Bhubaneshwar",
+    "state": "Odisha",
+    "lat": 20.2961,
+    "lng": 85.8245,
+    "count": 8.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-430GT-02",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "lat": 13.0827,
+    "lng": 80.2707,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-630GT",
+    "city": "Dist",
+    "state": "",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-0518",
+    "city": "Ranipet",
+    "state": "Tamil Nadu",
+    "lat": 12.9279,
+    "lng": 79.3333,
+    "count": 3.0
+  },
+
+  {
+    "brand": "VIOS",
+    "model": "VIOS 669-110126",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-438GT",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE VIM V2+ ( HOT & SEAM SEALING MACHINE)",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 2.0
+  },
+  {
+    "brand": "VIOS",
+    "model": "VIOS 669-110126",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 7.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-24698 BRHL",
+    "city": "Nashik",
+    "state": "Maharashtra",
+    "lat": 19.9975,
+    "lng": 73.7898,
+    "count": 1.0
+  },
+  {
+    "brand": "LOIVA",
+    "model": "LOIVA GL-2610-S CORD",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-24698 BRHL",
+    "city": "Nashik",
+    "state": "Maharashtra",
+    "lat": 19.9975,
+    "lng": 73.7898,
+    "count": 1.0
+  },
+  {
+    "brand": "VIOS",
+    "model": "VIOS 669-110126",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 5.0
+  },
+
+
+  
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HW762T-1 2-1X356",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+
+  {
+    "brand": "GRAND",
+    "model": "Grand GT 26-1",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DQ-1",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 188 MC",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DQ-1",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DQ-1",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+
+
+
+  {
+    "brand": "DUKE",
+    "model": "DUKE DQ-1",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+
+
+
+  {
+    "brand": "GRAND",
+    "model": "Grand GT 26-1",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "LOIVA",
+    "model": "LOIVA FB400-1332-03 2P-DM",
+    "city": "",
+    "state": "",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+
+
+
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-128 B",
+    "city": "Jalandhar",
+    "state": "Punjab",
+    "lat": 31.326,
+    "lng": 75.5762,
+    "count": 1.0
+  },
+ 
+
+
+
+
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-430GT-02",
+    "city": "",
+    "state": "",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+
+
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 900B @ 12%",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+
+  {
+    "brand": "DUKE",
+    "model": "DUKE  DY-70E",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 360",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-313",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+ 
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-430GT-02",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+ 
+  {
+    "brand": "DUKE",
+    "model": "DUKE GT- 261",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D1",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "lat": 30.7333,
+    "lng": 76.7794,
+    "count": 1.0
+  },
+  {
+    "brand": "GRAND",
+    "model": "GRAND T-22E-BLN",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 4.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX 6814TD-03UTC-3/AK",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  
+  {
+    "brand": "HUTANG",
+    "model": "HUTANG FB 400 664 -064 P/3L-10/DM",
+    "city": "Jalandhar",
+    "state": "Punjab",
+    "lat": 31.326,
+    "lng": 75.5762,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HW762T-1 2-1X356",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HUTANG",
+    "model": "Hutang FB450-12-064P-DM",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX6814TDV-03",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 6.0
+  },
+  {
+    "brand": "HUTANG",
+    "model": "Hutang FB450-12-064P-DM",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D4",
+    "city": "Amritsar",
+    "state": "Punjab",
+    "lat": 31.634,
+    "lng": 74.8723,
+    "count": 2.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 600MS @ 12%",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "lat": 30.7333,
+    "lng": 76.7794,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D2",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX6814TDV-03",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 2.0
+  },
+  {
+    "brand": "HUTANG",
+    "model": "Hutang FB450-12-064P-DM",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-438GT",
+    "city": "Jalandhar",
+    "state": "Punjab",
+    "lat": 31.326,
+    "lng": 75.5762,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DKJ-02-Q ( @12%)( Notuse)",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D1",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE BT-220",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HUTANG",
+    "model": "Hutang FB450-12-064P-DM",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-430GT-02",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "lat": 30.7333,
+    "lng": 76.7794,
+    "count": 1.0
+  },
+
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-430GT-02",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "lat": 30.7333,
+    "lng": 76.7794,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DKJ-02-Q ( @12%)( Notuse)",
+    "city": "",
+    "state": "",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 600MS @ 12%",
+    "city": "",
+    "state": "",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+ 
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-430GT-02",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 2.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 8800D/3MM",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HW782T-35B-356LV1/UTC/AK",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE 2530 DZ",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "lat": 30.7333,
+    "lng": 76.7794,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D2",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+ 
+  {
+    "brand": "HUTANG",
+    "model": "HUTANG IW500-23BB-256DM",
+    "city": "",
+    "state": "",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+  
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 0318-1",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "lat": 30.7333,
+    "lng": 76.7794,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX-6814TD-84BL/UTC3/AK",
+    "city": "",
+    "state": "",
+    "lat": null,
+    "lng": null,
+    "count": 2.0
+  },
+  
+  {
+    "brand": "ZOJE",
+    "model": "ZOJE ZJ-9701AR-D3-01",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 3.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-2600D-01X356",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "lat": 30.7333,
+    "lng": 76.7794,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-2600ED-01X356/DL/UT",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "lat": 30.7333,
+    "lng": 76.7794,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-430GT-02",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "lat": 30.7333,
+    "lng": 76.7794,
+    "count": 3.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-2600D-01X356",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "lat": 30.7333,
+    "lng": 76.7794,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-128-B",
+    "city": "Punjab",
+    "state": "Punjab",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 0318-1",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY DY 8800D/5MM",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HUTANG",
+    "model": "Hutang FB450-12-064P-DM",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE JZQ 630 (K)",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-38",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-430GT-02",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-430GT-02",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "lat": 30.7333,
+    "lng": 76.7794,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D4",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 10.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 0318-1",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HUTANG",
+    "model": "Hutang FB450-12-064P-DM",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "LOIVA",
+    "model": "LOIVA ST-21",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "Duke DK 933",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC343-B",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 450MS",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC 0318-1",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY3020M",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "lat": 30.7333,
+    "lng": 76.7794,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 4030M",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "lat": 30.7333,
+    "lng": 76.7794,
+    "count": 1.0
+  },
+  {
+    "brand": "LOIVA",
+    "model": "LOIVA ST-21",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HW762T-1 2-1X356",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D2",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 2.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HW762T-1 2-1X356",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HW 782T-35BX356 LV1/UAC2/AK",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE JZQ 630 (K)",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D2",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 2.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D2",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HW762T-1 2-1X356",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HUTANG",
+    "model": "Hutang FB450-12-064P-DM",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE 2530 DZ",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "lat": 30.7333,
+    "lng": 76.7794,
+    "count": 2.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY6800-D4",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE  DY-70E",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 360",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-313",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D2",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D2",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 600FS",
+    "city": "Jawaddi",
+    "state": "Punjab",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE JZQ 630 (K)",
+    "city": "Jalandhar",
+    "state": "Punjab",
+    "lat": 31.326,
+    "lng": 75.5762,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-430GT-02",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 2.0
+  },
+  {
+    "brand": "HUTANG",
+    "model": "Hutang FB450-12-064P-DM",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DKJ-02-Q ( @12%)( Notuse)",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY6800-D4",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D4",
+    "city": "Amritsar",
+    "state": "Punjab",
+    "lat": 31.634,
+    "lng": 74.8723,
+    "count": 2.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-38",
+    "city": "Punjab",
+    "state": "Punjab",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D4",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 2.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HBH-1790E-S",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D5",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 5.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-2628LG",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HK2903ASS-1",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DKJ-02-Q ( @12%)( Notuse)",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+ 
+  {
+    "brand": "DUKE",
+    "model": "DUKE V-6+ HOT AIR SEAM SEALING MACHINE",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "lat": 30.7333,
+    "lng": 76.7794,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX-6814TD-84BL/UTC3/AK",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 2.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE V-6+ HOT AIR SEAM SEALING MACHINE",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "lat": 30.7333,
+    "lng": 76.7794,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-430GT-02",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D2",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 5.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-2210GT-01A/CH",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D2",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 2.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC-128 B",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D5",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC0318-8",
+    "city": "Bathinda",
+    "state": "Punjab",
+    "lat": 30.21,
+    "lng": 74.9455,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GC0318-8",
+    "city": "",
+    "state": "",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D5",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 2.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-313",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-500-05",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HIGHLEAD",
+    "model": "HIGHLEAD GL-13118-1",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 2.0
+  },
+  
+  {
+    "brand": "DUKE",
+    "model": "DUKE DKJ-02-Q ( @12%)( Notuse)",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 2.0
+  },
+  
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D5",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 5.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DKJ-02-Q ( @12%)( Notuse)",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 4.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D5",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 2.0
+  },
+ 
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 430GT",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+ 
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D5",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 5.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE VIM V2+ (HOT AIR SEAM SEALING MACHINE)",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DKJ-02-Q ( @12%)( Notuse)",
+    "city": "Jalandhar",
+    "state": "Punjab",
+    "lat": 31.326,
+    "lng": 75.5762,
+    "count": 1.0
+  },
+ 
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 430GT",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D5",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DKJ-02-Q ( @12%)( Notuse)",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX6814TDV-03",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 3.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX6814TDV-03",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE JZQ 630 (K)",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D5",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 600FS",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+ 
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D1",
+    "city": "Punjab",
+    "state": "Punjab",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D5",
+    "city": "Punjab",
+    "state": "Punjab",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D2",
+    "city": "Punjab",
+    "state": "Punjab",
+    "lat": null,
+    "lng": null,
+    "count": 10.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 600FS",
+    "city": "Punjab",
+    "state": "Punjab",
+    "lat": null,
+    "lng": null,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX6814TDV-03",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY  2530",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX6814TDV-03",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX6814TDV-03",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D5",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX6814TDV-03",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 2.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-430GT-02",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DKJ-02-Q ( @12%)( Notuse)",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX6814TDV-03",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 2.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DKJ-02-Q",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D5",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 5.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D5",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 5.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 8800D/3MM",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DKJ-02-Q",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY6800-D4",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 2.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX6814TDV-03",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.5726,
+    "lng": 88.3639,
+    "count": 2.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-438GT",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D2",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 5.0
+  },
+  {
+    "brand": "HIKARI",
+    "model": "HIKARI HX-6814TD-84BL/UTC3/AK",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 2.0
+  },
+ 
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D5",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 10.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D5",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 5.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 450MS",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 9503-D5",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 2.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DK-40C",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+ 
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY-2600ED-01CBX356/DL/UT",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DKJ-02-Q",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "DUKE",
+    "model": "DUKE DY 600FS",
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.901,
+    "lng": 75.8573,
+    "count": 1.0
+  },
+  {
+    "brand": "LOIVA",
+    "model": "LOIVA LA-970",
+    "city": "Jalandhar",
+    "state": "Punjab",
+    "lat": 31.326,
+    "lng": 75.5762,
+    "count": 1.0
   }
+
+
+
 
 
   
