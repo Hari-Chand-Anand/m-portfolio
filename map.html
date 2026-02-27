@@ -92,14 +92,22 @@
       color:rgba(255,255,255,.92);
     }
 
+    /* ✅ Toolbar as one long glass bar, with right-aligned Reset View */
     .toolbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between; /* key */
+      gap:12px;
+      padding:16px 18px;
+      margin-bottom:18px;
+    }
+    .toolLeft{
       display:flex;
       flex-wrap:wrap;
       gap:12px;
       align-items:center;
       justify-content:flex-start;
-      padding:16px 18px;
-      margin-bottom:18px;
+      min-width:0;
     }
 
     select{
@@ -132,15 +140,34 @@
       transform:translateY(-2px);
     }
 
-    /* Hide hint per your “remove extra text” vibe */
-    #hint{
-      display:none;
+    /* ✅ RESET VIEW chip at extreme right INSIDE SAME toolbar card */
+    .resetViewRight{
+      margin-left:auto;
+      letter-spacing:3px;
+      font-size:12px;
+      text-transform:uppercase;
+      padding:10px 12px;
+      border-radius:14px;
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.10);
+      color:rgba(255,255,255,.78);
+      cursor:pointer;
+      user-select:none;
+      transition:all .25s ease;
+      display:none; /* shown via JS */
+      white-space:nowrap;
+    }
+    .resetViewRight:hover{
+      color:#2f6cff;
+      border-color:rgba(47,108,255,0.40);
+      transform:translateY(-2px);
     }
 
+    /* Hide hint per your “remove extra text” vibe */
+    #hint{ display:none; }
+
     /* Map container glass + size */
-    #mapWrap{
-      padding:14px;
-    }
+    #mapWrap{ padding:14px; }
 
     #map{
       height: 560px;
@@ -170,6 +197,7 @@
       .heroTitle{ font-size:34px; }
       select{ min-width:100%; width:100%; }
       #map{ height: 520px; }
+      .toolbar{ align-items:flex-start; }
     }
   </style>
 </head>
@@ -190,11 +218,16 @@
       <h1>WHERE MACHINES ARE RUNNING</h1>
     </section>
 
-    <!-- Toolbar -->
+    <!-- ✅ Toolbar -->
     <div class="glass toolbar">
-      <select id="machine"></select>
-      <span class="resetText" id="reset">RESET</span>
-      <span class="small" id="hint"></span>
+      <div class="toolLeft">
+        <select id="machine"></select>
+        <span class="resetText" id="reset">RESET</span>
+        <span class="small" id="hint"></span>
+      </div>
+
+      <!-- ✅ Extreme right inside same bar -->
+      <span class="resetViewRight" id="resetView" title="Reset zoom & position">RESET VIEW</span>
     </div>
 
     <!-- Map -->
@@ -250,6 +283,8 @@
       const rows = await loadData('data/brand_model_city_counts_correct.json');
 
       const sel = document.querySelector('#machine');
+      const resetBtn = document.querySelector('#reset');
+      const resetViewBtn = document.querySelector('#resetView');
 
       // ✅ Dropdown: BRANDS ONLY (normalized)
       const brands = Array.from(
@@ -260,8 +295,12 @@
         .map((b,i) => `<option value="${i===0?'ALL':safeText(b)}">${safeText(b)}</option>`)
         .join('');
 
-      // ✅ India map focus (unchanged)
-      const map = L.map('map', { scrollWheelZoom: true }).setView([22.9734, 78.6569], 5);
+      // ✅ Initial view (store it for reset view)
+      const initialCenter = [22.9734, 78.6569];
+      const initialZoom = 5;
+
+      // ✅ India map focus
+      const map = L.map('map', { scrollWheelZoom: true }).setView(initialCenter, initialZoom);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 18,
@@ -323,10 +362,39 @@
         });
       }
 
+      // ✅ show/hide RESET VIEW when zoom/pan is far from initial
+      function updateResetViewVisibility(){
+        const z = map.getZoom();
+        const c = map.getCenter();
+
+        // thresholds: adjust if you want stricter/looser
+        const zoomFar = Math.abs(z - initialZoom) >= 2;
+        const latFar = Math.abs(c.lat - initialCenter[0]) >= 3.0;
+        const lngFar = Math.abs(c.lng - initialCenter[1]) >= 3.0;
+        const movedFar = latFar || lngFar;
+
+        resetViewBtn.style.display = (zoomFar || movedFar) ? 'inline-flex' : 'none';
+      }
+
+      map.on('zoomend', updateResetViewVisibility);
+      map.on('moveend', updateResetViewVisibility);
+
+      // ✅ Reset view action
+      resetViewBtn.addEventListener('click', () => {
+        map.setView(initialCenter, initialZoom, { animate: true });
+      });
+
       sel.addEventListener('change', () => render(sel.value));
-      document.querySelector('#reset').addEventListener('click', () => { sel.value='ALL'; render('ALL'); });
+
+      // ✅ Existing reset (brands + markers) + also reset map view
+      resetBtn.addEventListener('click', () => {
+        sel.value = 'ALL';
+        render('ALL');
+        map.setView(initialCenter, initialZoom, { animate: true });
+      });
 
       render('ALL');
+      updateResetViewVisibility();
     })().catch(err => {
       console.error(err);
     });
