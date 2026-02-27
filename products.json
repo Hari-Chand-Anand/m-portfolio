@@ -48,7 +48,7 @@
     "popularity": "standard",
     "media": {
       "youtubeId": "https://youtu.be/2Nod9pUuz24?si=gwVonhmCJUB8odFl",
-      "catalogUrl": "",
+      "catalogUrl": "https://drive.google.com/file/d/1LwpkkkUlq3rovNhNncXeoSwkJhW61Nn-/view?usp=sharing",
       "glbUrl": ""
     },
     "operation": "Embroidery",
@@ -71,7 +71,7 @@
     "popularity": "standard",
     "media": {
       "youtubeId": "",
-      "catalogUrl": "",
+      "catalogUrl": "https://drive.google.com/file/d/1cprnTlyVdVBM0UlWGeXgaQv0Xp2AyqO2/view?usp=sharing",
       "glbUrl": ""
     },
     "operation": "Embroidery",
@@ -162,8 +162,8 @@
     "thumbnail": "images/es-1300.png",
     "popularity": "medium",
     "media": {
-      "youtubeId": "ECVKokkFGHw?si=vfenT9yqzhNdAJly",
-      "catalogUrl": "assets/catalogs/es-1300.pdf",
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1qGPIBkMBuLdymAq8V13tN2GyxHFMwCye/view?usp=sharing",
       "glbUrl": "assets/models/es-1300.glb"
     },
     "operation": "Embroidery and Sewing",
@@ -212,7 +212,7 @@
     "popularity": "standard",
     "media": {
       "youtubeId": "",
-      "catalogUrl": "",
+      "catalogUrl": "https://drive.google.com/file/d/1QqV8J3iIaUhqJIdjVI6r9Yrhv2s6PYFy/view?usp=sharing",
       "glbUrl": ""
     },
     "operation": "Embroidery",
