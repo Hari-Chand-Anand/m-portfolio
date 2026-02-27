@@ -3057,7 +3057,7 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
+      "youtubeId": "2cFkTaIwZac",
       "catalogUrl": "https://drive.google.com/file/d/1411pcyytvBspwVaZ0x_HJ2tX46QNCLII/view?usp=drive_link",
       "glbUrl": ""
     },
@@ -3425,7 +3425,7 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
+      "youtubeId": "F-gPKuFOqVg",
       "catalogUrl": "https://drive.google.com/file/d/1bcFapzl4CAdld7IwTAhHqCAedQqGjk4G/view?usp=sharing",
       "glbUrl": ""
     },
@@ -3484,7 +3484,7 @@
     "tags": [
       "highlead"
     ],
-    "key": "GC-0318"
+    "key": "GC-0318-1C"
   },
   {
     "id": "highlead-gc0318-1ce",
@@ -3909,7 +3909,7 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
+      "youtubeId": "AcHfnNbjqmM",
       "catalogUrl": "https://drive.google.com/file/d/1niq9me3bx8kC1fyeHDsYQsZAhalzmIab/view?usp=sharing",
       "glbUrl": ""
     },
@@ -3955,8 +3955,8 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
-      "catalogUrl": "",
+      "youtubeId": "BNWCdrYOnes",
+      "catalogUrl": "https://drive.google.com/file/d/1Q9pTOVJE1AMuMdWBPii1BBbeWeLapb_f/view?usp=drive_link",
       "glbUrl": ""
     },
     "operation": "Industrial Machine",
@@ -4001,8 +4001,8 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
-      "catalogUrl": "",
+      "youtubeId": "ieRaOAZZoEk",
+      "catalogUrl": "https://drive.google.com/file/d/1Ww_0Vtj8bCjGyhn3tYvRMy58LXktckBl/view",
       "glbUrl": ""
     },
     "operation": "Industrial Machine",
@@ -4015,12 +4015,14 @@
     ],
     "key": "405"
   },
+
+  
   {
-    "id": "epa-405-gmmac-cuff-forming",
-    "brand": "EPA",
-    "model": "EPA-405/GMMAC (CUFF FORMING)",
-    "name": "EPA-405/GMMAC (CUFF FORMING)",
-    "category": "finishing",
+    "id": "dy430gt02",
+    "brand": "DUKE",
+    "model": "DUKE DY-430GT-02",
+    "name": "DUKE DY-430GT-02",
+    "category": "sewing",
     "thumbnail": "",
     "popularity": "standard",
     "media": {
@@ -4028,16 +4030,274 @@
       "catalogUrl": "",
       "glbUrl": ""
     },
-    "operation": "Cuff Forming Machine",
-    "description": "EPA-405/GMMAC cuff forming machine.",
+    "operation": "",
+    "description": "DUKE DY-430GT-02 machine.",
     "spec": {},
     "features": [],
-    "application": "Cuff forming",
-    "tags": [
-      "epa"
-    ],
-    "key": "405-CUFF"
+    "application": "",
+    "tags": ["duke"],
+    "key": "dy430gt02"
   },
+  {
+    "id": "dy9703h",
+    "brand": "DUKE",
+    "model": "Duke Dy 9703H",
+    "name": "Duke Dy 9703H",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "Duke Dy 9703H machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": ["duke"],
+    "key": "dy9703h"
+  },
+  {
+    "id": "dy430gt",
+    "brand": "DUKE",
+    "model": "DUKE DY 430GT",
+    "name": "DUKE DY 430GT",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY 430GT machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": ["duke"],
+    "key": "dy430gt"
+  },
+  {
+    "id": "dq1",
+    "brand": "DUKE",
+    "model": "DUKE DQ-1",
+    "name": "DUKE DQ-1",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DQ-1 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": ["duke"],
+    "key": "dq1"
+  },
+  {
+    "id": "dy438gt",
+    "brand": "DUKE",
+    "model": "DUKE DY-438GT",
+    "name": "DUKE DY-438GT",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-438GT machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": ["duke"],
+    "key": "dy438gt"
+  },
+  {
+    "id": "dy6800d5",
+    "brand": "DUKE",
+    "model": "DUKE DY-6800D-5",
+    "name": "DUKE DY-6800D-5",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-6800D-5 machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": ["duke"],
+    "key": "dy6800d5"
+  },
+  {
+    "id": "jz0630k",
+    "brand": "DUKE",
+    "model": "DUKE JZ0 630 (K)",
+    "name": "DUKE JZ0 630 (K)",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE JZ0 630 (K) machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": ["duke"],
+    "key": "jz0630k"
+  },
+  {
+    "id": "dy138cs",
+    "brand": "DUKE",
+    "model": "DUKE DY 138CS",
+    "name": "DUKE DY 138CS",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY 138CS machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": ["duke"],
+    "key": "dy138cs"
+  },
+  {
+    "id": "dy3181c",
+    "brand": "DUKE",
+    "model": "DUKE DY-318-1C",
+    "name": "DUKE DY-318-1C",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-318-1C machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": ["duke"],
+    "key": "dy3181c"
+  },
+  {
+    "id": "1509pd",
+    "brand": "DUKE",
+    "model": "DUKE 1509P-D",
+    "name": "DUKE 1509P-D",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE 1509P-D machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": ["duke"],
+    "key": "1509pd"
+  },
+  {
+    "id": "dy6278",
+    "brand": "DUKE",
+    "model": "DUKE DY 627-8\"",
+    "name": "DUKE DY 627-8\"",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY 627-8\" machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": ["duke"],
+    "key": "dy6278"
+  },
+  {
+    "id": "dy335bh",
+    "brand": "DUKE",
+    "model": "DUKE DY-335BH",
+    "name": "DUKE DY-335BH",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-335BH machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": ["duke"],
+    "key": "dy335bh"
+  },
+  {
+    "id": "dy530gt",
+    "brand": "DUKE",
+    "model": "DUKE DY-530GT",
+    "name": "DUKE DY-530GT",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-530GT machine.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": ["duke"],
+    "key": "dy530gt"
+  },
+
+
+
+
+
+
+
+
   {
     "id": "0303d12",
     "brand": "DUKE",

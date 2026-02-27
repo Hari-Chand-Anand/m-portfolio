@@ -703,12 +703,18 @@
           const heroRank = new Map(heroIds.map((id, idx) => [String(id), idx]));
           filtered.forEach(m => { m.isHero = heroRank.has(String(m.id)); });
 
+          // ✅ ONLY CHANGE: sort by installedCount DESC (while keeping hero behavior same)
           filtered.sort((a,b) => {
             const ah = heroRank.has(String(a.id));
             const bh = heroRank.has(String(b.id));
             if (ah && bh) return heroRank.get(String(a.id)) - heroRank.get(String(b.id));
             if (ah) return -1;
             if (bh) return 1;
+
+            const ai = Number(a.installedCount ?? 0);
+            const bi = Number(b.installedCount ?? 0);
+            if (bi !== ai) return bi - ai;
+
             return String(a.model||'').localeCompare(String(b.model||''));
           });
 
