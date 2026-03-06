@@ -10,5 +10,12 @@
     "title": "DENIM / JEANS MANUFACTURING LINE",
     "catalogUrl": "https://drive.google.com/file/d/15HYtSjadPVpYWhElxzdbUJGrZ2BIhCOW/view?usp=sharing",
     "model": "models/projects/jeans.glb"
+  },
+
+  {
+    "id": "gloves-line",
+    "title": "GLOVES MANUFACTURING LINE",
+    "catalogUrl":"https://drive.google.com/file/d/1z1s0l5inU3x6XRaiMcoziUR0Zs_e-UIM/view?usp=sharing",
+    "model": "models/projects/gloves.glb"
   }
 ]
