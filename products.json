@@ -3253,7 +3253,7 @@
     "tags": [
       "highlead"
     ],
-    "key": "GC-198"
+    "key": "GC-198-3"
   },
   {
     "id": "highlead-gc-20518-b",
@@ -3322,7 +3322,7 @@
     "tags": [
       "highlead"
     ],
-    "key": "GC-20528"
+    "key": "GC-20528-B"
   },
   {
     "id": "highlead-gc-20698-1",
@@ -3345,7 +3345,7 @@
     "tags": [
       "highlead"
     ],
-    "key": "GC-20698"
+    "key": "GC-20698-1"
   },
   {
     "id": "highlead-gc-2268",
@@ -4026,7 +4026,7 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
+      "youtubeId": "ZGWhoH0NCOhyP6R",
       "catalogUrl": "https://drive.google.com/file/d/1vEqP2dd9pY9idoROBtjVmLKFdZAxUg7S/view?usp=sharing",
       "glbUrl": ""
     },
@@ -4068,7 +4068,7 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
+      "youtubeId": "mxvcCy6Nt3ovnbMt",
       "catalogUrl": "https://drive.google.com/file/d/1UonES50l2cSoov0cdPYAkEJfgC_g4CXr/view?usp=sharing",
       "glbUrl": ""
     },
@@ -4089,7 +4089,7 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
+      "youtubeId": "bFW5GJi9heU",
       "catalogUrl": "",
       "glbUrl": ""
     },
@@ -4110,7 +4110,7 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
+      "youtubeId": "qdToUWepSuU",
       "catalogUrl": "https://drive.google.com/file/d/1_jofRtMDd33mXzzx3vPlDYeffc10_Uqp/view?usp=drive_link",
       "glbUrl": ""
     },
@@ -4131,7 +4131,7 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
+      "youtubeId": "T_6g2O3m19M",
       "catalogUrl": "https://drive.google.com/file/d/1CLb3UvnFgyag15aTIMCKmC3HyYVlcDv4/view?usp=sharing",
       "glbUrl": ""
     },
@@ -4152,7 +4152,7 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
+      "youtubeId": "QsKSMK8SzD0",
       "catalogUrl": "https://drive.google.com/file/d/1Lv0c_MOEDuvyXC3PB-WyjzR9YCqqtL_Y/view?usp=sharing",
       "glbUrl": ""
     },
@@ -4195,7 +4195,7 @@
     "popularity": "standard",
     "media": {
       "youtubeId": "",
-      "catalogUrl": "",
+      "catalogUrl": "https://drive.google.com/file/d/1Nuzo6B7-52T5Ti5WCJoZtcanq9hnJOJj/view?usp=drive_link",
       "glbUrl": ""
     },
     "operation": "",
@@ -4215,7 +4215,7 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
+      "youtubeId": "DF0odt0NRbo",
       "catalogUrl": "https://drive.google.com/file/d/1BH06-QsDyCUpRtGI72MNPySegEe5dRqQ/view?usp=sharing",
       "glbUrl": ""
     },
@@ -4278,7 +4278,7 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
+      "youtubeId": "3UYvXYF5wsyBzqUB",
       "catalogUrl": "https://drive.google.com/file/d/12AV4oodbXDA58JknOARQMc9XOOD9EZOA/view?usp=sharing",
       "glbUrl": ""
     },
@@ -4376,7 +4376,7 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
+      "youtubeId": "b28i0604fDsxFijj",
       "catalogUrl": "https://drive.google.com/file/d/18kkrDvbArChjX4Cxw7wvgkdEOo_gR7Tg/view?usp=sharing",
       "glbUrl": ""
     },
@@ -4391,50 +4391,101 @@
     "key": "1721"
   },
   {
-    "id": "220",
+    "id": "dy2516rsl",
     "brand": "DUKE",
-    "model": "DUKE 220",
-    "name": "DUKE 220",
+    "model": "DUKE DY-2516R-SL",
+    "name": "DUKE DY-2516R-SL",
     "category": "sewing",
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
-      "catalogUrl": "https://drive.google.com/file/d/1rW872yxq_TJZAIhTXvD91XxeL9AbRNZ3/view?usp=sharing",
+      "youtubeId": "qxsHBrIq67TVolWR   ",
+      "catalogUrl": "https://drive.google.com/file/d/1wvWdmei0MkZINiQ919kRoqyMPR8J3da-/view?usp=drive_link",
       "glbUrl": ""
     },
     "operation": "",
-    "description": "DUKE 220 machine.",
+    "description": "DUKE DY-2516R-SL",
     "spec": {},
     "features": [],
     "application": "",
     "tags": [
       "duke"
     ],
-    "key": "220"
+    "key": "dy2516rsl"
   },
-  {
-    "id": "bt220",
+
+    {
+    "id": "dy430at06",
     "brand": "DUKE",
-    "model": "DUKE BT-220",
-    "name": "DUKE BT-220",
+    "model": "DUKE DY-430AT-06",
+    "name": "DUKE DY-430AT-06",
     "category": "sewing",
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
-      "catalogUrl": "https://drive.google.com/file/d/1bRC_lJNIanLa5ZsG_UUf8agnLjemsyfq/view?usp=sharing",
+      "youtubeId": "xBE_L4CfeGNtMxdE",
+      "catalogUrl": "https://drive.google.com/file/d/1gSPQP9jxgTZNVBAABHJ_jkzSPseSiaod/view?usp=drive_link",
       "glbUrl": ""
     },
     "operation": "",
-    "description": "DUKE BT-220 machine.",
+    "description": "DUKE DY-430AT-06",
     "spec": {},
     "features": [],
     "application": "",
     "tags": [
       "duke"
     ],
-    "key": "bt220"
+    "key": "dy430at06"
+  },
+
+
+  {
+    "id": "dkj02q",
+    "brand": "DUKE",
+    "model": "DUKE DKJ-02-Q",
+    "name": "DUKE DKJ-02-Q",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "rt2TUH2E8pdJzxIQ",
+      "catalogUrl": "https://drive.google.com/file/d/1re3L8I3mzqFYzJ8lOOM7LTPz3na587et/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DKJ-02-Q.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dkj02q"
+  },
+
+
+    {
+    "id": "dy2628lg",
+    "brand": "DUKE",
+    "model": "DUKE DY-2628LG",
+    "name": "DUKE DY-2628LG",
+    "category": "sewing",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1wKND_UZ2pG6189ndaLCpy7KQoL-JT2KD/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "",
+    "description": "DUKE DY-2628LG.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "dkj02q"
   },
   {
     "id": "csl1721pk",
@@ -4514,8 +4565,8 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
-      "catalogUrl": "",
+      "youtubeId": "b-bFuukkICZCwisi",
+      "catalogUrl": "https://drive.google.com/file/d/1IUkOQAR3D4yWpeeFXVNIVJ2ryAUfCsxK/view?usp=drive_link",
       "glbUrl": ""
     },
     "operation": "",
@@ -4583,8 +4634,8 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "HbCVdZL4SDM",
-      "catalogUrl": "https://drive.google.com/file/d/1vQgnB91TgjDVQZTW_KlSQ94aIkQmOt6Y/view?usp=sharing",
+      "youtubeId": "YIQPgVqqyGHAJ5jt",
+      "catalogUrl": "https://drive.google.com/file/d/108kUQzNCILmaoj0sC2AM9hIdw7QL-8uX/view?usp=drive_link",
       "glbUrl": ""
     },
     "operation": "",
@@ -4652,7 +4703,7 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
+      "youtubeId": "uQRMOvIQKWStbx8U",
       "catalogUrl": "https://drive.google.com/file/d/1J3xCZwhcL15FraU5TS4FkiqG1tNM65MF/view?usp=sharing",
       "glbUrl": ""
     },
@@ -4744,8 +4795,8 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
-      "catalogUrl": "https://drive.google.com/file/d/1OUdX2eH8bTkZO9d5TfVX_Dpue5IsUcbU/view?usp=sharing",
+      "youtubeId": "qEIPVdqJWHP6WqFj",
+      "catalogUrl": "https://drive.google.com/file/d/1dJOi2dDDzxmQjnHlG5jOCAeRdMO10twB/view?usp=drive_link",
       "glbUrl": ""
     },
     "operation": "",
@@ -5020,8 +5071,8 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
-      "catalogUrl": "https://drive.google.com/file/d/1lY7kmTlh-h65VKcK_9xU4BON3eJkHMfm/view?usp=sharing",
+      "youtubeId": "FSrGXlQzLBts2sZf",
+      "catalogUrl": "https://drive.google.com/file/d/1lY7kmTlh-h65VKcK_9xU4BON3eJkHMfm/view?usp=drive_link",
       "glbUrl": ""
     },
     "operation": "",
@@ -5181,7 +5232,7 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
+      "youtubeId": "m-seduRMyBBAqvjh",
       "catalogUrl": "https://drive.google.com/file/d/1JNyfbsZfaOGwE76IWttlHQZ8MjG_aSxW/view?usp=sharing",
       "glbUrl": ""
     },
@@ -5411,7 +5462,7 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
+      "youtubeId": "Ya_B9JZLo4sEbb_K",
       "catalogUrl": "https://drive.google.com/file/d/1glQLQuvgIU5Ff4zrQhLnRMyfvSNthQTa/view?usp=drive_link",
       "glbUrl": ""
     },
@@ -5434,7 +5485,7 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
+      "youtubeId": "9c9h_VNqhfY5fAww",
       "catalogUrl": "https://drive.google.com/file/d/1ZvHmC-iz_0WNVQV2gnnwWaav8RDpjQfM/view?usp=drive_link",
       "glbUrl": ""
     },
@@ -5457,7 +5508,7 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
+      "youtubeId": "9c9h_VNqhfY5fAww",
       "catalogUrl": "https://drive.google.com/file/d/1Y6_E8T8TokZgVevwzQDej8y8A8badmL-/view?usp=drive_link",
       "glbUrl": ""
     },
