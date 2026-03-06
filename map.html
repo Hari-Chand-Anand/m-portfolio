@@ -337,7 +337,11 @@
           const lat0  = Number(r.lat);
           const lng0  = Number(r.lng);
 
-          if (!model || !city || !state || !Number.isFinite(lat0) || !Number.isFinite(lng0)) return;
+          if (
+  !model || !city || !state ||
+  !Number.isFinite(lat0) || !Number.isFinite(lng0) ||
+  lat0 < 5 || lat0 > 40 || lng0 < 60 || lng0 > 100
+) return;
 
           const seed = hash32(`${normBrand(r.brand)}|${model}|${city}|${state}`);
           const j1 = rand01(seed);
