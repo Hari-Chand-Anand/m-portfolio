@@ -1,0 +1,1374 @@
+[
+  {
+    "id": "duke-r5",
+    "brand": "DUKE",
+    "model": "DUKE R5",
+    "name": "DUKE R5",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "wDSUcwNHWDg",
+      "catalogUrl": "https://drive.google.com/file/d/1uhBAGx5xtedevIJ5k6DRY1NAE2qhYWEa/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Thread Trimming Machine",
+    "description": "DIRECT DRIVE SINGLE NEEDLE LOCKSTICH MACHINE WITH THREAD TRIMMER, BALANCE THREAD 5-6 MM.",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "R5",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 1
+    }
+  },
+  {
+    "id": "duke-r9",
+    "brand": "DUKE",
+    "model": "DUKE R9",
+    "name": "DUKE R9",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "Pt_sBnUz20g",
+      "catalogUrl": "https://drive.google.com/file/d/1aAzWU4r-Cyew8MwdIa75s-CbQEySqwd0/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Thread Trimming Machine",
+    "description": "DIRECT DRIVE SINGLE NEEDLE LOCKSTICH MACHINE WITH THREAD TRIMMER, BALANCE THREAD 2.5-3MM",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "R9",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 2
+    }
+  },
+  {
+    "id": "duke-dy430",
+    "brand": "DUKE",
+    "model": "DUKE DY430",
+    "name": "DUKE DY430",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "MUQVKBbl-Qw",
+      "catalogUrl": "https://drive.google.com/file/d/1k8A8mRb8ZJlWWW-n_LD43CiU4bp-aqd3/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Bartack Machine",
+    "description": "DIRECT DRIVE  ELECTRONIC CONTROLLED BARTECK MACHINE WITH INFORCEMENT ATTACHMENT",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY430",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 3
+    }
+  },
+  {
+    "id": "duke-dy438",
+    "brand": "DUKE",
+    "model": "DUKE DY438",
+    "name": "DUKE DY438",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "qdToUWepSuU",
+      "catalogUrl": "https://drive.google.com/file/d/178pPdLO8i6rIoBb51pZ-keSK1kqtfeu2/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Button Attaching Machine",
+    "description": "DIRECT DRIVE ELECTRONIC CONTROL BUTTON MACHINE WITH BUTTON FEEDER",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY438",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 4
+    }
+  },
+  {
+    "id": "duke-dy1790",
+    "brand": "DUKE",
+    "model": "DUKE DY1790",
+    "name": "DUKE DY1790",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "chiUI6eAGfs",
+      "catalogUrl": "https://drive.google.com/file/d/1tm8OvGIF0wTi7VgqcVzBccVG52TNvd0g/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Button Hole Machine",
+    "description": "DIRECT DRIVE ELECTRONIC CONTROL BUTTON HOLE MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY1790",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 5
+    }
+  },
+  {
+    "id": "duke-dy4030-pro",
+    "brand": "DUKE",
+    "model": "DUKE DY4030 PRO",
+    "name": "DUKE DY4030 PRO",
+    "category": "automation",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "Z4AV7igPraM",
+      "catalogUrl": "https://drive.google.com/file/d/1Js-QtFn1xFim43DqAk1B60HeVkEPNQgW/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Pattern Sewing Machine",
+    "description": "DIRECT DRIVE ELECTRONIC CONTROL PATTERN SEWING MACHINE WORKING AREA 400X300MM (WITH SHOE JIG)",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY4030PRO",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 6
+    }
+  },
+  {
+    "id": "duke-dy510c-360degree",
+    "brand": "DUKE",
+    "model": "DUKE DY510C-360DEGREE",
+    "name": "DUKE DY510C-360DEGREE",
+    "category": "automation",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "qOavyMQtwH0",
+      "catalogUrl": "https://drive.google.com/file/d/1vIn1iXeMabvetE4VwYhCxDyl5zmA8Ksv/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Template Sewing Machine",
+    "description": "INTELLIGENT TEMPLATE SEWING MACHINE WITH 360 DEGREE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY510C-360DEGREE",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 7
+    }
+  },
+  {
+    "id": "duke-dy896-12ap",
+    "brand": "DUKE",
+    "model": "DUKE DY896-12AP",
+    "name": "DUKE DY896-12AP",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "VwvwPQUSkgY",
+      "catalogUrl": "https://drive.google.com/file/d/17sJd2FeE0nnGFLDQHDaoA9rCxZ_BpwzK/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Pocket Welt Machine",
+    "description": "AUTOMATIC POCKET WELT MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY896-12AP",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 8
+    }
+  },
+  {
+    "id": "duke-dy254",
+    "brand": "DUKE",
+    "model": "DUKE DY254",
+    "name": "DUKE DY254",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "WeptORMrEPU",
+      "catalogUrl": "https://drive.google.com/file/d/1rj9ryDUnuDN1cwmEWWSXoF665vkeMC27/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Loop Setter Machine",
+    "description": "AUTOMATIC LOOP SETTER MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY254",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 9
+    }
+  },
+  {
+    "id": "duke-ihd-ch-sh",
+    "brand": "DUKE",
+    "model": "DUKE IH639D-CH-SH",
+    "name": "DUKE IH639D-CH-SH",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1lGO1HsDSpiCDKWm-Si5FqKzl_BK-eUwn/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Hemming Machine",
+    "description": "AUTOMATIC TROUSHER BOTTOM HEMMING MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "IH639D-CH-SH",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 10
+    }
+  },
+  {
+    "id": "duke-dy1510",
+    "brand": "DUKE",
+    "model": "DUKE DY1510",
+    "name": "DUKE DY1510",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "JZvuP7udk4c",
+      "catalogUrl": "https://drive.google.com/file/d/181NDOZjLvBBNQbF5fa_yuNeyuAwE9vJl/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Binding Machine",
+    "description": "SINGLE  NEEDLE COMPOUND FEED BINDING MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY1510",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 11
+    }
+  },
+  {
+    "id": "duke-dy988bb",
+    "brand": "DUKE",
+    "model": "DUKE DY988BB",
+    "name": "DUKE DY988BB",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1744NLe20JNGLNhUHjVIpZPCXIolpSrj3/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Compound Feed Machine",
+    "description": "CYLINDER BED COMPOUND FEED SINGLE NEEDLE LOCKSTITCH MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY988BB",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 12
+    }
+  },
+  {
+    "id": "duke-dy0318dz",
+    "brand": "DUKE",
+    "model": "DUKE DY0318DZ",
+    "name": "DUKE DY0318DZ",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "czncf8wqexc",
+      "catalogUrl": "https://drive.google.com/file/d/1cs4YR3mXU9zVnr4G-9_J13ySYisdaJWQ/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Top & Bottom Feed Lockstitch Machine",
+    "description": "DIRECT DRIVE SINGLE NEEDLE TOP AND BOTTOM FEED LOCKSTITCH MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY0318DZ",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 13
+    }
+  },
+  {
+    "id": "duke-dy630gt",
+    "brand": "DUKE",
+    "model": "DUKE DY630GT",
+    "name": "DUKE DY630GT",
+    "category": "automation",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "4ANmNyVR_dY",
+      "catalogUrl": "https://drive.google.com/file/d/1tMP8AxAuWyqL_HYfm-Jda037OpdAJ_YO/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Pattern Sewing Machine",
+    "description": "DIRECT DRIVE PATTERN SEWING MACHINE WORKING AREA 80X60MM",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY630GT",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 14
+    }
+  },
+  {
+    "id": "duke-dy3000-1600",
+    "brand": "DUKE",
+    "model": "DUKE DY3000-1600",
+    "name": "DUKE DY3000-1600",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "Tt2ntb3ruVo",
+      "catalogUrl": "https://drive.google.com/file/d/1AvYukt6Tl99xRFDjV4CJfzeTZIi4-AKh/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Pintuck Machine",
+    "description": "SINGLE  NEEDLE LOCKSTICH AUTOMATIC PINTUCK MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY3000-1600",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 15
+    }
+  },
+  {
+    "id": "duke-dy10118-pset",
+    "brand": "DUKE",
+    "model": "DUKE DY10118-PSET",
+    "name": "DUKE DY10118-PSET",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "UMYXTo2D4YM",
+      "catalogUrl": "https://drive.google.com/file/d/1v_JV6eXpW-bfMlceg-5M-vWvdvXbmf6S/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Elastic Attaching Machine",
+    "description": "FLAT BED SINGLE CHAIN STITCH 118 NEEDLE BOBBIN ELASTIC MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY10118-PSET",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 16
+    }
+  },
+  {
+    "id": "duke-dy1509-pd",
+    "brand": "DUKE",
+    "model": "DUKE DY1509-PD",
+    "name": "DUKE DY1509-PD",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "DF0odt0NRbo",
+      "catalogUrl": "https://drive.google.com/file/d/1gKCoNAqu6QMbrH1P_Mc7lE8f2dAQ4xvP/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Waistband Attaching Machine",
+    "description": "DIRECTDRIVE WAIST BAND ATTACHING MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY1509-PD",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 17
+    }
+  },
+  {
+    "id": "duke-st23",
+    "brand": "DUKE",
+    "model": "DUKE ST23",
+    "name": "DUKE ST23",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "tEt6vg_jplk",
+      "catalogUrl": "https://drive.google.com/file/d/1FS-RSdzOdBhanjbhA1ROF3DV32ZkC5aW/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Button Wrapping Machine",
+    "description": "Button wrapping and knotting MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "ST23",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 18
+    }
+  },
+  {
+    "id": "duke-dy1406pmd",
+    "brand": "DUKE",
+    "model": "DUKE DY1406PMD",
+    "name": "DUKE DY1406PMD",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "D-PT7df79K0",
+      "catalogUrl": "https://drive.google.com/file/d/1ErTU_FdBUyibfbRPDtXMcfuezm1Hgl5M/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Chain Stitch Machine",
+    "description": "DIRECT DRIVE FLAT BED 6 NEEDLE CHAIN STITCH MACHINE WITH PULLER",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY1406PMD",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 19
+    }
+  },
+  {
+    "id": "duke-dy3704-200c",
+    "brand": "DUKE",
+    "model": "DUKE DY3704-200C",
+    "name": "DUKE DY3704-200C",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "c1nXt_U3NPU",
+      "catalogUrl": "https://drive.google.com/file/d/1e9QoFs672eFHyBgIsGA6pGii3s6cIX2x/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "HEAVY DUTY 200 DESIGN MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY3704-200C",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 20
+    }
+  },
+  {
+    "id": "duke-gc30-dy5030",
+    "brand": "DUKE",
+    "model": "DUKE GC30(DY5030)",
+    "name": "DUKE GC30(DY5030)",
+    "category": "automation",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/18cViB1B-Az5SmOZb5Mim5bmjXNk1J1U9/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Template Sewing Machine",
+    "description": "INTELLIGENT TEMPLATE SEWING MACHINE WITH SUCTION WORKING AREA 500X300MM",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "GC30(DY5030)",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 21
+    }
+  },
+  {
+    "id": "duke-dy-c01",
+    "brand": "DUKE",
+    "model": "DUKE DY-C01",
+    "name": "DUKE DY-C01",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "iuycoynarE8",
+      "catalogUrl": "https://drive.google.com/file/d/1s5PTi-g184-AqXU2NJOqwFYtgS3T6XyG/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Cord Inserting Machine",
+    "description": "CORD INSETING MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY-C01",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 22
+    }
+  },
+  {
+    "id": "duke-bt220",
+    "brand": "DUKE",
+    "model": "DUKE BT220",
+    "name": "DUKE BT220",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "eeSoxIbBkWc",
+      "catalogUrl": "https://drive.google.com/file/d/11r3UUCa6my8ED_uQKO13Nje40wJd3uBO/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Pocket Creasing Machine",
+    "description": "DOUBLE HEAD POCKET CREASING MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "BT220",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 23
+    }
+  },
+  {
+    "id": "duke-benkey-de95",
+    "brand": "DUKE",
+    "model": "DUKE BENKEY DE95",
+    "name": "DUKE BENKEY DE95",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "AUTOMATIC REVIT ATTACHING  MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "BENKEYDE95",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 24
+    }
+  },
+  {
+    "id": "duke-dy-160-20",
+    "brand": "DUKE",
+    "model": "DUKE DY 160-20",
+    "name": "DUKE DY 160-20",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Spot Tacking Machine",
+    "description": "SPOT TACKING MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY160-20",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 25
+    }
+  },
+  {
+    "id": "juita-jtk18f-130100aj",
+    "brand": "JUITA",
+    "model": "JUITA JTK18F-130100AJ",
+    "name": "JUITA JTK18F-130100AJ",
+    "category": "automation",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "4KaqelqmEu0",
+      "catalogUrl": "https://drive.google.com/file/d/1p4eXHKgYhocEM5LSEHMVHML4CS_DxlS3/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Template Sewing Machine",
+    "description": "AUTOMATIC TEMPLATE SEWING MACHIE WITH LASER AND MARKING AREA 1300X1000MM",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "juita"
+    ],
+    "key": "JTK18F-130100AJ",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 26
+    }
+  },
+  {
+    "id": "juita-dy5878b",
+    "brand": "JUITA",
+    "model": "JUITA DY5878B",
+    "name": "JUITA DY5878B",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "aLthI6ewvfQ",
+      "catalogUrl": "https://drive.google.com/file/d/1hF9bGE4YlGkd9kNXM9VKE-8YezPCCnPx/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Placket Machine",
+    "description": "POLO PLACKET MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "juita"
+    ],
+    "key": "DY5878B",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 27
+    }
+  },
+  {
+    "id": "juita-jt-a8",
+    "brand": "JUITA",
+    "model": "JUITA JT A8",
+    "name": "JUITA JT A8",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "99vwp-SpdHQ",
+      "catalogUrl": "https://drive.google.com/file/d/19XPGZSCV8k5nSoqBaHFRttBEGAJTw8dC/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Needle Management Machine",
+    "description": "NEEDLE MANAGEMENT MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "juita"
+    ],
+    "key": "JTA8",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 28
+    }
+  },
+  {
+    "id": "vios-669",
+    "brand": "VIOS",
+    "model": "VIOS 669",
+    "name": "VIOS 669",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "fDm6gjSRHG8",
+      "catalogUrl": "https://drive.google.com/file/d/1L5VtMDs5XEl0BGWs8To-xkQud19BEIDM/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Compound Feed Machine",
+    "description": "CYLINDER BED COMPOUND FEED SINGLE NEEDLE LOCK STITCH MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "vios"
+    ],
+    "key": "669",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 29
+    }
+  },
+  {
+    "id": "vios-867",
+    "brand": "VIOS",
+    "model": "VIOS 867",
+    "name": "VIOS 867",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "PyeqqzFd28Q",
+      "catalogUrl": "https://drive.google.com/file/d/1miu-rVCNRiC-APYc0z-btIRGa4CKBuCy/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Compound Feed Machine",
+    "description": "SINGLE NEEDLE FLAT BED COMPOUND FEED MACHINE WITH VERTICAL LARGE HOOK AND THRED TRIMMER",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "vios"
+    ],
+    "key": "867",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 30
+    }
+  },
+  {
+    "id": "vios-868",
+    "brand": "VIOS",
+    "model": "VIOS 868",
+    "name": "VIOS 868",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "M1aR20TMrZQ",
+      "catalogUrl": "https://drive.google.com/file/d/1L8iM0_DwRGfz3QZCluv9ycQeM_eKF59Q/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Post Bed Machine",
+    "description": "POST BED MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "vios"
+    ],
+    "key": "868",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 31
+    }
+  },
+  {
+    "id": "racing-pl-puller",
+    "brand": "RACING",
+    "model": "RACING PL PULLER",
+    "name": "RACING PL PULLER",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "WITH DY9503-D2  SINGLE NEEDL LOCKSTITHC MACHINE WITH RACING PL PULLER",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "racing"
+    ],
+    "key": "PLPULLER",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 32
+    }
+  },
+  {
+    "id": "racing-mcm-8u",
+    "brand": "RACING",
+    "model": "RACING MCM 8U",
+    "name": "RACING MCM 8U",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Lockstitch Machine",
+    "description": "WITH 0068-1 SINGLE NEEDLE LOCKSTITCH ZIG ZAG MACHNE WITH RACING MCM8U METERING DEVICE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "racing"
+    ],
+    "key": "MCM8U",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 33
+    }
+  },
+  {
+    "id": "racing-mca20k-30z",
+    "brand": "RACING",
+    "model": "RACING MCA20K 30Z",
+    "name": "RACING MCA20K 30Z",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Overlock Machine",
+    "description": "WITH HAOUTANG LOIVA 333  CYLINDER BED OVERLOCK MACHINE WITH RACING TAPE FEEDER AND CHOPER CUTTER",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "racing"
+    ],
+    "key": "MCA20K30Z",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 34
+    }
+  },
+  {
+    "id": "racing-pr-puller",
+    "brand": "RACING",
+    "model": "RACING PR PULLER",
+    "name": "RACING PR PULLER",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Overlock Machine",
+    "description": "WITH DY900-5 FIVE THREAD OVERLOCK MACHINE WITH PULLER",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "racing"
+    ],
+    "key": "PRPULLER",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 35
+    }
+  },
+  {
+    "id": "racing-po-f",
+    "brand": "RACING",
+    "model": "RACING PO-F",
+    "name": "RACING PO-F",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "WITH DY900-4 FOUR THREAD OVER LOCK MACHINE WTH PULLER",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "racing"
+    ],
+    "key": "PO-F",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 36
+    }
+  },
+  {
+    "id": "racing-tfs26-3",
+    "brand": "RACING",
+    "model": "RACING TFS26-3",
+    "name": "RACING TFS26-3",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "WITH DY500-CB-01 FLATE LOCK MACHIE WITH SIDE TAPE FEEDER",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "racing"
+    ],
+    "key": "TFS26-3",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 37
+    }
+  },
+  {
+    "id": "grand-t22ebln",
+    "brand": "GRAND",
+    "model": "GRAND T22EBLN",
+    "name": "GRAND T22EBLN",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "mTKLAb3HNKE",
+      "catalogUrl": "https://drive.google.com/file/d/1iRWKxEDiq-OmlVX0fh95z3BU3e1wanyD/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Thread Trimming Machine",
+    "description": "TREAD TRIMMMING MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "grand"
+    ],
+    "key": "T22EBLN",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 38
+    }
+  },
+  {
+    "id": "grand-gt26-1",
+    "brand": "GRAND",
+    "model": "GRAND GT26-1",
+    "name": "GRAND GT26-1",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/14wVaRnSASTkB5kWJk4UfLvUNAXOH_adf/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Thread Trimming Machine",
+    "description": "TREAD TRIMMMING MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "grand"
+    ],
+    "key": "GT26-1",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 39
+    }
+  },
+  {
+    "id": "huatang-loiva-fb450-064-12-dm-uta",
+    "brand": "HUATANG-LOIVA",
+    "model": "HUATANG LOIVA FB450 -064-12-DM-UTA",
+    "name": "HUATANG LOIVA FB450 -064-12-DM-UTA",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "gGpJu6hzDO4",
+      "catalogUrl": "https://drive.google.com/file/d/1oNRgC55M5FKfFXTYWY76A_odVB_-0nv5/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Chain Stitch Machine",
+    "description": "DIRECT DRIVE 12 NEEDLE DOUBEL CHAIN STITCH MACHINE WITH THREAD TRIMMER",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "huatang-loiva"
+    ],
+    "key": "FB450-064-12-DM-UTA",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 40
+    }
+  },
+  {
+    "id": "huatang-loiva-bl210-02-064c-10-dm-tka",
+    "brand": "HUATANG-LOIVA",
+    "model": "HUATANG LOIVA BL210-02-064C/10-DM/TKA",
+    "name": "HUATANG LOIVA BL210-02-064C/10-DM/TKA",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "kafInjmp60Y",
+      "catalogUrl": "https://drive.google.com/file/d/1KQzVB_g4Wogb6vyJG9kgKqLj6QFkHIA5/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Loop Making Machine",
+    "description": "DIRECT DRIVE LOOP MAKING MACHINE WITH LOOP  CUTTER",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "huatang-loiva"
+    ],
+    "key": "BL210-02-064C/10-DM/TKA",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 41
+    }
+  },
+  {
+    "id": "huatang-loiva-nf1106-0632-254p-dm",
+    "brand": "HUATANG-LOIVA",
+    "model": "HUATANG LOIVA NF1106-0632-254P-DM",
+    "name": "HUATANG LOIVA NF1106-0632-254P-DM",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "dv5mrNB_OXU",
+      "catalogUrl": "https://drive.google.com/file/d/1NxWdIgGNiTxONkIOcJ24yKaWSTJH_yGr/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Waistband Attaching Machine",
+    "description": "4 NEEDLE NEEDLE FEED WAIST BAND ATTACHING MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "huatang-loiva"
+    ],
+    "key": "NF1106-0632-254P-DM",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 42
+    }
+  },
+  {
+    "id": "huatang-loiva-loiva-xot7014-03-333n2x4-with-ac1801",
+    "brand": "HUATANG-LOIVA",
+    "model": "HUATANG LOIVA Loiva -Xot7014-03/333N2X4 with AC1801",
+    "name": "HUATANG LOIVA Loiva -Xot7014-03/333N2X4 with AC1801",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "j0mo1ZNr5bI",
+      "catalogUrl": "https://drive.google.com/file/d/1eMbtYgLC7hVXz623asOuYRJndFwKrwNQ/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "AUTOMATIC NECK  RIB MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "huatang-loiva"
+    ],
+    "key": "LOIVA-XOT7014-03/333N2X4WITHAC1801",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 43
+    }
+  },
+  {
+    "id": "huatang-loiva-dy6800tdp-4k-ach",
+    "brand": "HUATANG-LOIVA",
+    "model": "HUATANG LOIVA DY6800TDP-4K/ACH",
+    "name": "HUATANG LOIVA DY6800TDP-4K/ACH",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "eeSoxIbBkWc",
+      "catalogUrl": "https://drive.google.com/file/d/1emWcJsUS5Tk8V_xc1P0KIAR0chBj66zt/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Cuff Attaching Machine",
+    "description": "AUTOMATIC CUFF ATTACHING MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "huatang-loiva"
+    ],
+    "key": "DY6800TDP-4K/ACH",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 44
+    }
+  },
+  {
+    "id": "embrodiery-machine-1201-l",
+    "brand": "DUKEJIA",
+    "model": "EMBRODIERY MACHINE 1201-L",
+    "name": "EMBRODIERY MACHINE 1201-L",
+    "category": "embroidery",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "RQqBEYF4ETI",
+      "catalogUrl": "https://drive.google.com/file/d/1m3ub_1eH5XRAP_jRZ2lH050bsYGqF5Hx/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Embroidery Machine",
+    "description": "SINGLE HEAD EMBROIDERY MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "embrodiery-machine"
+    ],
+    "key": "1201-L",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 45
+    }
+  },
+  {
+    "id": "lensh-ls6022",
+    "brand": "LENSH",
+    "model": "LENSH LS6022",
+    "name": "LENSH LS6022",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "QGR5hzg6FpE",
+      "catalogUrl": "https://drive.google.com/file/d/1NN8-uWxSLGJZte9hzmrSh-qxLBoE2TLa/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Cord Inserting Machine",
+    "description": "CORD INSERTING MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "lensh"
+    ],
+    "key": "LS6022",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 46
+    }
+  },
+  {
+    "id": "megasew-mj101tx-460-03h1-h2-sdv-at-aw-sco",
+    "brand": "MEGASEW",
+    "model": "MEGASEW MJ101TX-460-03H1,H2/SDV/AT/AW/SCO",
+    "name": "MEGASEW MJ101TX-460-03H1,H2/SDV/AT/AW/SCO",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "r-zaqYYAcqs",
+      "catalogUrl": "",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "4 NEEDLE FLAT SEAMER FEED UP THE ARM MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "megasew"
+    ],
+    "key": "MJ101TX-460-03H1,H2/SDV/AT/AW/SCO",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 47
+    }
+  },
+  {
+    "id": "merrow-mg3u",
+    "brand": "MERROW",
+    "model": "MERROW MG3U",
+    "name": "MERROW MG3U",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "FfpWBwy8ois",
+      "catalogUrl": "https://drive.google.com/file/d/1Tir-I4eLaizcReGVBThGhR5f0STN3TMJ/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "LABEL EDGING MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "merrow"
+    ],
+    "key": "MG3U",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 48
+    }
+  },
+  {
+    "id": "merrow-hemway",
+    "brand": "MERROW",
+    "model": "MERROW Hemway",
+    "name": "MERROW Hemway",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "ASGwKmoYfss",
+      "catalogUrl": "https://drive.google.com/file/d/1le1O4rTj5hpCX4E4NAy6QjK1yJr1aOYe/view?usp=drive_link",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "T98S",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "merrow"
+    ],
+    "key": "HEMWAY",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 49
+    }
+  }
+]
