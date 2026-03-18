@@ -339,8 +339,8 @@
     const PRODUCTS_URL = "./exhibition-products.json";
 
     // ===== Google Sheets Pricing (live) =====
-    const PRICING_SHEET_ID = "PASTE_YOUR_EXHIBITION_SHEET_ID";
-    const PRICING_GID = "EXHIBITION_GID";
+    const PRICING_SHEET_ID = "19dyezx1-22eixYD6myzGAloDWb_xSyBrHPBfnhy5nOc";
+    const PRICING_GID = "0";
     const PRICING_CSV_URL = `https://docs.google.com/spreadsheets/d/${PRICING_SHEET_ID}/gviz/tq?tqx=out:csv&gid=${PRICING_GID}`;
 
     function normKey(k){ return String(k ?? "").trim().toUpperCase(); }
@@ -387,39 +387,48 @@
       return rows.filter(r => r.some(c => String(c).trim() !== ""));
     }
 
-    async function loadPriceMap(){
-      const res = await fetch(PRICING_CSV_URL, { cache: "no-store" });
-      if (!res.ok) throw new Error("Failed to load pricing sheet CSV");
-      const csv = await res.text();
-      const rows = parseCsv(csv);
-      if (!rows.length) return {};
+async function loadPriceMap(){
+  const res = await fetch(PRICING_CSV_URL, { cache: "no-store" });
+  if (!res.ok) throw new Error("Failed to load pricing sheet CSV");
 
-      const header = rows[0].map(h => String(h).trim().toLowerCase());
-      const idxKey = header.indexOf("key");
-      const idxQuote = header.indexOf("quote price");
-      const idxOverride = header.indexOf("fx_override (for testing)");
-      if (idxKey === -1) return {};
+  const csv = await res.text();
+  const rows = parseCsv(csv);
+  if (!rows.length) return {};
 
-      const map = {};
-      for (let i = 1; i < rows.length; i++){
-        const r = rows[i];
-        const k = normKey(r[idxKey]);
-        if (!k) continue;
+  const header = rows[0].map(h => String(h).trim().toLowerCase());
+  const idxKey = header.indexOf("key");
+  const idxQuote = header.indexOf("quote price");
+  const idxOverride = header.indexOf("fx_override (for testing)");
 
-        let price = null;
-        if (idxOverride !== -1) {
-          const rawOverride = r[idxOverride];
-          if (rawOverride && String(rawOverride).trim() !== "") {
-            price = parseNumber(rawOverride);
-          }
-        }
-        if (price == null && idxQuote !== -1) {
-          price = parseNumber(r[idxQuote]);
-        }
-        if (price != null) map[k] = Math.round(price);
+  if (idxKey === -1) throw new Error("Missing 'key' column in pricing sheet");
+
+  const map = {};
+  for (let i = 1; i < rows.length; i++){
+    const r = rows[i];
+    const k = normKey(r[idxKey]);
+    if (!k) continue;
+
+    let price = null;
+
+    if (idxOverride !== -1) {
+      const overrideVal = String(r[idxOverride] ?? "").trim();
+      if (overrideVal !== "" && overrideVal !== "0") {
+        price = parseNumber(overrideVal);
       }
-      return map;
     }
+
+    if (price == null && idxQuote !== -1) {
+      price = parseNumber(r[idxQuote]);
+    }
+
+    if (price != null) {
+      map[k] = Math.round(price);
+    }
+  }
+
+  return map;
+}
+ 
 
     const $ = (s) => document.querySelector(s);
 

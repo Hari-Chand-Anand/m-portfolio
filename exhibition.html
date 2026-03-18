@@ -438,15 +438,13 @@
     }
 
     // ===== Google Sheets Pricing (live) =====
-    const PRICING_SHEET_ID = "PASTE_YOUR_EXHIBITION_SHEET_ID";
-    const PRICING_GID = "EXHIBITION_GID";
+    const PRICING_SHEET_ID = "19dyezx1-22eixYD6myzGAloDWb_xSyBrHPBfnhy5nOc";
+    const PRICING_GID = "0";
     const PRICING_CSV_URL = `https://docs.google.com/spreadsheets/d/${PRICING_SHEET_ID}/gviz/tq?tqx=out:csv&gid=${PRICING_GID}`;
 
     // ===== Google Sheets Installed Counts (LIVE) =====
     // Sheet columns: id, installed
-    const INSTALLED_SHEET_ID = "";
-    const INSTALLED_GID = "0";
-    const INSTALLED_CSV_URL = `https://docs.google.com/spreadsheets/d/${INSTALLED_SHEET_ID}/gviz/tq?tqx=out:csv&gid=${INSTALLED_GID}`;
+   
 
     function normKey(k){ return String(k ?? "").trim().toUpperCase(); }
 
@@ -776,7 +774,15 @@
       const machines = await loadProducts();
 
       // Apply live prices from Google Sheet
-      try { await loadPriceMap(); } catch(e){ console.warn(e); }
+      try {
+  const priceMap = await loadPriceMap();
+  for (const m of machines) {
+    const k = normKey(m.priceKey || m.model || m.id);
+    if (priceMap[k] != null) m.priceINR = priceMap[k];
+  }
+} catch (e) {
+  console.warn("Pricing sheet not reachable, using JSON priceINR.", e);
+}
 
       // Apply LIVE installed counts from Google Sheet
       try {
