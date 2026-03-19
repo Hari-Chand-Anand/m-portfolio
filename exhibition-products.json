@@ -1370,5 +1370,33 @@
       "status": "On Display",
       "priority": 49
     }
+  },
+  {
+    "id": "FKGROUP",
+    "brand": "FK group",
+    "model": "IRON HEAVY ",
+    "name": "IRON HEAVY (DENIM EDITION)",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "WesHsZpTM0",
+      "catalogUrl": "https://drive.google.com/file/d/1jtvh9W4llrtKiRw8A2MDiFda0BqsiuiA/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "Industrial Sewing Machine",
+    "description": "CUTTING MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "FKGROUP"
+    ],
+    "key": "FKGROUP",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 49
+    }
   }
 ]
