@@ -922,9 +922,9 @@
       "status": "On Display",
       "priority": 33
     }
-  },
+  },                
   {
-    "id": "racing-mca20k-30z",
+    "id": "racing-mca20k-30z",                                                                        
     "brand": "RACING",
     "model": "RACING MCA20K 30Z",
     "name": "RACING MCA20K 30Z",
@@ -960,8 +960,8 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "",
-      "catalogUrl": "",
+      "youtubeId": "N49qgVG6lcc",
+      "catalogUrl": "https://drive.google.com/file/d/1exzNhPmGPHA6ERXNf4Mgj-L7nP8zrUQ5/preview",
       "glbUrl": ""
     },
     "operation": "Overlock Machine",
@@ -1203,34 +1203,7 @@
       "priority": 43
     }
   },
-  {
-    "id": "huatang-loiva-dy6800tdp-4k-ach",
-    "brand": "HUATANG-LOIVA",
-    "model": "HUATANG LOIVA DY6800TDP-4K/ACH",
-    "name": "HUATANG LOIVA DY6800TDP-4K/ACH",
-    "category": "industrial",
-    "thumbnail": "",
-    "popularity": "standard",
-    "media": {
-      "youtubeId": "eeSoxIbBkWc",
-      "catalogUrl": "https://drive.google.com/file/d/1emWcJsUS5Tk8V_xc1P0KIAR0chBj66zt/view?usp=drive_link",
-      "glbUrl": ""
-    },
-    "operation": "Cuff Attaching Machine",
-    "description": "AUTOMATIC CUFF ATTACHING MACHINE",
-    "spec": {},
-    "features": [],
-    "application": "",
-    "tags": [
-      "huatang-loiva"
-    ],
-    "key": "DY6800TDP-4K/ACH",
-    "stockQty": 1,
-    "exhibition": {
-      "status": "On Display",
-      "priority": 44
-    }
-  },
+
   {
     "id": "embrodiery-machine-1201-l",
     "brand": "DUKEJIA",
