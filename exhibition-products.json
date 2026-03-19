@@ -680,6 +680,34 @@
     "thumbnail": "",
     "popularity": "standard",
     "media": {
+      "youtubeId": "GjqSDDmkUx4",
+      "catalogUrl": "https://drive.google.com/file/d/1Tp5frbGnyOKbr5Hgy3KnaqNX4mbZXHxC/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "Spot Tacking Machine",
+    "description": "SPOT TACKING MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "duke"
+    ],
+    "key": "DY160-20",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 25
+    }
+  },
+  {
+    "id": "duke-DP2700-35L-356/EST",
+    "brand": "DUKE",
+    "model": "DUKE DP2700-35L-356/EST",
+    "name": "DUKE DP2700-35L-356/EST",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
       "youtubeId": "",
       "catalogUrl": "",
       "glbUrl": ""
@@ -692,7 +720,7 @@
     "tags": [
       "duke"
     ],
-    "key": "DY160-20",
+    "key": "DP2700-35L-356/EST",
     "stockQty": 1,
     "exhibition": {
       "status": "On Display",
@@ -1092,6 +1120,36 @@
     }
   },
   {
+    "id": "grand-gt12-A2",
+    "brand": "GRAND",
+    "model": "GRAND GT12-A2",
+    "name": "GRAND GT12-A2",
+    "category": "industrial",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "",
+      "catalogUrl": "https://drive.google.com/file/d/1pmfswuKuRcAHT0jZoXl3L0FzmkhdOCxA/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "Thread Trimming Machine",
+    "description": "THREAD TRIMMMING MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "grand"
+    ],
+    "key": "GT12-A2",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 39
+    }
+  },
+
+  
+  {
     "id": "huatang-loiva-fb450-064-12-dm-uta",
     "brand": "HUATANG-LOIVA",
     "model": "HUATANG LOIVA FB450 -064-12-DM-UTA",
@@ -1232,6 +1290,37 @@
       "priority": 45
     }
   },
+
+  {
+    "id": "embrodiery-machine-ES-1300",
+    "brand": "DUKEJIA",
+    "model": "EMBRODIERY MACHINE ES-1300",
+    "name": "EMBRODIERY MACHINE ES-1300",
+    "category": "embroidery",
+    "thumbnail": "",
+    "popularity": "standard",
+    "media": {
+      "youtubeId": "ECVKokkFGHw",
+      "catalogUrl": "https://drive.google.com/file/d/1qGPIBkMBuLdymAq8V13tN2GyxHFMwCye/view?usp=sharing",
+      "glbUrl": ""
+    },
+    "operation": "Bottom Hemming Machine",
+    "description": "BOTTOM HEMMING MACHINE",
+    "spec": {},
+    "features": [],
+    "application": "",
+    "tags": [
+      "embrodiery-machine"
+    ],
+    "key": "ES-1300",
+    "stockQty": 1,
+    "exhibition": {
+      "status": "On Display",
+      "priority": 45
+    }
+  },
+
+
   {
     "id": "lensh-ls6022",
     "brand": "LENSH",
@@ -1270,7 +1359,7 @@
     "popularity": "standard",
     "media": {
       "youtubeId": "r-zaqYYAcqs",
-      "catalogUrl": "",
+      "catalogUrl": "https://drive.google.com/file/d/1w0c-g2LwNkaWMweUttZneT7RdRNHCJcx/view?usp=sharing",
       "glbUrl": ""
     },
     "operation": "Industrial Sewing Machine",
@@ -1317,10 +1406,10 @@
     }
   },
   {
-    "id": "merrow-hemway",
-    "brand": "MERROW",
-    "model": "MERROW Hemway",
-    "name": "MERROW Hemway",
+    "id": "hemway",
+    "brand": "HEMWAY",
+    "model": "HEMWAY",
+    "name": "HEMWAY",
     "category": "industrial",
     "thumbnail": "",
     "popularity": "standard",
@@ -1337,7 +1426,7 @@
     "tags": [
       "merrow"
     ],
-    "key": "HEMWAY",
+    "key": "T98S",
     "stockQty": 1,
     "exhibition": {
       "status": "On Display",
@@ -1345,27 +1434,27 @@
     }
   },
   {
-    "id": "FKGROUP",
-    "brand": "FK group",
-    "model": "IRON HEAVY ",
-    "name": "IRON HEAVY (DENIM EDITION)",
+    "id": "LSM",
+    "brand": "LSM",
+    "model": "LSM 150 ",
+    "name": "LSM 150",
     "category": "industrial",
     "thumbnail": "",
     "popularity": "standard",
     "media": {
-      "youtubeId": "-WesHsZpTM0",
-      "catalogUrl": "https://drive.google.com/file/d/1jtvh9W4llrtKiRw8A2MDiFda0BqsiuiA/view?usp=sharing",
+      "youtubeId": "jMft1nG13rc",
+      "catalogUrl": "https://drive.google.com/file/d/1yCzEtaIiT_LN7zZSX6X5gyXiTq4Ts0ip/view?usp=sharing",
       "glbUrl": ""
     },
     "operation": "Industrial Sewing Machine",
-    "description": "CUTTING MACHINE",
+    "description": "EYELET KAAZ MACHINE",
     "spec": {},
     "features": [],
     "application": "",
     "tags": [
-      "FKGROUP"
+      "LSM150"
     ],
-    "key": "FKGROUP",
+    "key": "LSM150",
     "stockQty": 1,
     "exhibition": {
       "status": "On Display",
