@@ -11,7 +11,7 @@ const app = express();
    ✅ CORS FIX (Codespaces + Local)
    ========================= */
 const allowOrigin = (origin) => {
-  if (!origin) return true;
+  if (!origin || origin === "null") return true; // file:// pages send origin "null"
   return (
     origin.endsWith(".app.github.dev") ||
     origin.startsWith("http://localhost") ||
@@ -126,12 +126,28 @@ function norm(s) {
 }
 
 function findByModel(rows, model) {
-  const key = norm(model);
-  let row = rows.find((r) => norm(r["model"]) === key);
+  const q = norm(model);
+
+  // 1. Exact match on key column (actual model codes e.g. DY-1201H, GC-188)
+  let row = rows.find((r) => norm(r["key"]) === q);
   if (row) return row;
 
-  // fallback contains match
-  row = rows.find((r) => norm(r["model"]).includes(key) || key.includes(norm(r["model"])));
+  // 2. Exact match on model column (brand names)
+  row = rows.find((r) => norm(r["model"]) === q);
+  if (row) return row;
+
+  // 3. Contains match on key column — "dy 1201" matches "dy 1201h"
+  row = rows.find((r) => {
+    const k = norm(r["key"]);
+    return k.includes(q) || q.includes(k);
+  });
+  if (row) return row;
+
+  // 4. Contains match on model column
+  row = rows.find((r) => {
+    const m = norm(r["model"]);
+    return m.includes(q) || q.includes(m);
+  });
   return row || null;
 }
 
@@ -224,6 +240,61 @@ app.get("/api/admin/price/:model", requireAdmin, async (req, res) => {
     });
   } catch (e) {
     res.status(500).json({ error: String(e.message || e) });
+  }
+});
+
+
+// ── Catalog routes ──────────────────────────────
+import { readFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname  = dirname(__filename);
+const PRODUCTS   = JSON.parse(
+  readFileSync(join(__dirname, '../products.json'), 'utf8')
+);
+
+// GET /api/machines — all machines, optional filters
+app.get('/api/machines', (req, res) => {
+  const { brand, category, q } = req.query;
+  let results = PRODUCTS;
+
+  if (brand)    results = results.filter(m => m.brand?.toLowerCase() === brand.toLowerCase());
+  if (category) results = results.filter(m => m.category?.toLowerCase() === category.toLowerCase());
+  if (q) {
+    const query = q.toLowerCase();
+    results = results.filter(m =>
+      m.name?.toLowerCase().includes(query) ||
+      m.model?.toLowerCase().includes(query) ||
+      m.description?.toLowerCase().includes(query) ||
+      (m.tags || []).some(t => t.toLowerCase().includes(query))
+    );
+  }
+
+  res.json(results);
+});
+
+// GET /api/machines/:id — single machine full detail
+app.get('/api/machines/:id', (req, res) => {
+  const machine = PRODUCTS.find(m => m.id === req.params.id);
+  if (!machine) return res.status(404).json({ error: 'Machine not found' });
+  res.json(machine);
+});
+
+// ── Agent chat endpoint ──────────────────────────
+import { chat } from './agent.js';
+
+app.post('/api/chat', async (req, res) => {
+  const { message, history } = req.body;
+  if (!message?.trim()) return res.status(400).json({ error: 'Message required' });
+
+  try {
+    const result = await chat(message, history || []);
+    res.json(result);
+  } catch (e) {
+    console.error('Agent error:', e);
+    res.status(500).json({ error: e.message });
   }
 });
 
