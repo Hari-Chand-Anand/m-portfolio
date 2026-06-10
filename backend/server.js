@@ -271,14 +271,41 @@ app.get('/api/admin/logs', requireAdmin, (req, res) => {
 });
 
 // ── Catalog routes ──────────────────────────────
-const __filename = fileURLToPath(import.meta.url);
-const __dirname  = dirname(__filename);
-const PRODUCTS   = JSON.parse(
-  readFileSync(join(__dirname, '../products.json'), 'utf8')
-);
-const PROJECTS   = JSON.parse(
-  readFileSync(join(__dirname, '../data/projects.json'), 'utf8')
-);
+const __filename    = fileURLToPath(import.meta.url);
+const __dirname     = dirname(__filename);
+const PRODUCTS      = JSON.parse(readFileSync(join(__dirname, '../products.json'), 'utf8'));
+const PROJECTS      = JSON.parse(readFileSync(join(__dirname, '../data/projects.json'), 'utf8'));
+const EXTENDED_RAW  = JSON.parse(readFileSync(join(__dirname, '../data/machines.json'), 'utf8'));
+const INSTALLATIONS = JSON.parse(readFileSync(join(__dirname, '../data/brand_model_city_counts_correct.json'), 'utf8'));
+
+// Normalise data/machines.json entries to the same shape as products.json
+function extractYtId(url) {
+  if (!url) return '';
+  const m = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\s]+)/);
+  return m ? m[1] : '';
+}
+
+const EXTENDED = EXTENDED_RAW.map(m => ({
+  id:          m.id,
+  brand:       m.brand,
+  model:       m.model,
+  name:        m.model,
+  category:    (m.type || '').toLowerCase(),
+  description: m.short || '',
+  media: {
+    catalogUrl: (m.catalogUrl || '').trim().includes('example.com') ? '' : (m.catalogUrl || '').trim(),
+    youtubeId:  extractYtId(m.videoUrl),
+    glbUrl:     '',
+  },
+  spec:     {},
+  features: [],
+  tags:     m.tags || [],
+  key:      m.sheetKey || m.id,
+  _source:  'extended',
+}));
+
+// Merge: products first, then extended (no id collision expected)
+const ALL_MACHINES = [...PRODUCTS, ...EXTENDED];
 
 // ── Query Logging ────────────────────────────────
 const LOG_DIR  = join(__dirname, '../logs');
@@ -293,24 +320,52 @@ function logQuery(entry) {
   }
 }
 
-// GET /api/machines — all machines, optional filters
+// GET /api/machines — all machines (both sources), optional filters
 app.get('/api/machines', (req, res) => {
   const { brand, category, q } = req.query;
-  let results = PRODUCTS;
+  let results = ALL_MACHINES;
 
   if (brand)    results = results.filter(m => m.brand?.toLowerCase() === brand.toLowerCase());
   if (category) results = results.filter(m => m.category?.toLowerCase() === category.toLowerCase());
   if (q) {
     const query = q.toLowerCase();
     results = results.filter(m =>
-      m.name?.toLowerCase().includes(query) ||
-      m.model?.toLowerCase().includes(query) ||
+      m.name?.toLowerCase().includes(query)        ||
+      m.model?.toLowerCase().includes(query)       ||
+      m.brand?.toLowerCase().includes(query)       ||
+      m.key?.toLowerCase().includes(query)         ||
+      m.category?.toLowerCase().includes(query)    ||
+      (m.operation || '').toLowerCase().includes(query) ||
       m.description?.toLowerCase().includes(query) ||
-      (m.tags || []).some(t => t.toLowerCase().includes(query))
+      (m.tags || []).some(t => t.toLowerCase().includes(query)) ||
+      Object.values(m.spec || {}).some(v => String(v).toLowerCase().includes(query))
     );
   }
 
   res.json(results);
+});
+
+// GET /api/installations/stats — aggregated installation presence
+app.get('/api/installations/stats', (req, res) => {
+  const { brand, city } = req.query;
+  let data = INSTALLATIONS;
+
+  if (brand) data = data.filter(r => r.brand?.toLowerCase() === brand.toLowerCase());
+  if (city)  data = data.filter(r => r.city?.toLowerCase().includes(city.toLowerCase()));
+
+  const totalInstallations = data.reduce((sum, r) => sum + (Number(r.count) || 1), 0);
+
+  const cityMap = {}, brandMap = {};
+  data.forEach(r => {
+    if (r.city)  cityMap[r.city]   = (cityMap[r.city]   || 0) + (Number(r.count) || 1);
+    if (r.brand) brandMap[r.brand] = (brandMap[r.brand] || 0) + (Number(r.count) || 1);
+  });
+
+  const topCities = Object.entries(cityMap)
+    .sort((a, b) => b[1] - a[1]).slice(0, 10)
+    .map(([city, count]) => ({ city, count }));
+
+  res.json({ total_installations: totalInstallations, unique_cities: Object.keys(cityMap).length, brands: brandMap, top_cities: topCities });
 });
 
 // GET /api/projects — manufacturing line setups

@@ -61,6 +61,24 @@ def get_projects() -> list:
 
 
 @tool
+def get_installation_stats(brand: str = "", city: str = "") -> dict:
+    """
+    Get geographic installation statistics for HCA machines across India.
+    Use when asked: where are machines installed, which cities, how many
+    installations, geographic presence, market reach, or city-wise data.
+    Args:
+        brand: Optional brand filter e.g. DUKE, DUKEJIA, HIGHLEAD, EPA
+        city: Optional city filter e.g. Noida, Ludhiana, Delhi, Bangalore
+    """
+    try:
+        params = {k: v for k, v in {"brand": brand, "city": city}.items() if v}
+        res = httpx.get(f"{BASE}/api/installations/stats", params=params, timeout=10)
+        return res.json()
+    except Exception as e:
+        return {"error": str(e)}
+
+
+@tool
 def get_price(machine_model: str) -> dict:
     """
     Get quoted price for a machine model.
