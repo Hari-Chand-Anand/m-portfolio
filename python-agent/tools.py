@@ -18,6 +18,8 @@ def search_machines(q: str = "", brand: str = "", category: str = "") -> list:
     try:
         res = httpx.get(f"{BASE}/api/machines", params=params, timeout=10)
         data = res.json()
+        if not data:
+            return [{"message": "No machines found. Available categories: embroidery, lockstitch, finishing, industrial, sewing."}]
         return data[:8]
     except Exception as e:
         return [{"error": str(e)}]
