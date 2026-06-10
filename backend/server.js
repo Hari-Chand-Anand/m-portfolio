@@ -276,6 +276,9 @@ const __dirname  = dirname(__filename);
 const PRODUCTS   = JSON.parse(
   readFileSync(join(__dirname, '../products.json'), 'utf8')
 );
+const PROJECTS   = JSON.parse(
+  readFileSync(join(__dirname, '../data/projects.json'), 'utf8')
+);
 
 // ── Query Logging ────────────────────────────────
 const LOG_DIR  = join(__dirname, '../logs');
@@ -308,6 +311,11 @@ app.get('/api/machines', (req, res) => {
   }
 
   res.json(results);
+});
+
+// GET /api/projects — manufacturing line setups
+app.get('/api/projects', (req, res) => {
+  res.json(PROJECTS);
 });
 
 // GET /api/machines/:id — single machine full detail

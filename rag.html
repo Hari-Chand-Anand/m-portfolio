@@ -185,8 +185,14 @@
       overflow: hidden;
     }
 
-    .mc-link {
+    .mc-actions {
       margin-top: auto;
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .mc-link {
       display: inline-block;
       padding: 6px 12px;
       border-radius: 8px;
@@ -199,6 +205,43 @@
       transition: background .15s;
     }
     .mc-link:hover { background: rgba(106,166,255,.2); }
+
+    .mc-link-yt {
+      background: rgba(255,80,80,.08);
+      color: #f87171;
+      border-color: rgba(255,80,80,.2);
+    }
+    .mc-link-yt:hover { background: rgba(255,80,80,.16); }
+
+    /* ── Project card ── */
+    .project-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      width: 240px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: border-color .15s, transform .15s;
+    }
+    .project-card:hover {
+      border-color: rgba(106,166,255,.35);
+      transform: translateY(-2px);
+    }
+    .pj-label {
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .pj-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.3;
+    }
 
     /* ── Price card ── */
     .price-card {
@@ -592,20 +635,47 @@
       if (card.type === 'machine_detail') {
         return buildMachineCard(card.machine);
       }
+      if (card.type === 'project_list') {
+        const frag = document.createDocumentFragment();
+        card.projects.forEach(p => frag.appendChild(buildProjectCard(p)));
+        const wrap = document.createElement('div');
+        wrap.style.display = 'contents';
+        wrap.appendChild(frag);
+        return wrap;
+      }
       return document.createElement('div');
     }
 
     function buildMachineCard(m) {
       const el = document.createElement('div');
       el.className = 'machine-card';
+      // catalogUrl lives under media in products.json; handle both shapes
+      const catUrl = (m.media && m.media.catalogUrl) || m.catalogUrl || '';
+      const ytId   = (m.media && m.media.youtubeId)  || m.youtubeId  || '';
+      const ytUrl  = ytId ? `https://www.youtube.com/watch?v=${encodeURIComponent(ytId)}` : '';
       el.innerHTML = `
         <div class="mc-brand">${escHtml(m.brand || '')}</div>
         <div class="mc-model">${escHtml(m.model || m.name || '')}</div>
         ${m.category ? `<div class="mc-category">${escHtml(m.category)}</div>` : ''}
         ${m.description ? `<div class="mc-desc">${escHtml(m.description)}</div>` : ''}
-        ${m.catalogUrl
-          ? `<a class="mc-link" href="${escHtml(m.catalogUrl)}" target="_blank" rel="noopener">View Catalog ↗</a>`
-          : ''}
+        ${catUrl || ytUrl ? `<div class="mc-actions">
+          ${catUrl ? `<a class="mc-link" href="${escHtml(catUrl)}" target="_blank" rel="noopener">Catalog ↗</a>` : ''}
+          ${ytUrl  ? `<a class="mc-link mc-link-yt" href="${escHtml(ytUrl)}" target="_blank" rel="noopener">▶ Video</a>` : ''}
+        </div>` : ''}
+      `;
+      return el;
+    }
+
+    function buildProjectCard(p) {
+      const el = document.createElement('div');
+      el.className = 'project-card';
+      const catUrl = p.catalogUrl || '';
+      el.innerHTML = `
+        <div class="pj-label">Manufacturing Line</div>
+        <div class="pj-title">${escHtml(p.title || '')}</div>
+        ${catUrl ? `<div class="mc-actions">
+          <a class="mc-link" href="${escHtml(catUrl)}" target="_blank" rel="noopener">Catalog ↗</a>
+        </div>` : ''}
       `;
       return el;
     }

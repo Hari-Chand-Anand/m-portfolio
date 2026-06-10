@@ -43,6 +43,24 @@ def get_machine_details(id: str) -> dict:
 
 
 @tool
+def get_projects() -> list:
+    """
+    Get all HCA manufacturing project lines (complete factory setups).
+    Use when asked about production lines, complete setups, shirt line,
+    denim line, gloves line, or what manufacturing solutions HCA offers.
+    Returns project title and catalog URL for each line.
+    """
+    try:
+        res = httpx.get(f"{BASE}/api/projects", timeout=10)
+        data = res.json()
+        if not data:
+            return [{"message": "No project lines found."}]
+        return data
+    except Exception as e:
+        return [{"error": str(e)}]
+
+
+@tool
 def get_price(machine_model: str) -> dict:
     """
     Get quoted price for a machine model.
