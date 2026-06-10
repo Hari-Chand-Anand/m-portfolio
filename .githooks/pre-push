@@ -1,0 +1,106 @@
+#!/bin/sh
+# Pre-push hook: block commits containing secrets or .env files
+
+RED='\033[0;31m'
+YELLOW='\033[1;33m'
+GREEN='\033[0;32m'
+NC='\033[0m'
+
+BLOCKED=0
+
+# Only examine commits not yet on the remote
+COMMITS=$(git log @{u}..HEAD --format="%H" 2>/dev/null)
+if [ -z "$COMMITS" ]; then
+  exit 0
+fi
+
+# Added lines only (strip diff headers starting with +++)
+ADDED=$(git diff @{u}..HEAD | grep "^+" | grep -v "^+++")
+
+# ── 1. Block .env files ───────────────────────────────────────────────
+ENV_FILES=$(git diff @{u}..HEAD --name-only | grep -E "(^|/)\.env(\.|$)")
+if [ -n "$ENV_FILES" ]; then
+  printf "${RED}[BLOCKED] .env file in push:${NC}\n"
+  echo "$ENV_FILES" | while read f; do printf "  • %s\n" "$f"; done
+  BLOCKED=1
+fi
+
+# ── 2. Scan for secret patterns ───────────────────────────────────────
+check_pattern() {
+  LABEL="$1"
+  PATTERN="$2"
+  MATCH=$(echo "$ADDED" | grep -E "$PATTERN")
+  if [ -n "$MATCH" ]; then
+    printf "${RED}[BLOCKED] Possible %s detected:${NC}\n" "$LABEL"
+    echo "$MATCH" | head -3 | while read line; do printf "  %s\n" "$line"; done
+    BLOCKED=1
+  fi
+}
+
+check_pattern "Groq API key"       "gsk_[a-zA-Z0-9]{40,}"
+check_pattern "OpenAI API key"     "sk-[a-zA-Z0-9]{40,}"
+check_pattern "AWS access key"     "AKIA[A-Z0-9]{16}"
+check_pattern "AWS secret key"     "aws_secret_access_key[[:space:]]*=[[:space:]]*[A-Za-z0-9/+=]{40}"
+check_pattern "GitHub token"       "gh[ps]_[a-zA-Z0-9]{36,}"
+check_pattern "Anthropic API key"  "sk-ant-[a-zA-Z0-9-]{40,}"
+check_pattern "HuggingFace token"  "hf_[a-zA-Z0-9]{30,}"
+check_pattern "Private key header" "BEGIN (RSA|EC|OPENSSH) PRIVATE KEY"
+
+# ── 3. Warn on weak dev secrets ───────────────────────────────────────
+WEAK=$(echo "$ADDED" | grep -iE "(JWT_SECRET|ADMIN_PASSWORD|DB_PASSWORD|POSTGRES_PASSWORD)[[:space:]]*=[[:space:]]*.{1,12}$")
+if [ -n "$WEAK" ]; then
+  printf "${YELLOW}[WARN] Short/weak secret — rotate before production:${NC}\n"
+  echo "$WEAK" | head -3 | while read line; do printf "  %s\n" "$line"; done
+fi
+
+# ── 4. Smoke test — verify services are up ───────────────────────────
+printf "Running smoke tests...\n"
+SMOKE_FAIL=0
+
+# Node.js backend
+NODE_RES=$(curl -s --max-time 5 http://localhost:3001/ 2>/dev/null)
+if echo "$NODE_RES" | grep -q "Backend is running"; then
+  printf "${GREEN}  ✔ Node backend   http://localhost:3001${NC}\n"
+else
+  printf "${RED}  ✘ Node backend   not responding (is server.js running?)${NC}\n"
+  SMOKE_FAIL=1
+fi
+
+# Python agent health
+PY_RES=$(curl -s --max-time 5 http://localhost:8000/health 2>/dev/null)
+if echo "$PY_RES" | grep -q '"ok"'; then
+  printf "${GREEN}  ✔ Python agent   http://localhost:8000${NC}\n"
+else
+  printf "${RED}  ✘ Python agent   not responding (is docker compose up?)${NC}\n"
+  SMOKE_FAIL=1
+fi
+
+# End-to-end chat round-trip
+if [ "$SMOKE_FAIL" = "0" ]; then
+  CHAT_RES=$(curl -s --max-time 15 -X POST http://localhost:3001/api/chat \
+    -H "Content-Type: application/json" \
+    -d '{"message":"ping","thread_id":"pre-push-smoke"}' 2>/dev/null)
+  if echo "$CHAT_RES" | grep -q '"answer"'; then
+    printf "${GREEN}  ✔ Chat round-trip /api/chat → python-agent → Groq${NC}\n"
+  else
+    printf "${RED}  ✘ Chat round-trip failed — check agent logs${NC}\n"
+    SMOKE_FAIL=1
+  fi
+fi
+
+if [ "$SMOKE_FAIL" = "1" ]; then
+  printf "\n${YELLOW}[WARN] Smoke tests failed — push is blocked until services are healthy.${NC}\n"
+  printf "Start services:  docker compose up -d && node backend/server.js\n"
+  BLOCKED=1
+fi
+
+# ── Result ────────────────────────────────────────────────────────────
+if [ "$BLOCKED" = "1" ]; then
+  printf "\n${RED}Push blocked.${NC}\n"
+  printf "  Secrets:   git rm --cached <file> && git commit --amend\n"
+  printf "  Services:  docker compose up -d && node backend/server.js\n"
+  exit 1
+fi
+
+printf "${GREEN}[OK] All checks passed — pushing.${NC}\n"
+exit 0
