@@ -1,0 +1,63 @@
+import os
+import httpx
+from langchain_core.tools import tool
+
+BASE = os.getenv("API_BASE", "http://localhost:3001")
+
+@tool
+def search_machines(q: str = "", brand: str = "", category: str = "") -> list:
+    """
+    Search HCA machine catalog by keyword, brand, or category.
+    Use for finding machines, listing options, recommendations.
+    Args:
+        q: Keyword e.g. embroidery, lockstitch, button hole, overlock
+        brand: DUKE or DUKEJIA
+        category: e.g. embroidery, lockstitch
+    """
+    params = {k: v for k, v in {"q": q, "brand": brand, "category": category}.items() if v}
+    try:
+        res = httpx.get(f"{BASE}/api/machines", params=params, timeout=10)
+        data = res.json()
+        return data[:8]
+    except Exception as e:
+        return [{"error": str(e)}]
+
+
+@tool
+def get_machine_details(id: str) -> dict:
+    """
+    Get complete specs for one specific machine.
+    Use when user asks about a specific model or wants full details.
+    Args:
+        id: Machine ID from search results e.g. duke-dk-1201-embroidery-machine
+    """
+    try:
+        res = httpx.get(f"{BASE}/api/machines/{id}", timeout=10)
+        if res.status_code == 404:
+            return {"error": "Machine not found in catalog"}
+        return res.json()
+    except Exception as e:
+        return {"error": str(e)}
+
+
+@tool
+def get_price(machine_model: str) -> dict:
+    """
+    Get quoted price for a machine model.
+    Use whenever user asks about price, cost, or rate.
+    If the first attempt returns an error, retry with variations:
+    - Strip brand prefix (e.g. 'DUKEJIA DY-1201' → try 'DY-1201')
+    - Try without spaces (e.g. 'DY 1201' → try 'DY-1201')
+    Args:
+        machine_model: Machine model name e.g. DY-1201, DUKE R5, DUKE R9
+    """
+    try:
+        res = httpx.get(
+            f"{BASE}/api/price/{machine_model}",
+            timeout=10
+        )
+        if res.status_code == 404:
+            return {"error": "Price not available for this model"}
+        return res.json()
+    except Exception as e:
+        return {"error": str(e)}

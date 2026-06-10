@@ -1,0 +1,44 @@
+version: '3.9'
+
+services:
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: hca_postgres
+    environment:
+      POSTGRES_DB:       hca_agent
+      POSTGRES_USER:     hca
+      POSTGRES_PASSWORD: hca_secret
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hca -d hca_agent"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  python-agent:
+    build: ./python-agent
+    container_name: hca_python_agent
+    env_file: ./backend/.env
+    environment:
+      DATABASE_URL: postgresql://hca:hca_secret@postgres:5432/hca_agent
+      # Node.js runs on the HOST — use host.docker.internal (Mac/Windows)
+      # On Linux: use your machine's LAN IP or add extra_hosts below
+      API_BASE: http://host.docker.internal:3001
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # ── Linux-only: uncomment these two blocks ──────────────────────────
+  # extra_hosts:
+  #   - "host.docker.internal:host-gateway"
+
+volumes:
+  postgres_data:

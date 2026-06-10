@@ -1,0 +1,8 @@
+node_modules/
+.env
+logs/
+*.log
+python-agent/.venv/
+python-agent/__pycache__/
+**/__pycache__/
+*.pyc

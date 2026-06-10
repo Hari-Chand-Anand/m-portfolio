@@ -359,6 +359,78 @@
       width: 100%;
       margin: 0 auto;
     }
+
+    /* ── Thread controls ── */
+    .turn-badge {
+      display: none;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 10px;
+      letter-spacing: .8px;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      white-space: nowrap;
+    }
+    .turn-badge.visible { display: flex; }
+    .turn-badge::before {
+      content: '';
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--brand);
+      opacity: .6;
+      flex-shrink: 0;
+    }
+
+    #new-chat-btn {
+      display: none;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 11px;
+      letter-spacing: .5px;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      background: transparent;
+      cursor: pointer;
+      font-family: var(--font-ui);
+      transition: color .15s, border-color .15s, background .15s;
+      white-space: nowrap;
+    }
+    #new-chat-btn.visible { display: flex; }
+    #new-chat-btn:hover {
+      color: var(--text);
+      border-color: rgba(255,255,255,.2);
+      background: rgba(255,255,255,.04);
+    }
+
+    /* ── Resume notice on welcome ── */
+    .resume-notice {
+      display: none;
+      align-items: center;
+      gap: 8px;
+      margin: -16px auto 20px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 11px;
+      color: var(--brand);
+      border: 1px solid rgba(106,166,255,.2);
+      background: rgba(106,166,255,.06);
+      letter-spacing: .4px;
+      max-width: fit-content;
+    }
+    .resume-notice.visible { display: flex; }
+    .resume-notice::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--brand);
+      box-shadow: 0 0 5px var(--brand);
+      flex-shrink: 0;
+    }
   </style>
 </head>
 <body>
@@ -370,6 +442,8 @@
       <strong>HCA Assistant</strong>
       <span>Catalog · Specs · Live Prices</span>
     </div>
+    <span class="turn-badge" id="turn-badge"></span>
+    <button id="new-chat-btn" title="Start a new conversation">+ New Chat</button>
     <div class="status-dot" title="AI online"></div>
   </header>
 
@@ -379,7 +453,8 @@
 
       <div class="welcome" id="welcome">
         <h2>HCA Assistant</h2>
-        <p>Ask me about machines, specifications, or get live prices straight from the catalog.</p>
+        <p id="welcome-sub">Ask me about machines, specifications, or get live prices straight from the catalog.</p>
+        <div class="resume-notice" id="resume-notice"></div>
         <div class="suggestions">
           <button class="suggestion" data-q="Show me embroidery machines">Embroidery machines</button>
           <button class="suggestion" data-q="What lockstitch machines do you have?">Lockstitch machines</button>
@@ -403,7 +478,9 @@
 
   <script>
     const API = 'http://localhost:3001';
-    let history = [];
+    let history  = [];
+    let threadId = localStorage.getItem('hca_thread_id') || null;
+    let turnCount = parseInt(localStorage.getItem('hca_turns') || '0', 10);
     let busy = false;
 
     const messagesInner = document.getElementById('messages-inner');
@@ -411,6 +488,9 @@
     const inputEl       = document.getElementById('user-input');
     const sendBtn       = document.getElementById('send-btn');
     const welcome       = document.getElementById('welcome');
+    const turnBadge     = document.getElementById('turn-badge');
+    const newChatBtn    = document.getElementById('new-chat-btn');
+    const resumeNotice  = document.getElementById('resume-notice');
 
     // Auto-resize textarea
     inputEl.addEventListener('input', () => {
@@ -424,6 +504,29 @@
     });
 
     sendBtn.addEventListener('click', send);
+
+    // Restore thread state on load
+    if (threadId && turnCount > 0) {
+      updateThreadUI();
+      resumeNotice.textContent = `Resuming previous session · ${turnCount} turn${turnCount !== 1 ? 's' : ''}`;
+      resumeNotice.classList.add('visible');
+    }
+
+    // New chat
+    newChatBtn.addEventListener('click', () => {
+      if (!confirm('Start a new conversation? This will clear the current session.')) return;
+      threadId  = null;
+      turnCount = 0;
+      localStorage.removeItem('hca_thread_id');
+      localStorage.removeItem('hca_turns');
+      location.reload();
+    });
+
+    function updateThreadUI() {
+      turnBadge.textContent = `${turnCount} turn${turnCount !== 1 ? 's' : ''}`;
+      turnBadge.classList.add('visible');
+      newChatBtn.classList.add('visible');
+    }
 
     // Suggestion chips
     document.querySelectorAll('.suggestion').forEach(btn => {
@@ -555,7 +658,7 @@
         const res = await fetch(`${API}/api/chat`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ message: text, history })
+          body: JSON.stringify({ message: text, thread_id: threadId })
         });
 
         const data = await res.json();
@@ -564,7 +667,12 @@
         if (data.error) {
           addBotRow('Sorry, something went wrong: ' + data.error, []);
         } else {
-          history = data.history || [];
+          threadId  = data.thread_id || threadId;
+          history   = data.history   || [];
+          turnCount = data.history_turns || turnCount + 1;
+          localStorage.setItem('hca_thread_id', threadId);
+          localStorage.setItem('hca_turns', turnCount);
+          updateThreadUI();
           addBotRow(data.answer, data.cards || []);
         }
       } catch (err) {

@@ -2,6 +2,10 @@ import express from "express";
 import cors from "cors";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
+import { readFileSync, appendFileSync, mkdirSync, existsSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+import { randomUUID } from 'crypto';
 
 dotenv.config();
 
@@ -244,16 +248,47 @@ app.get("/api/admin/price/:model", requireAdmin, async (req, res) => {
 });
 
 
-// ── Catalog routes ──────────────────────────────
-import { readFileSync } from 'fs';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+// GET /api/admin/logs — view query log (admin only)
+app.get('/api/admin/logs', requireAdmin, (req, res) => {
+  try {
+    if (!existsSync(LOG_FILE)) return res.json({ total: 0, entries: [] });
 
+    const lines = readFileSync(LOG_FILE, 'utf8')
+      .split('\n')
+      .filter(Boolean)
+      .map(l => JSON.parse(l));
+
+    // Optional ?limit=N and ?offset=N for pagination
+    const limit  = Math.min(parseInt(req.query.limit  || '200', 10), 1000);
+    const offset = parseInt(req.query.offset || '0', 10);
+    const total  = lines.length;
+    const entries = lines.slice(-(offset + limit), total - offset).reverse();
+
+    res.json({ total, entries });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// ── Catalog routes ──────────────────────────────
 const __filename = fileURLToPath(import.meta.url);
 const __dirname  = dirname(__filename);
 const PRODUCTS   = JSON.parse(
   readFileSync(join(__dirname, '../products.json'), 'utf8')
 );
+
+// ── Query Logging ────────────────────────────────
+const LOG_DIR  = join(__dirname, '../logs');
+const LOG_FILE = join(LOG_DIR, 'query_log.jsonl');
+
+function logQuery(entry) {
+  try {
+    if (!existsSync(LOG_DIR)) mkdirSync(LOG_DIR, { recursive: true });
+    appendFileSync(LOG_FILE, JSON.stringify(entry) + '\n', 'utf8');
+  } catch (e) {
+    console.error('⚠️  Log write failed:', e.message);
+  }
+}
 
 // GET /api/machines — all machines, optional filters
 app.get('/api/machines', (req, res) => {
@@ -283,17 +318,58 @@ app.get('/api/machines/:id', (req, res) => {
 });
 
 // ── Agent chat endpoint ──────────────────────────
-import { chat } from './agent.js';
+const PYTHON_AGENT_URL = process.env.PYTHON_AGENT_URL || 'http://localhost:8000';
 
 app.post('/api/chat', async (req, res) => {
-  const { message, history } = req.body;
+  const { message, thread_id } = req.body;
   if (!message?.trim()) return res.status(400).json({ error: 'Message required' });
 
+  const startTime = Date.now();
+  const tid       = thread_id || randomUUID();
+
   try {
-    const result = await chat(message, history || []);
-    res.json(result);
+    const pyRes = await fetch(`${PYTHON_AGENT_URL}/chat`, {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify({ message, thread_id: tid }),
+    });
+
+    if (!pyRes.ok) {
+      const errText = await pyRes.text();
+      throw new Error(`Python agent ${pyRes.status}: ${errText}`);
+    }
+
+    const result = await pyRes.json();
+
+    logQuery({
+      timestamp:     new Date().toISOString(),
+      thread_id:     tid,
+      query:         message,
+      answer:        result.answer,
+      tools_used:    (result.cards || []).map(c => c.type),
+      response_ms:   Date.now() - startTime,
+      history_turns: result.history_turns || 0,
+    });
+
+    res.json({
+      answer:    result.answer,
+      cards:     result.cards || [],
+      thread_id: tid,
+      history:   [],
+    });
+
   } catch (e) {
     console.error('Agent error:', e);
+
+    logQuery({
+      timestamp:   new Date().toISOString(),
+      thread_id:   tid,
+      query:       message,
+      error:       e.message,
+      tools_used:  [],
+      response_ms: Date.now() - startTime,
+    });
+
     res.status(500).json({ error: e.message });
   }
 });
