@@ -55,9 +55,9 @@ except ImportError:
     sys.exit("Missing: pip install pdfplumber")
 
 try:
-    import gdown
+    import requests
 except ImportError:
-    sys.exit("Missing: pip install gdown")
+    sys.exit("Missing: pip install requests")
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
@@ -69,11 +69,27 @@ def extract_file_id(drive_url: str) -> str | None:
 
 
 def download_pdf(file_id: str, dest_path: str) -> bool:
-    """Download a Google Drive PDF. Returns True on success."""
-    url = f"https://drive.google.com/uc?export=download&id={file_id}"
+    """Download a Google Drive PDF using requests (handles confirm redirect)."""
+    session = requests.Session()
+    session.headers.update({"User-Agent": "Mozilla/5.0"})
+    url = f"https://drive.usercontent.google.com/download?id={file_id}&export=download&authuser=0&confirm=t"
     try:
-        result = gdown.download(url, dest_path, quiet=True)
-        return result is not None and os.path.getsize(dest_path) > 1000
+        resp = session.get(url, stream=True, timeout=30)
+        if resp.status_code != 200:
+            print(f"    ⚠  HTTP {resp.status_code}")
+            return False
+        content_type = resp.headers.get("Content-Type", "")
+        if "text/html" in content_type:
+            print(f"    ⚠  Got HTML instead of PDF — file not publicly shared")
+            return False
+        with open(dest_path, "wb") as f:
+            for chunk in resp.iter_content(32768):
+                f.write(chunk)
+        size = os.path.getsize(dest_path)
+        if size < 1000:
+            print(f"    ⚠  File too small ({size} bytes) — likely an error page")
+            return False
+        return True
     except Exception as e:
         print(f"    ⚠  Download failed: {e}")
         return False
@@ -186,77 +202,148 @@ def load_catalog_urls() -> list[dict]:
     return entries
 
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--brand",  help="Only ingest catalogs for this brand")
-    parser.add_argument("--force",  action="store_true", help="Re-ingest already processed entries")
-    parser.add_argument("--limit",  type=int, default=0, help="Max entries to process (0 = all)")
-    args = parser.parse_args()
+def build_machine_text(m: dict, source: str) -> str:
+    """Build a rich searchable text document from a machine's JSON data."""
+    parts = []
+    brand   = m.get("brand", "")
+    model   = m.get("model") or m.get("name", "")
+    cat     = m.get("category") or m.get("type", "")
+    desc    = m.get("description") or m.get("short", "")
 
-    print(f"\n🔌 Connecting to Postgres: {DATABASE_URL[:40]}...")
-    conn = psycopg2.connect(DATABASE_URL)
-    setup_db(conn)
+    if brand:  parts.append(f"Brand: {brand}")
+    if model:  parts.append(f"Model: {model}")
+    if cat:    parts.append(f"Category: {cat}")
+    if desc:   parts.append(f"Description: {desc}")
 
+    # products.json: spec is a dict
+    spec = m.get("spec")
+    if isinstance(spec, dict):
+        parts.append("Specifications:")
+        for k, v in spec.items():
+            parts.append(f"  {k}: {v}")
+
+    # data/machines.json: tags, operation, stockQty etc.
+    if m.get("operation"):   parts.append(f"Operation: {m['operation']}")
+    if m.get("tags"):        parts.append(f"Tags: {', '.join(m['tags'])}")
+    if m.get("equivalents"): parts.append(f"Equivalent models: {', '.join(m['equivalents'])}")
+
+    return "\n".join(parts)
+
+
+def index_json_catalog(conn, force: bool = False, brand_filter: str = ""):
+    """Index all 296 machines from products.json + data/machines.json into catalog_docs."""
+    base = Path(__file__).parent
+    total_ok = total_skip = 0
+
+    for json_path in [base / "products.json", base / "data" / "machines.json"]:
+        data = json.loads(json_path.read_text(encoding="utf-8"))
+        source = json_path.name
+
+        for m in data:
+            brand = m.get("brand", "")
+            if brand_filter and brand.upper() != brand_filter.upper():
+                continue
+
+            machine_id = m.get("id", "")
+            if not machine_id:
+                continue
+
+            # Skip if already indexed and not forcing
+            if not force and already_ingested(conn, machine_id):
+                total_skip += 1
+                continue
+
+            text = build_machine_text(m, source)
+            if not text.strip():
+                total_skip += 1
+                continue
+
+            if force:
+                delete_machine(conn, machine_id)
+
+            chunks = chunk_text(text, chunk_size=400, overlap=50)
+            model_name = m.get("model") or m.get("name", "")
+            insert_chunks(conn, machine_id, brand, model_name, chunks)
+            total_ok += 1
+
+    print(f"   JSON catalog: {total_ok} indexed, {total_skip} skipped")
+
+
+def ingest_pdfs(conn, force: bool = False, brand_filter: str = ""):
+    """Download catalog PDFs from Drive and ingest their text into catalog_docs."""
     entries = load_catalog_urls()
-    print(f"📋 Found {len(entries)} catalog entries")
 
-    if args.brand:
-        entries = [e for e in entries if e["brand"].lower() == args.brand.lower()]
-        print(f"   Filtered to brand '{args.brand}': {len(entries)} entries")
+    if brand_filter:
+        entries = [e for e in entries if e["brand"].upper() == brand_filter.upper()]
 
-    if args.limit:
-        entries = entries[:args.limit]
-
+    print(f"\n📄 PDF ingestion: {len(entries)} machines with catalog PDFs")
     ok = skip = fail = 0
 
-    for i, entry in enumerate(entries, 1):
-        mid   = entry["id"]
-        brand = entry["brand"]
-        model = entry["model"]
-        fid   = entry["file_id"]
+    with tempfile.TemporaryDirectory() as tmpdir:
+        for i, entry in enumerate(entries, 1):
+            machine_id = entry["id"]
+            brand      = entry["brand"]
+            model      = entry["model"]
+            file_id    = entry["file_id"]
 
-        label = f"[{i}/{len(entries)}] {brand} {model}"
+            print(f"  [{i}/{len(entries)}] {brand} {model} ... ", end="", flush=True)
 
-        if not args.force and already_ingested(conn, mid):
-            print(f"  ⏭  {label} — already ingested")
-            skip += 1
-            continue
+            if not force and already_ingested(conn, machine_id):
+                print("skipped (already indexed)")
+                skip += 1
+                continue
 
-        print(f"  ↓  {label}")
-
-        with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as tmp:
-            tmp_path = tmp.name
-
-        try:
-            if not download_pdf(fid, tmp_path):
-                print(f"    ✗  Download failed — skipping")
+            pdf_path = os.path.join(tmpdir, f"{machine_id}.pdf")
+            if not download_pdf(file_id, pdf_path):
                 fail += 1
                 continue
 
-            text = extract_text(tmp_path)
+            text = extract_text(pdf_path)
             if not text.strip():
-                print(f"    ✗  No text extracted — skipping")
+                print("no text extracted")
                 fail += 1
                 continue
+
+            if force:
+                delete_machine(conn, machine_id)
 
             chunks = chunk_text(text)
-            if args.force:
-                delete_machine(conn, mid)
-            insert_chunks(conn, mid, brand, model, chunks)
-            print(f"    ✓  {len(chunks)} chunks stored ({len(text)} chars)")
+            insert_chunks(conn, machine_id, brand, model, chunks)
+            print(f"done ({len(chunks)} chunks)")
             ok += 1
+            time.sleep(0.5)  # be polite to Drive
 
-        finally:
-            if os.path.exists(tmp_path):
-                os.unlink(tmp_path)
+    print(f"\n   PDF results: {ok} indexed, {skip} skipped, {fail} failed")
+    return ok, fail
 
-        # polite rate limiting
-        time.sleep(0.5)
+
+def main():
+    parser = argparse.ArgumentParser(description="Ingest HCA machine catalog into Postgres for RAG search")
+    parser.add_argument("--brand", default="", help="Only ingest machines for this brand (e.g. EPA, DUKE)")
+    parser.add_argument("--force", action="store_true", help="Re-ingest even if already indexed")
+    parser.add_argument("--json-only", action="store_true", help="Only index JSON specs, skip PDF download")
+    args = parser.parse_args()
+
+    brand_filter = args.brand.strip().upper()
+
+    print(f"Connecting to Postgres...")
+    try:
+        conn = psycopg2.connect(DATABASE_URL)
+    except Exception as e:
+        sys.exit(f"Cannot connect to Postgres: {e}")
+
+    setup_db(conn)
+
+    # Step 1: Index structured JSON specs for all machines (fast, no download)
+    print(f"\n📋 Indexing JSON catalog specs...")
+    index_json_catalog(conn, force=args.force, brand_filter=brand_filter)
+
+    # Step 2: Download and index PDF catalogs (slower, requires Drive access)
+    if not args.json_only:
+        ingest_pdfs(conn, force=args.force, brand_filter=brand_filter)
 
     conn.close()
-    print(f"\n{'='*50}")
-    print(f"Done.  ✅ {ok} ingested  |  ⏭ {skip} skipped  |  ✗ {fail} failed")
-    print(f"{'='*50}\n")
+    print("\nDone.")
 
 
 if __name__ == "__main__":

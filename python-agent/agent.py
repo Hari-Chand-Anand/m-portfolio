@@ -8,30 +8,30 @@ from psycopg_pool import ConnectionPool
 
 from tools import search_machines, get_machine_details, get_price, get_projects, get_installation_stats, search_catalog_docs
 
-SYSTEM_PROMPT = """You are the HCA Sales Assistant for Hari Chand Anand & Co. — an industrial sewing machinery company in India.
+SYSTEM_PROMPT = """You are the HCA Sales Assistant for Hari Chand Anand & Co. -- an industrial sewing machinery company in India.
 Contact: tech@grouphca.com
 
-## RULE #1 — MANDATORY, NO EXCEPTIONS
+## RULE #1 -- MANDATORY, NO EXCEPTIONS
 You have ZERO knowledge of what machines, brands, models, or specs HCA carries.
 Every answer about catalog, brands, models, pricing, or installations MUST come from a tool call.
-If you have not called a tool yet this turn, you cannot answer — call the tool first.
+If you have not called a tool yet this turn, you cannot answer -- call the tool first.
 
-## Step 1 — Before writing any response, classify the query
+## Step 1 -- Before writing any response, classify the query
 
 Ask yourself: "Is this about machines, brands, models, categories, prices, installations, factory lines, or technical specs?"
-- If YES → find the right tool below and call it NOW. Do not respond yet.
-- If NO (e.g. greeting, general question) → respond directly.
+- If YES -> find the right tool below and call it NOW. Do not respond yet.
+- If NO (e.g. greeting, general question) -> respond directly.
 
-## Step 2 — Tool decision table
+## Step 2 -- Tool decision table
 
 | Query type | Tool to call |
 |---|---|
-| What brands / machines do you carry? | search_machines(q="") |
-| Machines by a specific brand | search_machines(brand="<brand>") |
+| What brands do you carry? / Overview of catalog | search_machines(q="") -- returns brand-grouped summary; list brands in text, invite user to ask about a specific brand |
+| Machines by a specific brand | search_machines(brand="<brand>") -- brands: DUKE, DUKEJIA, EPA, HIGHLEAD, HIKARI, GRAND, LOIVA, MERROW, PFAFF, ZOJE, VIOS, JUITA, HUTANG, LENSH |
 | Machines by type or category | search_machines(category="<type>") |
 | Specific model or keyword search | search_machines(q="<keyword>") |
 | Full specs of one machine | get_machine_details(id) using id from search results |
-| Price / cost / rate of any model | get_price(machine_model="...") — retry with stripped model name if 404 |
+| Price / cost / rate of any model | get_price(machine_model="...") -- retry with stripped model name if 404 |
 | Factory lines / complete production setups | get_projects() |
 | Installations / city presence / geographic reach | get_installation_stats() |
 | Technical specs from catalog PDF (stitch length, needle, motor, thread) | search_catalog_docs(query="...", model="...") |
@@ -39,14 +39,14 @@ Ask yourself: "Is this about machines, brands, models, categories, prices, insta
 ### Price retry logic
 - Attempt 1: full name as given
 - Attempt 2: strip brand prefix
-- Attempt 3: normalise separators (spaces → hyphens)
-- Attempt 4: use `key` field from search_machines results
+- Attempt 3: normalise separators (spaces -> hyphens)
+- Attempt 4: use key field from search_machines results
 
-## Step 3 — Respond after tool results are in hand
+## Step 3 -- Respond after tool results are in hand
 
 - Write ONE brief sentence intro (e.g. "Here are our embroidery machines:")
-- Data renders as cards — do NOT list machine names, specs, or prices in text
-- Never paste catalog URLs or video links in text — they are on the cards
+- Data renders as cards -- do NOT list machine names, specs, or prices in text
+- Never paste catalog URLs or video links in text -- they are on the cards
 - For bulk/volume pricing: "Contact our sales team at tech@grouphca.com for bulk pricing."
 
 ## What you must never do
@@ -62,7 +62,7 @@ Ask yourself: "Is this about machines, brands, models, categories, prices, insta
 
 TOOLS = [search_machines, get_machine_details, get_price, get_projects, get_installation_stats, search_catalog_docs]
 
-# ── LLM ─────────────────────────────────────────────────────────────────
+# -- LLM ---------------------------------------------------------------------
 llm = ChatGroq(
     model="qwen/qwen3-32b",
     api_key=os.getenv("GROQ_API_KEY"),
@@ -70,7 +70,7 @@ llm = ChatGroq(
     temperature=0,
 )
 
-# ── Postgres checkpointer ────────────────────────────────────────────────
+# -- Postgres checkpointer ----------------------------------------------------
 DB_URI = os.getenv("DATABASE_URL")
 
 _pool = None
@@ -100,7 +100,7 @@ def get_graph():
     return _graph
 
 
-# ── Cards extraction ─────────────────────────────────────────────────────
+# -- Cards extraction ---------------------------------------------------------
 def extract_cards(messages: list) -> list:
     """
     Parse tool messages from the final LangGraph state and build
@@ -118,8 +118,8 @@ def extract_cards(messages: list) -> list:
 
     cards = []
 
-    # Map tool_call_id → tool name from AI messages
-    tool_name_map: dict[str, str] = {}
+    # Map tool_call_id -> tool name from AI messages
+    tool_name_map = {}
     for msg in messages:
         if isinstance(msg, AIMessage) and msg.tool_calls:
             for tc in msg.tool_calls:
@@ -133,9 +133,12 @@ def extract_cards(messages: list) -> list:
             content = json.loads(msg.content) if isinstance(msg.content, str) else msg.content
 
             if tool_name == "search_machines" and isinstance(content, list) and content:
-                machines = [m for m in content if "error" not in m and "message" not in m]
-                if machines:
-                    cards.append({"type": "machine_list", "machines": machines})
+                # Brand summary (no filter) has total_machines key -- not machine cards
+                is_brand_summary = all("total_machines" in m for m in content if isinstance(m, dict))
+                if not is_brand_summary:
+                    machines = [m for m in content if "error" not in m and "message" not in m]
+                    if machines:
+                        cards.append({"type": "machine_list", "machines": machines})
 
             elif tool_name == "get_machine_details" and isinstance(content, dict) and "error" not in content:
                 cards.append({"type": "machine_detail", "machine": content})
@@ -158,7 +161,7 @@ def extract_cards(messages: list) -> list:
     return cards
 
 
-# ── Public interface ─────────────────────────────────────────────────────
+# -- Public interface ---------------------------------------------------------
 def run_chat(message: str, thread_id: str) -> dict:
     """
     Invoke the graph for one user message.

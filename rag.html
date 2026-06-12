@@ -466,10 +466,11 @@
     /* ── Input area ── */
     .input-area {
       flex-shrink: 0;
-      padding: 14px 20px;
-      border-top: 1px solid var(--border);
-      background: rgba(11,18,32,.85);
+      padding: 16px 20px 20px;
+      border-top: 1px solid rgba(106,166,255,.15);
+      background: rgba(8,14,28,.95);
       backdrop-filter: blur(14px);
+      z-index: 5;
     }
 
     .input-wrap {
@@ -482,22 +483,25 @@
 
     #user-input {
       flex: 1;
-      background: var(--input-bg);
-      border: 1px solid var(--border);
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(106,166,255,.25);
       border-radius: 12px;
-      padding: 12px 16px;
+      padding: 13px 16px;
       font-size: 14px;
       color: var(--text);
       font-family: var(--font-ui);
       resize: none;
       outline: none;
       line-height: 1.5;
-      min-height: 46px;
+      min-height: 48px;
       max-height: 140px;
-      transition: border-color .15s;
+      transition: border-color .15s, background .15s;
     }
 
-    #user-input:focus { border-color: rgba(106,166,255,.4); }
+    #user-input:focus {
+      border-color: rgba(106,166,255,.6);
+      background: rgba(255,255,255,.09);
+    }
     #user-input::placeholder { color: var(--muted); }
 
     #send-btn {

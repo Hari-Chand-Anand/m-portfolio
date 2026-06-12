@@ -9,10 +9,10 @@ def search_machines(q: str = "", brand: str = "", category: str = "") -> list:
     """
     Search the HCA machine catalog.
     ALWAYS call this tool for any question about machines, brands, or categories.
-    Never answer catalog questions from memory — call this first, every time.
+    Never answer catalog questions from memory -- call this first, every time.
     Args:
         q: Keyword search term
-        brand: Filter by brand name
+        brand: Filter by brand name (e.g. DUKE, HIGHLEAD, HIKARI, EPA, GRAND, LOIVA, MERROW, PFAFF, ZOJE, VIOS, JUITA, HUTANG, LENSH, DUKEJIA)
         category: Filter by category
     """
     params = {k: v for k, v in {"q": q, "brand": brand, "category": category}.items() if v}
@@ -21,7 +21,25 @@ def search_machines(q: str = "", brand: str = "", category: str = "") -> list:
         data = res.json()
         if not data:
             return [{"message": "No machines found for that query."}]
-        return data[:12]
+
+        # No filters -- return a brand-grouped summary so the agent surfaces
+        # all 15 brands rather than just the first N machines from the list.
+        if not q and not brand and not category:
+            brand_counts = {}
+            brand_samples = {}
+            for m in data:
+                b = m.get("brand", "Unknown")
+                brand_counts[b] = brand_counts.get(b, 0) + 1
+                if b not in brand_samples:
+                    brand_samples[b] = m.get("model") or m.get("name") or ""
+            summary = [
+                {"brand": b, "total_machines": brand_counts[b], "example_model": brand_samples[b]}
+                for b in sorted(brand_counts, key=lambda x: -brand_counts[x])
+            ]
+            return summary
+
+        # Filtered search -- return up to 20 results
+        return data[:20]
     except Exception as e:
         return [{"error": str(e)}]
 
@@ -103,8 +121,8 @@ def search_catalog_docs(query: str, model: str = "") -> list:
     needle requirements, motor specs, tension settings, or any technical detail
     not available from basic catalog search.
     Args:
-        query: Technical term to search for (e.g. "stitch length", "needle type", "motor power")
-        model: Optional machine model to narrow search (e.g. "DY-1201")
+        query: Technical term to search for e.g. stitch length, needle type, motor power
+        model: Optional machine model to narrow search e.g. DY-1201
     """
     try:
         params = {k: v for k, v in {"query": query, "model": model}.items() if v}
@@ -114,6 +132,6 @@ def search_catalog_docs(query: str, model: str = "") -> list:
         data = res.json()
         if not data:
             return [{"message": "No technical documentation found for that query."}]
-        return data[:5]
+        return data[:10]
     except Exception as e:
         return [{"error": str(e)}]
