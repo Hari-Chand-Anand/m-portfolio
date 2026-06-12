@@ -6,8 +6,12 @@ import { readFileSync, appendFileSync, mkdirSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { randomUUID } from 'crypto';
+import pg from 'pg';
+const { Pool } = pg;
 
-dotenv.config();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+dotenv.config({ path: join(__dirname, '.env') });
 
 const app = express();
 
@@ -271,8 +275,6 @@ app.get('/api/admin/logs', requireAdmin, (req, res) => {
 });
 
 // ── Catalog routes ──────────────────────────────
-const __filename    = fileURLToPath(import.meta.url);
-const __dirname     = dirname(__filename);
 const PRODUCTS      = JSON.parse(readFileSync(join(__dirname, '../products.json'), 'utf8'));
 const PROJECTS      = JSON.parse(readFileSync(join(__dirname, '../data/projects.json'), 'utf8'));
 const EXTENDED_RAW  = JSON.parse(readFileSync(join(__dirname, '../data/machines.json'), 'utf8'));
@@ -378,6 +380,86 @@ app.get('/api/machines/:id', (req, res) => {
   const machine = PRODUCTS.find(m => m.id === req.params.id);
   if (!machine) return res.status(404).json({ error: 'Machine not found' });
   res.json(machine);
+});
+
+// ── Postgres (for catalog docs + thread listing) ──
+const pgPool = new Pool({ connectionString: process.env.DATABASE_URL });
+
+// GET /api/catalog-docs/search — full-text search over ingested PDFs
+app.get('/api/catalog-docs/search', async (req, res) => {
+  const { query, model } = req.query;
+  if (!query?.trim()) return res.status(400).json({ error: 'query param required' });
+
+  try {
+    // Check if table exists first
+    const tableCheck = await pgPool.query(
+      "SELECT to_regclass('public.catalog_docs') AS tbl"
+    );
+    if (!tableCheck.rows[0].tbl) {
+      return res.status(404).json({ error: 'Catalog docs not yet indexed. Run ingest_catalogs.py first.' });
+    }
+
+    const params = [query];
+    let sql = `
+      SELECT machine_id, brand, model, chunk_index, content,
+             ts_rank(tsv, plainto_tsquery('english', $1)) AS rank
+      FROM catalog_docs
+      WHERE tsv @@ plainto_tsquery('english', $1)
+    `;
+
+    if (model?.trim()) {
+      params.push(`%${model.trim()}%`);
+      sql += ` AND (model ILIKE $2 OR machine_id ILIKE $2)`;
+    }
+
+    sql += ` ORDER BY rank DESC LIMIT 5`;
+
+    const result = await pgPool.query(sql, params);
+    res.json(result.rows.map(r => ({
+      machine_id:  r.machine_id,
+      brand:       r.brand,
+      model:       r.model,
+      content:     r.content,
+      relevance:   parseFloat(r.rank).toFixed(4),
+    })));
+  } catch (e) {
+    console.error('catalog-docs error:', e);
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// GET /api/threads — list conversation threads from LangGraph checkpoints
+app.get('/api/threads', async (req, res) => {
+  try {
+    const tableCheck = await pgPool.query(
+      "SELECT to_regclass('public.checkpoints') AS tbl"
+    );
+    if (!tableCheck.rows[0].tbl) {
+      return res.json([]);
+    }
+
+    // Get the most recent checkpoint per thread; ts is inside the checkpoint JSONB
+    const result = await pgPool.query(`
+      SELECT DISTINCT ON (thread_id)
+        thread_id,
+        checkpoint->>'ts' AS last_active
+      FROM checkpoints
+      ORDER BY thread_id, checkpoint->>'ts' DESC
+    `);
+
+    const threads = result.rows.map(row => ({
+      thread_id:   row.thread_id,
+      title:       row.thread_id.length > 36 ? row.thread_id : 'Conversation',
+      last_active: row.last_active,
+    }));
+
+    threads.sort((a, b) => new Date(b.last_active) - new Date(a.last_active));
+    res.json(threads.slice(0, 50));
+
+  } catch (e) {
+    console.error('threads error:', e);
+    res.status(500).json({ error: e.message });
+  }
 });
 
 // ── Agent chat endpoint ──────────────────────────

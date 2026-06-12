@@ -6,7 +6,7 @@ A sales intelligence platform for **Hari Chand Anand & Co.** (industrial sewing 
 
 1. **Static HTML frontend** — catalog browsing, 3D models, installation map, AI chat (`rag.html`)
 2. **Node.js backend** (`backend/server.js`) — serves catalog data, live pricing from Google Sheets, proxies chat to Python agent
-3. **Python AI agent** (`python-agent/`) — LangGraph ReAct agent using Llama 4 Scout (Groq), Postgres memory, 5 tools
+3. **Python AI agent** (`python-agent/`) — LangGraph ReAct agent using Llama 3.3 70B (Groq), Postgres memory, 5 tools
 
 ---
 
@@ -99,9 +99,11 @@ The agent (`python-agent/agent.py`) must **always call tools** for catalog quest
 ### The #1 bug and its fix
 **Bug**: System prompt listed brand names and stats as facts → LLM answered from memory instead of calling tools.
 
-**Fix applied**: `SYSTEM_PROMPT` in `agent.py` now explicitly states "You do not know what machines, brands, models, or prices are in the catalog" and lists exactly which question types require which tool call. The brand list and hardcoded counts have been removed.
+**Fix applied**:
+- Model switched from `llama-4-scout-17b` → `llama-3.3-70b-versatile` (temperature=0). The 70B model is dramatically more reliable at tool use.
+- System prompt now uses a **3-step chain-of-thought reasoning framework**: (1) classify query type, (2) look up tool decision table, (3) respond only after tool results are in hand. Brand names and hardcoded counts removed from the prompt entirely.
 
-If the agent regresses to answering from memory, **do not add more facts to the system prompt**. Instead, strengthen the tool-first instruction.
+If the agent regresses to answering from memory, **do not add more facts to the system prompt**. Strengthen step 1 (the classification rule) instead.
 
 ---
 

@@ -17,9 +17,136 @@
 
     body {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       background: var(--bg);
       font-family: var(--font-ui);
+    }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      width: 240px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      background: rgba(8,16,36,.85);
+      border-right: 1px solid var(--border);
+      height: 100%;
+      overflow: hidden;
+      transition: width .2s ease;
+    }
+    .sidebar.collapsed { width: 0; border-right: none; }
+
+    .sidebar-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 14px 10px;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .sidebar-title {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .sidebar-new-btn {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 10px;
+      border-radius: 14px;
+      font-size: 11px;
+      color: var(--brand);
+      border: 1px solid rgba(106,166,255,.25);
+      background: rgba(106,166,255,.06);
+      cursor: pointer;
+      font-family: var(--font-ui);
+      transition: background .15s, border-color .15s;
+      white-space: nowrap;
+    }
+    .sidebar-new-btn:hover {
+      background: rgba(106,166,255,.14);
+      border-color: rgba(106,166,255,.4);
+    }
+
+    .sidebar-threads {
+      flex: 1;
+      overflow-y: auto;
+      padding: 8px 0;
+    }
+    .sidebar-threads::-webkit-scrollbar { width: 3px; }
+    .sidebar-threads::-webkit-scrollbar-thumb { background: rgba(255,255,255,.08); border-radius: 3px; }
+
+    .thread-item {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      padding: 8px 14px;
+      cursor: pointer;
+      border-left: 2px solid transparent;
+      transition: background .12s, border-color .12s;
+    }
+    .thread-item:hover {
+      background: rgba(255,255,255,.04);
+    }
+    .thread-item.active {
+      background: rgba(106,166,255,.08);
+      border-left-color: var(--brand);
+    }
+    .thread-title {
+      font-size: 12px;
+      color: var(--text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.3;
+    }
+    .thread-time {
+      font-size: 10px;
+      color: var(--muted);
+      opacity: .7;
+    }
+
+    .sidebar-empty {
+      padding: 24px 14px;
+      font-size: 11px;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .sidebar-toggle {
+      position: absolute;
+      left: 240px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      width: 18px;
+      height: 40px;
+      background: rgba(8,16,36,.9);
+      border: 1px solid var(--border);
+      border-left: none;
+      border-radius: 0 6px 6px 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 9px;
+      transition: left .2s ease, color .15s;
+    }
+    .sidebar-toggle:hover { color: var(--text); }
+    .sidebar-toggle.collapsed { left: 0; }
+
+    /* ── Main area wraps header + messages + input ── */
+    .main-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      position: relative;
     }
 
     /* ── Header ── */
@@ -478,6 +605,21 @@
 </head>
 <body>
 
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-title">Threads</span>
+      <button class="sidebar-new-btn" id="sidebar-new-btn">+ New</button>
+    </div>
+    <div class="sidebar-threads" id="sidebar-threads">
+      <div class="sidebar-empty" id="sidebar-empty">No past conversations yet.</div>
+    </div>
+  </aside>
+  <button class="sidebar-toggle" id="sidebar-toggle" title="Toggle sidebar">&#8249;</button>
+
+  <!-- Main area -->
+  <div class="main-area">
+
   <!-- Header -->
   <header class="rag-header">
     <a href="index.html" title="Back">&#8592;</a>
@@ -519,51 +661,161 @@
     </div>
   </div>
 
+  </div><!-- /.main-area -->
+
   <script>
     const API = 'http://localhost:3001';
-    let history  = [];
-    let threadId = localStorage.getItem('hca_thread_id') || null;
+    let history   = [];
+    let threadId  = localStorage.getItem('hca_thread_id') || null;
     let turnCount = parseInt(localStorage.getItem('hca_turns') || '0', 10);
-    let busy = false;
+    let busy      = false;
+    let sidebarOpen = localStorage.getItem('hca_sidebar') !== 'closed';
 
-    const messagesInner = document.getElementById('messages-inner');
-    const messagesEl    = document.getElementById('messages');
-    const inputEl       = document.getElementById('user-input');
-    const sendBtn       = document.getElementById('send-btn');
-    const welcome       = document.getElementById('welcome');
-    const turnBadge     = document.getElementById('turn-badge');
-    const newChatBtn    = document.getElementById('new-chat-btn');
-    const resumeNotice  = document.getElementById('resume-notice');
+    const messagesInner  = document.getElementById('messages-inner');
+    const messagesEl     = document.getElementById('messages');
+    const inputEl        = document.getElementById('user-input');
+    const sendBtn        = document.getElementById('send-btn');
+    const welcome        = document.getElementById('welcome');
+    const turnBadge      = document.getElementById('turn-badge');
+    const newChatBtn     = document.getElementById('new-chat-btn');
+    const resumeNotice   = document.getElementById('resume-notice');
+    const sidebar        = document.getElementById('sidebar');
+    const sidebarThreads = document.getElementById('sidebar-threads');
+    const sidebarEmpty   = document.getElementById('sidebar-empty');
+    const sidebarToggle  = document.getElementById('sidebar-toggle');
+    const sidebarNewBtn  = document.getElementById('sidebar-new-btn');
 
-    // Auto-resize textarea
+    // ── Sidebar toggle ──────────────────────────────
+    function applySidebarState() {
+      if (sidebarOpen) {
+        sidebar.classList.remove('collapsed');
+        sidebarToggle.style.left = '240px';
+        sidebarToggle.classList.remove('collapsed');
+        sidebarToggle.innerHTML = '&#8249;';
+      } else {
+        sidebar.classList.add('collapsed');
+        sidebarToggle.style.left = '0';
+        sidebarToggle.classList.add('collapsed');
+        sidebarToggle.innerHTML = '&#8250;';
+      }
+    }
+    applySidebarState();
+
+    sidebarToggle.addEventListener('click', () => {
+      sidebarOpen = !sidebarOpen;
+      localStorage.setItem('hca_sidebar', sidebarOpen ? 'open' : 'closed');
+      applySidebarState();
+    });
+
+    // ── Load thread list from API ───────────────────
+    async function loadThreads() {
+      try {
+        const res  = await fetch(`${API}/api/threads`);
+        const data = await res.json();
+        renderThreads(Array.isArray(data) ? data : []);
+      } catch {
+        // Backend not up yet or no threads — silently ignore
+      }
+    }
+
+    function renderThreads(threads) {
+      sidebarThreads.innerHTML = '';
+      if (!threads.length) {
+        sidebarThreads.appendChild(sidebarEmpty);
+        return;
+      }
+      threads.forEach(t => {
+        const el = document.createElement('div');
+        el.className = 'thread-item' + (t.thread_id === threadId ? ' active' : '');
+        el.dataset.tid = t.thread_id;
+
+        const age = formatAge(t.last_active);
+        el.innerHTML = `
+          <div class="thread-title">${escHtml(t.title || 'Conversation')}</div>
+          <div class="thread-time">${age}</div>
+        `;
+        el.addEventListener('click', () => switchThread(t.thread_id, t.title));
+        sidebarThreads.appendChild(el);
+      });
+    }
+
+    function formatAge(iso) {
+      if (!iso) return '';
+      const diff = Date.now() - new Date(iso).getTime();
+      const mins = Math.floor(diff / 60000);
+      if (mins < 1)   return 'just now';
+      if (mins < 60)  return `${mins}m ago`;
+      const hrs = Math.floor(mins / 60);
+      if (hrs < 24)   return `${hrs}h ago`;
+      const days = Math.floor(hrs / 24);
+      return `${days}d ago`;
+    }
+
+    function switchThread(tid, title) {
+      if (tid === threadId) return;
+      threadId  = tid;
+      turnCount = 0;
+      localStorage.setItem('hca_thread_id', threadId);
+      localStorage.setItem('hca_turns', '0');
+      // Mark active
+      document.querySelectorAll('.thread-item').forEach(el => {
+        el.classList.toggle('active', el.dataset.tid === tid);
+      });
+      // Reset chat UI
+      messagesInner.innerHTML = '';
+      if (welcome) {
+        const w = welcome.cloneNode(true);
+        messagesInner.appendChild(w);
+        w.style.display = '';
+        // Re-attach suggestion listeners
+        w.querySelectorAll('.suggestion').forEach(btn => {
+          btn.addEventListener('click', () => { inputEl.value = btn.dataset.q; send(); });
+        });
+        // Show resume notice
+        const rn = w.querySelector('#resume-notice');
+        if (rn) {
+          rn.textContent = `Resuming: ${title || 'conversation'}`;
+          rn.classList.add('visible');
+        }
+      }
+      turnBadge.classList.remove('visible');
+      newChatBtn.classList.remove('visible');
+      inputEl.focus();
+    }
+
+    // ── New chat (sidebar button + header button) ───
+    function startNewChat() {
+      threadId  = null;
+      turnCount = 0;
+      localStorage.removeItem('hca_thread_id');
+      localStorage.removeItem('hca_turns');
+      location.reload();
+    }
+
+    sidebarNewBtn.addEventListener('click', startNewChat);
+    newChatBtn.addEventListener('click', () => {
+      if (!confirm('Start a new conversation?')) return;
+      startNewChat();
+    });
+
+    // ── Auto-resize textarea ────────────────────────
     inputEl.addEventListener('input', () => {
       inputEl.style.height = 'auto';
       inputEl.style.height = Math.min(inputEl.scrollHeight, 140) + 'px';
     });
 
-    // Enter to send (Shift+Enter = newline)
     inputEl.addEventListener('keydown', e => {
       if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); }
     });
 
     sendBtn.addEventListener('click', send);
 
-    // Restore thread state on load
+    // ── Restore thread state on load ───────────────
     if (threadId && turnCount > 0) {
       updateThreadUI();
       resumeNotice.textContent = `Resuming previous session · ${turnCount} turn${turnCount !== 1 ? 's' : ''}`;
       resumeNotice.classList.add('visible');
     }
-
-    // New chat
-    newChatBtn.addEventListener('click', () => {
-      if (!confirm('Start a new conversation? This will clear the current session.')) return;
-      threadId  = null;
-      turnCount = 0;
-      localStorage.removeItem('hca_thread_id');
-      localStorage.removeItem('hca_turns');
-      location.reload();
-    });
 
     function updateThreadUI() {
       turnBadge.textContent = `${turnCount} turn${turnCount !== 1 ? 's' : ''}`;
@@ -744,6 +996,8 @@
           localStorage.setItem('hca_turns', turnCount);
           updateThreadUI();
           addBotRow(data.answer, data.cards || []);
+          // Refresh sidebar thread list
+          loadThreads();
         }
       } catch (err) {
         thinking.remove();
@@ -754,6 +1008,9 @@
       sendBtn.disabled = false;
       inputEl.focus();
     }
+
+    // Load threads on page open
+    loadThreads();
   </script>
 
 </body>
